@@ -15,14 +15,26 @@ class AppCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cardTheme = Theme.of(context).cardTheme;
-    return Material(
-      color: cardTheme.color,
-      shape: cardTheme.shape,
-      child: InkWell(
-        onTap: onTap,
+    final theme = Theme.of(context);
+    return Container(
+      decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        child: Padding(padding: padding, child: child),
+        boxShadow: [
+          BoxShadow(
+            color: theme.colorScheme.primary.withValues(alpha: 0.06),
+            blurRadius: 14,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Material(
+        color: theme.cardTheme.color,
+        shape: theme.cardTheme.shape,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(20),
+          child: Padding(padding: padding, child: child),
+        ),
       ),
     );
   }

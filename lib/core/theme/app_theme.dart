@@ -8,9 +8,9 @@ class AppTheme {
 
   static ThemeData get light {
     final scheme = ColorScheme.fromSeed(
-      seedColor: AppColors.blue,
+      seedColor: AppColors.purple,
       brightness: Brightness.light,
-      primary: AppColors.blue,
+      primary: AppColors.purple,
       secondary: AppColors.gold,
       surface: AppColors.warmWhite,
     );
@@ -47,14 +47,14 @@ class AppTheme {
       ),
       dividerTheme: DividerThemeData(color: AppColors.gold.withValues(alpha: 0.15)),
       chipTheme: ChipThemeData(
-        backgroundColor: AppColors.blueSoft,
-        labelStyle: const TextStyle(color: AppColors.blueDeep, fontWeight: FontWeight.w600),
+        backgroundColor: AppColors.purpleSoft,
+        labelStyle: const TextStyle(color: AppColors.purpleDeep, fontWeight: FontWeight.w600),
         side: BorderSide.none,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.blue,
+          backgroundColor: AppColors.purple,
           foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -65,9 +65,9 @@ class AppTheme {
 
   static ThemeData get dark {
     final scheme = ColorScheme.fromSeed(
-      seedColor: AppColors.blueDarkAccent,
+      seedColor: AppColors.purpleDarkAccent,
       brightness: Brightness.dark,
-      primary: AppColors.blueDarkAccent,
+      primary: AppColors.purpleDarkAccent,
       secondary: AppColors.goldDarkAccent,
       surface: AppColors.surfaceDarkAlt,
     );
@@ -96,7 +96,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: AppColors.surfaceDarkAlt,
-        indicatorColor: AppColors.blueDeep,
+        indicatorColor: AppColors.purpleDeep,
         elevation: 0,
         labelTextStyle: WidgetStateProperty.all(
           const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
@@ -104,14 +104,14 @@ class AppTheme {
       ),
       dividerTheme: DividerThemeData(color: AppColors.goldDarkAccent.withValues(alpha: 0.14)),
       chipTheme: ChipThemeData(
-        backgroundColor: AppColors.blueDeep,
-        labelStyle: const TextStyle(color: AppColors.blueDarkAccent, fontWeight: FontWeight.w600),
+        backgroundColor: AppColors.purpleDeep,
+        labelStyle: const TextStyle(color: AppColors.purpleDarkAccent, fontWeight: FontWeight.w600),
         side: BorderSide.none,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.blueDarkAccent,
+          backgroundColor: AppColors.purpleDarkAccent,
           foregroundColor: AppColors.surfaceDark,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

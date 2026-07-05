@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../../core/widgets/art_banner.dart';
 import '../../../data/models/music_model.dart';
 import '../../providers/content_providers.dart';
 
@@ -24,9 +25,25 @@ class MusicScreen extends ConsumerWidget {
       body: categoriesAsync.when(
         data: (categories) => ListView.builder(
           padding: const EdgeInsets.all(16),
-          itemCount: categories.length,
+          itemCount: categories.length + 1,
           itemBuilder: (context, i) {
-            final category = categories[i];
+            if (i == 0) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: ArtBanner(
+                  asset: 'assets/images/sermon.jpg',
+                  height: 140,
+                  child: Text(
+                    'Canta y alaba: musica para acompañar tu fe',
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleMedium
+                        ?.copyWith(color: Colors.white),
+                  ),
+                ),
+              );
+            }
+            final category = categories[i - 1];
             return _MusicCategoryTile(category: category, onOpen: (uri) => _openSearch(context, uri));
           },
         ),

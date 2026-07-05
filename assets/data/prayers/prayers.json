@@ -94,5 +94,83 @@
     "category": "Accion de gracias",
     "title": "Accion de gracias",
     "text": "Gracias, Señor, por la vida, por la fe, por mi familia y por cada persona que pones en mi camino. Gracias por los momentos dificiles que me han hecho crecer y por los momentos de alegria que me recuerdan tu bondad. Todo te lo debo a ti. Amen."
+  },
+  {
+    "id": "acto_contricion",
+    "category": "Basicas",
+    "title": "Acto de contricion",
+    "text": "Señor mio Jesucristo, Dios y Hombre verdadero, Creador, Padre y Redentor mio. Por ser Tu quien eres, bondad infinita, y porque te amo sobre todas las cosas, me pesa de todo corazon haberte ofendido. Tambien me pesa porque puedes castigarme con las penas del infierno. Ayudado de tu divina gracia, propongo firmemente nunca mas pecar, confesarme y cumplir la penitencia que me fuere impuesta. Amen."
+  },
+  {
+    "id": "senal_cruz",
+    "category": "Basicas",
+    "title": "La señal de la cruz",
+    "text": "Por la señal de la Santa Cruz, de nuestros enemigos libranos, Señor, Dios nuestro. En el nombre del Padre, y del Hijo, y del Espiritu Santo. Amen."
+  },
+  {
+    "id": "ven_espiritu",
+    "category": "Espiritu Santo",
+    "title": "Ven, Espiritu Santo",
+    "text": "Ven, Espiritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor. Envia, Señor, tu Espiritu y todo sera creado, y renovaras la faz de la tierra. Oh Dios, que has instruido los corazones de tus fieles con la luz del Espiritu Santo, concedenos que sintamos rectamente con el mismo Espiritu y gocemos siempre de su divino consuelo. Por Jesucristo nuestro Señor. Amen."
+  },
+  {
+    "id": "alma_cristo",
+    "category": "Basicas",
+    "title": "Alma de Cristo",
+    "text": "Alma de Cristo, santificame. Cuerpo de Cristo, salvame. Sangre de Cristo, embriagame. Agua del costado de Cristo, lavame. Pasion de Cristo, confortame. Oh buen Jesus, oyeme. Dentro de tus llagas, escondeme. No permitas que me aparte de Ti. Del enemigo maligno, defiendeme. En la hora de mi muerte, llamame, y mandame ir a Ti, para que con tus santos te alabe por los siglos de los siglos. Amen."
+  },
+  {
+    "id": "comunion_espiritual",
+    "category": "Basicas",
+    "title": "Comunion espiritual",
+    "text": "Creo, Jesus mio, que estas presente en el Santisimo Sacramento del altar. Te amo sobre todas las cosas y deseo recibirte en mi alma. Ya que ahora no puedo recibirte sacramentalmente, ven al menos espiritualmente a mi corazon. Y como si ya te hubiese recibido, me abrazo y me uno todo a Ti. No permitas, Señor, que jamas me aparte de Ti. Amen."
+  },
+  {
+    "id": "por_la_familia",
+    "category": "Familia",
+    "title": "Oracion por la familia",
+    "text": "Señor, te encomiendo a mi familia. Bendice nuestro hogar con tu paz, danos paciencia para comprendernos, generosidad para perdonarnos y amor para acompañarnos en todo momento. Protege a cada uno de los mios, a los que estan cerca y a los que estan lejos, y no permitas que nada nos separe de Ti. Amen."
+  },
+  {
+    "id": "por_los_hijos",
+    "category": "Familia",
+    "title": "Oracion por los hijos",
+    "text": "Padre bueno, te confio a mis hijos. Cuidalos cuando yo no pueda hacerlo, guia sus pasos por el buen camino, dales salud, sabiduria y un corazon noble. Que crezcan conociendote y amandote, y que tu angel los acompañe siempre. Amen."
+  },
+  {
+    "id": "matrimonio",
+    "category": "Familia",
+    "title": "Oracion de los esposos",
+    "text": "Señor, gracias por la persona que pusiste a mi lado. Ayudanos a amarnos con paciencia y ternura, a perdonarnos pronto, a hablarnos con respeto y a buscar juntos tu voluntad. Que nuestro amor sea reflejo del tuyo. Amen."
+  },
+  {
+    "id": "por_los_enfermos",
+    "category": "Salud",
+    "title": "Oracion por un enfermo",
+    "text": "Señor Jesus, que pasaste por el mundo haciendo el bien y sanando a los enfermos, mira con amor a quien hoy sufre en su cuerpo o en su espiritu. Dale fuerza en su debilidad, esperanza en su angustia y salud segun tu voluntad. Acompaña tambien a quienes lo cuidan. Amen."
+  },
+  {
+    "id": "por_mi_salud",
+    "category": "Salud",
+    "title": "Oracion pidiendo salud",
+    "text": "Señor, Tu conoces mi cuerpo y mi corazon. Te pido por mi salud: sana lo que esta enfermo, fortalece lo que esta debil y dame serenidad para aceptar lo que no comprendo. Pongo mi vida en tus manos, confiando en tu amor de Padre. Amen."
+  },
+  {
+    "id": "por_los_difuntos",
+    "category": "Difuntos",
+    "title": "Oracion por los difuntos",
+    "text": "Dales, Señor, el descanso eterno, y brille para ellos la luz perpetua. Que las almas de los fieles difuntos, por la misericordia de Dios, descansen en paz. Amen."
+  },
+  {
+    "id": "consuelo_duelo",
+    "category": "Difuntos",
+    "title": "Oracion en el duelo",
+    "text": "Señor, hoy mi corazon esta triste por la partida de un ser querido. Consuelame con tu presencia y dame la certeza de que la muerte no tiene la ultima palabra, porque Tu venciste a la muerte. Recibe en tu casa a quien tanto ame, y ayudame a vivir con la esperanza de reencontrarnos en Ti. Amen."
+  },
+  {
+    "id": "bendicion_mesa",
+    "category": "Accion de gracias",
+    "title": "Bendicion de la mesa",
+    "text": "Bendicenos, Señor, y bendice estos alimentos que por tu bondad vamos a recibir. Bendice las manos que los prepararon, da pan a los que no lo tienen y hambre de Ti a los que tenemos pan. Por Jesucristo nuestro Señor. Amen."
   }
 ]

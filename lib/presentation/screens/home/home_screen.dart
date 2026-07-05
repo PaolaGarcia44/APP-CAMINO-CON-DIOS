@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
-import 'package:share_plus/share_plus.dart';
 
 import '../../../config/app_config.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/utils/greeting_helper.dart';
 import '../../../core/widgets/app_card.dart';
+import '../../../core/widgets/fade_slide_in.dart';
 import '../../../core/widgets/faith_icon.dart';
+import '../../../core/widgets/quote_art_card.dart';
 import '../../../core/widgets/section_header.dart';
 import '../../../routes/route_paths.dart';
 import '../../providers/bible_providers.dart';
@@ -55,6 +56,7 @@ class HomeScreen extends ConsumerWidget {
                   [
                     _SectionBlock(
                       title: 'Lectura biblica del dia',
+                      delayMs: 0,
                       child: progressAsync.when(
                         data: (progress) {
                           final bookName = booksAsync.maybeWhen(
@@ -77,8 +79,8 @@ class HomeScreen extends ConsumerWidget {
                               children: [
                                 _FeaturedIcon(
                                   icon: Icons.menu_book_rounded,
-                                  background: AppColors.blueSoft,
-                                  foreground: AppColors.blueDeep,
+                                  background: AppColors.purpleSoft,
+                                  foreground: AppColors.purpleDeep,
                                 ),
                                 const SizedBox(width: 16),
                                 Expanded(
@@ -115,11 +117,13 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(height: 20),
                     const _SectionBlock(
                       title: 'Accesos rapidos',
+                      delayMs: 90,
                       child: _QuickActionsGrid(),
                     ),
                     const SizedBox(height: 20),
                     _SectionBlock(
                       title: 'Reflexion del dia',
+                      delayMs: 180,
                       child: reflectionAsync.when(
                         data: (reflection) => AppCard(
                           padding: const EdgeInsets.all(20),
@@ -170,6 +174,7 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(height: 20),
                     _SectionBlock(
                       title: 'Oracion corta del dia',
+                      delayMs: 260,
                       child: prayerAsync.when(
                         data: (prayer) => AppCard(
                           padding: const EdgeInsets.all(20),
@@ -181,7 +186,7 @@ class HomeScreen extends ConsumerWidget {
                                   _FeaturedIcon(
                                     icon: Icons.volunteer_activism_rounded,
                                     background: AppColors.goldSoft,
-                                    foreground: AppColors.blueDeep,
+                                    foreground: AppColors.purpleDeep,
                                   ),
                                   const SizedBox(width: 14),
                                   Expanded(
@@ -204,42 +209,49 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(height: 20),
                     _SectionBlock(
                       title: 'Frase inspiradora',
+                      delayMs: 340,
                       child: quoteAsync.when(
-                        data: (quote) => AppCard(
-                          padding: const EdgeInsets.all(20),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  _FeaturedIcon(
-                                    icon: Icons.favorite_rounded,
-                                    background: AppColors.cream,
-                                    foreground: AppColors.gold,
-                                  ),
-                                  const SizedBox(width: 14),
-                                  Expanded(
-                                    child: Text(
-                                      quote.text,
-                                      style: Theme.of(context).textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 14),
-                              Align(
-                                alignment: Alignment.centerRight,
-                                child: TextButton.icon(
-                                  onPressed: () => Share.share(quote.text),
-                                  icon: const Icon(Icons.share_outlined),
-                                  label: const Text('Compartir'),
-                                ),
-                              ),
-                            ],
-                          ),
+                        data: (quote) => QuoteArtCard(
+                          quoteText: quote.text,
+                          appName: AppConfig.appName,
                         ),
                         loading: () => const _LoadingCard(),
                         error: (_, __) => const SizedBox.shrink(),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    _SectionBlock(
+                      title: 'Santo del dia',
+                      delayMs: 420,
+                      child: AppCard(
+                        onTap: () => context.push(RoutePaths.saintOfDay),
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          children: [
+                            _FeaturedIcon(
+                              icon: Icons.emoji_events_outlined,
+                              background: AppColors.goldSoft,
+                              foreground: AppColors.gold,
+                            ),
+                            const SizedBox(width: 16),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Conoce al santo de hoy',
+                                      style: Theme.of(context).textTheme.titleMedium),
+                                  const SizedBox(height: 6),
+                                  Text(
+                                    'Su historia, su frase y una oracion para pedir su intercesion.',
+                                    style: Theme.of(context).textTheme.bodyMedium,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(width: 10),
+                            const Icon(Icons.chevron_right_rounded),
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -271,17 +283,25 @@ class _HomeHero extends StatelessWidget {
     final theme = Theme.of(context);
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            theme.colorScheme.primary.withValues(alpha: 0.96),
-            theme.colorScheme.primaryContainer.withValues(alpha: 0.92),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/maria.jpg'),
+          fit: BoxFit.cover,
+          alignment: Alignment.topCenter,
         ),
       ),
-      child: SafeArea(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.purpleDeep.withValues(alpha: 0.92),
+              theme.colorScheme.primary.withValues(alpha: 0.70),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: SafeArea(
         bottom: false,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
@@ -341,6 +361,7 @@ class _HomeHero extends StatelessWidget {
             ],
           ),
         ),
+        ),
       ),
     );
   }
@@ -349,18 +370,22 @@ class _HomeHero extends StatelessWidget {
 class _SectionBlock extends StatelessWidget {
   final String title;
   final Widget child;
+  final int delayMs;
 
-  const _SectionBlock({required this.title, required this.child});
+  const _SectionBlock({required this.title, required this.child, this.delayMs = 0});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SectionHeader(title: title),
-        const SizedBox(height: 10),
-        child,
-      ],
+    return FadeSlideIn(
+      delayMs: delayMs,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SectionHeader(title: title),
+          const SizedBox(height: 10),
+          child,
+        ],
+      ),
     );
   }
 }
@@ -371,12 +396,12 @@ class _QuickActionsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final actions = <_QuickActionItem>[
-      _QuickActionItem('Biblia', Icons.menu_book_rounded, AppColors.blueSoft, AppColors.blueDeep, RoutePaths.bible),
+      _QuickActionItem('Biblia', Icons.menu_book_rounded, AppColors.purpleSoft, AppColors.purpleDeep, RoutePaths.bible),
       _QuickActionItem('Rosario', Icons.circle_outlined, AppColors.goldSoft, AppColors.gold, RoutePaths.rosary),
-      _QuickActionItem('Oraciones', Icons.volunteer_activism_rounded, AppColors.cream, AppColors.blueDeep, RoutePaths.prayers),
-      _QuickActionItem('Diario', Icons.edit_note_rounded, AppColors.blueSoft, AppColors.blue, RoutePaths.journal),
+      _QuickActionItem('Oraciones', Icons.volunteer_activism_rounded, AppColors.cream, AppColors.purpleDeep, RoutePaths.prayers),
+      _QuickActionItem('Diario', Icons.edit_note_rounded, AppColors.purpleSoft, AppColors.purple, RoutePaths.journal),
       _QuickActionItem('Favoritos', Icons.bookmark_rounded, AppColors.goldSoft, AppColors.gold, RoutePaths.favorites),
-      _QuickActionItem('Ajustes', Icons.settings_rounded, AppColors.cream, AppColors.blueDeep, RoutePaths.settings),
+      _QuickActionItem('Ajustes', Icons.settings_rounded, AppColors.cream, AppColors.purpleDeep, RoutePaths.settings),
     ];
 
     return Wrap(

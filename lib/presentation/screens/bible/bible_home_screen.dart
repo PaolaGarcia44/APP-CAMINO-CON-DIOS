@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/widgets/app_card.dart';
+import '../../../core/widgets/art_banner.dart';
 import '../../../routes/route_paths.dart';
 import '../../providers/bible_providers.dart';
 
@@ -27,6 +28,15 @@ class BibleHomeScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
+          ArtBanner(
+            asset: 'assets/images/pastor.jpg',
+            height: 130,
+            child: Text(
+              'La Palabra de Dios te espera hoy',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),
+            ),
+          ),
+          const SizedBox(height: 16),
           progressAsync.when(
             data: (progress) {
               final bookName = booksAsync.maybeWhen(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 import '../../../core/widgets/app_card.dart';
-import '../../../core/widgets/faith_icon.dart';
+import '../../../core/widgets/art_banner.dart';
 import '../../providers/content_providers.dart';
 
 class SaintOfDayScreen extends ConsumerWidget {
@@ -19,23 +20,43 @@ class SaintOfDayScreen extends ConsumerWidget {
               child: Padding(
                 padding: EdgeInsets.all(24),
                 child: Text(
-                  'Aun no tenemos un santo cargado para hoy en esta muestra. '
-                  'El santoral completo se agregara en una proxima actualizacion.',
+                  'No se pudo cargar el santoral.',
                   textAlign: TextAlign.center,
                 ),
               ),
             );
           }
+          final now = DateTime.now();
+          final isToday = saint.month == now.month && saint.day == now.day;
+          final feastDate = DateFormat("d 'de' MMMM", 'es')
+              .format(DateTime(now.year, saint.month, saint.day));
           return ListView(
             padding: const EdgeInsets.all(20),
             children: [
-              Center(
-                child: FaithIcon(type: FaithIconType.dove, size: 56, color: Theme.of(context).colorScheme.secondary),
-              ),
-              const SizedBox(height: 14),
-              Center(
-                child: Text(saint.name,
-                    textAlign: TextAlign.center, style: Theme.of(context).textTheme.headlineSmall),
+              ArtBanner(
+                asset: 'assets/images/anunciacion.jpg',
+                height: 150,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      saint.name,
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(color: Colors.white),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      isToday ? 'Hoy, $feastDate' : 'Fiesta: $feastDate',
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(color: Colors.white70),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 20),
               AppCard(

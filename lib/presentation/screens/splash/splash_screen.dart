@@ -47,14 +47,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
+    // Siempre oscuro: sobre este fondo el texto blanco se lee bien en
+    // cualquier tema del telefono.
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: isDark
-                ? [AppColors.surfaceDark, AppColors.surfaceDarkAlt]
-                : [AppColors.cream, AppColors.warmWhite],
+            colors: [Color(0xFF120D1C), AppColors.purpleDeep],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -68,42 +67,45 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Container(
-                    width: 92,
-                    height: 92,
+                    width: 96,
+                    height: 96,
                     decoration: BoxDecoration(
-                      color: isDark ? AppColors.surfaceDarkAlt : Colors.white,
-                      borderRadius: BorderRadius.circular(28),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: isDark ? 0.18 : 0.08),
-                          blurRadius: 20,
-                          offset: const Offset(0, 10),
-                        ),
-                      ],
+                      color: Colors.white.withValues(alpha: 0.08),
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(color: AppColors.gold.withValues(alpha: 0.45)),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: FaithIcon(
-                        type: FaithIconType.cross,
-                        size: 52,
-                        color: isDark ? AppColors.goldDarkAccent : AppColors.gold,
+                        type: FaithIconType.dove,
+                        size: 56,
+                        color: AppColors.goldSoft,
                       ),
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  Text(AppConfig.appName, style: Theme.of(context).textTheme.headlineMedium),
+                  const SizedBox(height: 26),
+                  Text(
+                    AppConfig.appName,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headlineMedium
+                        ?.copyWith(color: Colors.white),
+                  ),
                   const SizedBox(height: 10),
                   Text(
                     AppConfig.appTagline,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(color: Colors.white.withValues(alpha: 0.75)),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 24),
-                  SizedBox(
+                  const SizedBox(height: 26),
+                  const SizedBox(
                     width: 20,
                     height: 20,
                     child: CircularProgressIndicator(
                       strokeWidth: 2.2,
-                      color: isDark ? AppColors.goldDarkAccent : AppColors.blue,
+                      color: AppColors.goldDarkAccent,
                     ),
                   ),
                 ],

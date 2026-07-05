@@ -2,8 +2,10 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import '../models/saint_model.dart';
 
-/// Lista de muestra (incompleta a proposito). Ampliar con un santoral
-/// completo de 365 dias es un trabajo de contenido pendiente.
+/// Santoral con los santos y fiestas mas conocidos de cada mes. Cuando un
+/// dia no tiene entrada propia, [getForDate] devuelve la del dia anterior
+/// mas cercano, para que la pantalla nunca quede vacia (la pantalla indica
+/// la fecha real de la fiesta).
 class SaintsLocalDataSource {
   List<SaintModel>? _saints;
 
@@ -17,9 +19,21 @@ class SaintsLocalDataSource {
 
   Future<SaintModel?> getForDate(DateTime date) async {
     final saints = await getAll();
+    if (saints.isEmpty) return null;
+
+    SaintModel? best;
+    var bestDistance = 400; // mayor que cualquier distancia posible en dias
+    final target = date.month * 31 + date.day;
     for (final s in saints) {
-      if (s.month == date.month && s.day == date.day) return s;
+      final key = s.month * 31 + s.day;
+      // distancia hacia atras, envolviendo el año (12 * 31 + 31 = 403)
+      final distance = key <= target ? target - key : target - key + 403;
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = s;
+        if (distance == 0) break;
+      }
     }
-    return null;
+    return best;
   }
 }

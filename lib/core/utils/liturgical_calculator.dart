@@ -17,12 +17,71 @@ class LiturgicalInfo {
   });
 }
 
+class LiturgicalFeast {
+  final DateTime date;
+  final String name;
+  const LiturgicalFeast(this.date, this.name);
+}
+
 /// Calcula el tiempo y color liturgico a partir de la fecha, usando el
 /// algoritmo de Computus (Meeus/Jones/Butcher) para hallar el Domingo de
 /// Pascua. Es un calculo puramente algoritmico, sin contenido con derechos
 /// de autor. El Evangelio del dia queda pendiente de una fuente con licencia.
 class LiturgicalCalculator {
   LiturgicalCalculator._();
+
+  /// Fiestas y solemnidades principales del año: las fijas mas las moviles
+  /// calculadas a partir de la Pascua. Ascension y Corpus se muestran en
+  /// domingo, como se celebran en Colombia y gran parte de America Latina.
+  static List<LiturgicalFeast> feastsForYear(int year) {
+    final easter = easterSunday(year);
+    final feasts = <LiturgicalFeast>[
+      LiturgicalFeast(DateTime(year, 1, 1), 'Santa Maria, Madre de Dios'),
+      LiturgicalFeast(DateTime(year, 1, 6), 'Epifania del Señor (Reyes Magos)'),
+      LiturgicalFeast(easter.subtract(const Duration(days: 46)), 'Miercoles de Ceniza'),
+      LiturgicalFeast(DateTime(year, 3, 19), 'San Jose'),
+      LiturgicalFeast(DateTime(year, 3, 25), 'Anunciacion del Señor'),
+      LiturgicalFeast(easter.subtract(const Duration(days: 7)), 'Domingo de Ramos'),
+      LiturgicalFeast(easter.subtract(const Duration(days: 3)), 'Jueves Santo'),
+      LiturgicalFeast(easter.subtract(const Duration(days: 2)), 'Viernes Santo'),
+      LiturgicalFeast(easter, 'Domingo de Pascua (Resurreccion)'),
+      LiturgicalFeast(easter.add(const Duration(days: 7)), 'Divina Misericordia'),
+      LiturgicalFeast(easter.add(const Duration(days: 42)), 'Ascension del Señor'),
+      LiturgicalFeast(easter.add(const Duration(days: 49)), 'Pentecostes'),
+      LiturgicalFeast(easter.add(const Duration(days: 56)), 'Santisima Trinidad'),
+      LiturgicalFeast(easter.add(const Duration(days: 63)), 'Corpus Christi'),
+      LiturgicalFeast(easter.add(const Duration(days: 68)), 'Sagrado Corazon de Jesus'),
+      LiturgicalFeast(DateTime(year, 6, 29), 'San Pedro y San Pablo'),
+      LiturgicalFeast(DateTime(year, 7, 16), 'Nuestra Señora del Carmen'),
+      LiturgicalFeast(DateTime(year, 8, 15), 'Asuncion de la Virgen Maria'),
+      LiturgicalFeast(DateTime(year, 10, 7), 'Nuestra Señora del Rosario'),
+      LiturgicalFeast(DateTime(year, 11, 1), 'Todos los Santos'),
+      LiturgicalFeast(DateTime(year, 11, 2), 'Fieles Difuntos'),
+      LiturgicalFeast(_firstAdventSunday(year).subtract(const Duration(days: 7)), 'Cristo Rey del Universo'),
+      LiturgicalFeast(_firstAdventSunday(year), 'Primer Domingo de Adviento'),
+      LiturgicalFeast(DateTime(year, 12, 8), 'Inmaculada Concepcion'),
+      LiturgicalFeast(DateTime(year, 12, 12), 'Nuestra Señora de Guadalupe'),
+      LiturgicalFeast(DateTime(year, 12, 25), 'Navidad del Señor'),
+    ]..sort((a, b) => a.date.compareTo(b.date));
+    return feasts;
+  }
+
+  /// La fiesta que cae exactamente en [date], si la hay.
+  static LiturgicalFeast? feastFor(DateTime date) {
+    for (final f in feastsForYear(date.year)) {
+      if (f.date.year == date.year && f.date.month == date.month && f.date.day == date.day) {
+        return f;
+      }
+    }
+    return null;
+  }
+
+  /// Las proximas [count] fiestas a partir de [date] (exclusive hoy).
+  static List<LiturgicalFeast> upcomingFeasts(DateTime date, {int count = 5}) {
+    final day = DateTime(date.year, date.month, date.day);
+    final all = [...feastsForYear(day.year), ...feastsForYear(day.year + 1)];
+    return all.where((f) => f.date.isAfter(day)).take(count).toList();
+  }
 
   static DateTime easterSunday(int year) {
     final a = year % 19;

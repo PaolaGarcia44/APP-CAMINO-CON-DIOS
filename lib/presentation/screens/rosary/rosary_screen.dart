@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/widgets/art_banner.dart';
 import '../../../core/widgets/faith_icon.dart';
-import '../../../domain/entities/rosary_bead.dart';
 import '../../../domain/usecases/build_rosary_flow.dart';
 import '../../providers/content_providers.dart';
 import '../../providers/settings_providers.dart';
@@ -74,8 +74,19 @@ class _RosaryScreenState extends ConsumerState<RosaryScreen> {
                       padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
                       child: Column(
                         children: [
-                          Text(mysterySet.name, style: Theme.of(context).textTheme.labelLarge),
-                          const SizedBox(height: 8),
+                          ArtBanner(
+                            asset: 'assets/images/virgen_orante.jpg',
+                            height: 96,
+                            imageAlignment: Alignment.center,
+                            child: Text(
+                              mysterySet.name,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleMedium
+                                  ?.copyWith(color: Colors.white),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
                           LinearProgressIndicator(value: (index + 1) / beads.length, minHeight: 6),
                         ],
                       ),
@@ -83,31 +94,46 @@ class _RosaryScreenState extends ConsumerState<RosaryScreen> {
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 28),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            FaithIcon(
-                              type: FaithIconType.cross,
-                              size: 40,
-                              color: Theme.of(context).colorScheme.secondary,
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 320),
+                          switchInCurve: Curves.easeOutCubic,
+                          transitionBuilder: (child, animation) => FadeTransition(
+                            opacity: animation,
+                            child: SlideTransition(
+                              position: Tween<Offset>(
+                                begin: const Offset(0, 0.04),
+                                end: Offset.zero,
+                              ).animate(animation),
+                              child: child,
                             ),
-                            const SizedBox(height: 18),
-                            Text(
-                              bead.title,
-                              textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.headlineSmall,
-                            ),
-                            if (bead.count != null && bead.total != null) ...[
-                              const SizedBox(height: 6),
-                              _BeadCounter(current: bead.count!, total: bead.total!),
+                          ),
+                          child: Column(
+                            key: ValueKey(index),
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FaithIcon(
+                                type: FaithIconType.cross,
+                                size: 40,
+                                color: Theme.of(context).colorScheme.secondary,
+                              ),
+                              const SizedBox(height: 18),
+                              Text(
+                                bead.title,
+                                textAlign: TextAlign.center,
+                                style: Theme.of(context).textTheme.headlineSmall,
+                              ),
+                              if (bead.count != null && bead.total != null) ...[
+                                const SizedBox(height: 6),
+                                _BeadCounter(current: bead.count!, total: bead.total!),
+                              ],
+                              const SizedBox(height: 20),
+                              Text(
+                                bead.text,
+                                textAlign: TextAlign.center,
+                                style: Theme.of(context).textTheme.bodyLarge,
+                              ),
                             ],
-                            const SizedBox(height: 20),
-                            Text(
-                              bead.text,
-                              textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.bodyLarge,
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                     ),

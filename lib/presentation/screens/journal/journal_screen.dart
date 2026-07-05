@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
+import '../../../core/widgets/art_banner.dart';
 import '../../../data/models/journal_entry.dart';
 import '../../providers/journal_providers.dart';
 
@@ -21,23 +22,48 @@ class JournalScreen extends ConsumerWidget {
       body: entriesAsync.when(
         data: (entries) {
           if (entries.isEmpty) {
-            return const Center(
-              child: Padding(
-                padding: EdgeInsets.all(24),
-                child: Text(
+            return ListView(
+              padding: const EdgeInsets.all(24),
+              children: [
+                ArtBanner(
+                  asset: 'assets/images/hijo_prodigo.jpg',
+                  height: 150,
+                  child: Text(
+                    'Tu conversacion escrita con Dios',
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleMedium
+                        ?.copyWith(color: Colors.white),
+                  ),
+                ),
+                const SizedBox(height: 24),
+                const Text(
                   'Escribe tus agradecimientos, peticiones y reflexiones personales. '
                   'Todo se guarda solo en tu dispositivo.',
                   textAlign: TextAlign.center,
                 ),
-              ),
+              ],
             );
           }
           return ListView.separated(
             padding: const EdgeInsets.all(16),
-            itemCount: entries.length,
+            itemCount: entries.length + 1,
             separatorBuilder: (_, __) => const SizedBox(height: 10),
             itemBuilder: (context, i) {
-              final entry = entries[i];
+              if (i == 0) {
+                return ArtBanner(
+                  asset: 'assets/images/hijo_prodigo.jpg',
+                  height: 120,
+                  child: Text(
+                    'Tu conversacion escrita con Dios',
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleMedium
+                        ?.copyWith(color: Colors.white),
+                  ),
+                );
+              }
+              final entry = entries[i - 1];
               return Dismissible(
                 key: ValueKey(entry.id),
                 direction: DismissDirection.endToStart,

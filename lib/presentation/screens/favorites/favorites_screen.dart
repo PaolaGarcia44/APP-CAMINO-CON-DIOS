@@ -52,7 +52,28 @@ class _FavoritesScreenState extends ConsumerState<FavoritesScreen>
           children: _tabs.map((t) {
             final filtered = items.where((f) => f.type == t.$1).toList();
             if (filtered.isEmpty) {
-              return const Center(child: Text('Aun no tienes elementos guardados aqui.'));
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.bookmark_add_outlined,
+                      size: 52,
+                      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.35),
+                    ),
+                    const SizedBox(height: 14),
+                    Text(
+                      'Aun no tienes elementos guardados aqui.',
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      'Toca el corazon en cualquier contenido para guardarlo.',
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                  ],
+                ),
+              );
             }
             return ListView.separated(
               padding: const EdgeInsets.all(16),

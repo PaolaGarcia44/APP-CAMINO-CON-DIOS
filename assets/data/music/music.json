@@ -5,7 +5,12 @@
     "songs": [
       {"title": "Aqui Estoy de Pie", "artist": "Miel San Marcos"},
       {"title": "Sublime Gracia", "artist": "Tradicional"},
-      {"title": "Oceanos", "artist": "Hillsong (version en español)"}
+      {"title": "Oceanos", "artist": "Hillsong (version en español)"},
+      {"title": "Vine a Adorarte", "artist": "Tim Hughes (version en español)"},
+      {"title": "Al Estar Aqui", "artist": "Marcos Witt"},
+      {"title": "Te Alabare Mi Buen Jesus", "artist": "Athenas"},
+      {"title": "Nada Te Turbe", "artist": "Taize"},
+      {"title": "Tan Cerca de Mi", "artist": "Cristobal Fones"}
     ]
   },
   {
@@ -14,7 +19,12 @@
     "songs": [
       {"title": "Cantale al Señor", "artist": "Coalo Zamorano"},
       {"title": "Digno Es el Señor", "artist": "Miel San Marcos"},
-      {"title": "Alabare", "artist": "Tradicional"}
+      {"title": "Alabare", "artist": "Tradicional"},
+      {"title": "La Bondad de Dios", "artist": "Bethel (version en español)"},
+      {"title": "Grande y Fuerte", "artist": "Miel San Marcos"},
+      {"title": "Vive Jesus el Señor", "artist": "Coro Catolico"},
+      {"title": "Cristo Vive", "artist": "Athenas"},
+      {"title": "Dios Esta Aqui", "artist": "Tradicional"}
     ]
   },
   {
@@ -23,7 +33,36 @@
     "songs": [
       {"title": "Salve, Salve", "artist": "Tradicional"},
       {"title": "Reina del Cielo", "artist": "Coro Catolico"},
-      {"title": "Ave Maria", "artist": "Schubert"}
+      {"title": "Ave Maria", "artist": "Schubert"},
+      {"title": "Ave Maria", "artist": "Athenas"},
+      {"title": "Junto a Ti Maria", "artist": "Tradicional"},
+      {"title": "Ven con Nosotros al Caminar", "artist": "Tradicional"},
+      {"title": "Madre de los Pobres", "artist": "Tradicional"},
+      {"title": "Santa Maria del Camino", "artist": "Juan Antonio Espinosa"}
+    ]
+  },
+  {
+    "id": "lazos_de_amor",
+    "name": "Lazos de Amor Mariano",
+    "songs": [
+      {"title": "Consagracion a Maria", "artist": "Lazos de Amor Mariano"},
+      {"title": "Madre del Amor", "artist": "Lazos de Amor Mariano"},
+      {"title": "Alabanzas de adoracion", "artist": "Lazos de Amor Mariano"},
+      {"title": "Hora Santa cantada", "artist": "Lazos de Amor Mariano"},
+      {"title": "Rosario meditado con cantos", "artist": "Lazos de Amor Mariano"},
+      {"title": "Canciones a la Virgen Maria", "artist": "Lazos de Amor Mariano"},
+      {"title": "Musica catolica de sanacion", "artist": "Lazos de Amor Mariano"}
+    ]
+  },
+  {
+    "id": "espiritu_santo",
+    "name": "Espiritu Santo",
+    "songs": [
+      {"title": "Ven Espiritu Santo", "artist": "Tradicional"},
+      {"title": "Espiritu Santo Ven", "artist": "Miel San Marcos"},
+      {"title": "Sopla Espiritu", "artist": "Athenas"},
+      {"title": "Fuego de Dios", "artist": "Kairoi"},
+      {"title": "Ven Espiritu de Dios", "artist": "Coro Catolico"}
     ]
   },
   {
@@ -32,7 +71,35 @@
     "songs": [
       {"title": "Pan de Vida", "artist": "Coro Catolico"},
       {"title": "Cordero de Dios", "artist": "Tradicional"},
-      {"title": "Tantum Ergo", "artist": "Tradicional"}
+      {"title": "Tantum Ergo", "artist": "Tradicional"},
+      {"title": "Una Espiga", "artist": "Cesareo Gabarain"},
+      {"title": "Pescador de Hombres", "artist": "Cesareo Gabarain"},
+      {"title": "Alma Misionera", "artist": "Tradicional"},
+      {"title": "Te Conocimos al Partir el Pan", "artist": "Tradicional"}
+    ]
+  },
+  {
+    "id": "confianza",
+    "name": "Confianza y Esperanza",
+    "songs": [
+      {"title": "El Señor Es Mi Pastor", "artist": "Tradicional"},
+      {"title": "Nada Me Faltara", "artist": "Athenas"},
+      {"title": "Confio en Ti", "artist": "Jesed"},
+      {"title": "Todo Lo Puedo en Cristo", "artist": "Hna. Glenda"},
+      {"title": "Mi Pensamiento Eres Tu Señor", "artist": "Hna. Glenda"},
+      {"title": "Dios Proveera", "artist": "Danny Berrios"}
+    ]
+  },
+  {
+    "id": "juveniles",
+    "name": "Juveniles",
+    "songs": [
+      {"title": "Mi Universo", "artist": "Pablo Martinez"},
+      {"title": "Rey", "artist": "Un Corazon"},
+      {"title": "Tu Amor No Se Rinde", "artist": "Un Corazon"},
+      {"title": "Me Sostendras", "artist": "Majo y Dan"},
+      {"title": "Como Dijiste", "artist": "TercerCielo"},
+      {"title": "Basta con Tu Gracia", "artist": "Pablo Martinez"}
     ]
   },
   {
@@ -41,7 +108,10 @@
     "songs": [
       {"title": "Noche de Paz", "artist": "Tradicional"},
       {"title": "Adeste Fideles", "artist": "Tradicional"},
-      {"title": "Los Peces en el Rio", "artist": "Tradicional"}
+      {"title": "Los Peces en el Rio", "artist": "Tradicional"},
+      {"title": "Campana Sobre Campana", "artist": "Tradicional"},
+      {"title": "El Burrito Sabanero", "artist": "Tradicional"},
+      {"title": "Tutaina", "artist": "Tradicional Colombiana"}
     ]
   },
   {
@@ -50,16 +120,20 @@
     "songs": [
       {"title": "Perdona a Tu Pueblo, Señor", "artist": "Tradicional"},
       {"title": "Junto a Ti, Maria", "artist": "Coro Catolico"},
-      {"title": "Perdon, Oh Dios Mio", "artist": "Tradicional"}
+      {"title": "Perdon, Oh Dios Mio", "artist": "Tradicional"},
+      {"title": "Nadie Te Ama Como Yo", "artist": "Martin Valverde"},
+      {"title": "Vaso Nuevo", "artist": "Tradicional"}
     ]
   },
   {
     "id": "pascua",
     "name": "Pascua",
     "songs": [
-      {"title": "Resucito", "artist": "Tradicional"},
+      {"title": "Resucito", "artist": "Kiko Argüello"},
       {"title": "Aleluya, Cristo Resucito", "artist": "Coro Catolico"},
-      {"title": "Este Es el Dia", "artist": "Coro Catolico"}
+      {"title": "Este Es el Dia", "artist": "Coro Catolico"},
+      {"title": "Alegria Alegria", "artist": "Tradicional"},
+      {"title": "El Señor Resucito", "artist": "Tradicional"}
     ]
   }
 ]
