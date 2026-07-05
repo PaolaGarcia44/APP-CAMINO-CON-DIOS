@@ -1,0 +1,90 @@
+[
+  {
+    "month": 1,
+    "day": 24,
+    "name": "San Francisco de Sales",
+    "story": "Obispo y doctor de la Iglesia, conocido por su mansedumbre y su forma sencilla de acercar la fe a la gente comun.",
+    "phrase": "Un espiritu de mansedumbre lo puede todo.",
+    "prayer": "San Francisco de Sales, enseñame a ser paciente y amable, incluso en las dificultades. Amen."
+  },
+  {
+    "month": 3,
+    "day": 19,
+    "name": "San Jose",
+    "story": "Esposo de Maria y padre adoptivo de Jesus, modelo de obediencia silenciosa a la voluntad de Dios y de trabajo honesto.",
+    "phrase": "El silencio de Jose habla mas fuerte que muchas palabras.",
+    "prayer": "San Jose, custodio fiel, cuida de mi familia y de mi trabajo. Amen."
+  },
+  {
+    "month": 5,
+    "day": 13,
+    "name": "Nuestra Señora de Fatima",
+    "story": "Aparicion mariana en Fatima, Portugal, con un llamado insistente a la oracion, especialmente al Rosario, y a la conversion.",
+    "phrase": "Recen el Rosario todos los dias.",
+    "prayer": "Virgen de Fatima, ayudame a orar con constancia y confianza. Amen."
+  },
+  {
+    "month": 6,
+    "day": 13,
+    "name": "San Antonio de Padua",
+    "story": "Franciscano y doctor de la Iglesia, conocido por su predicacion y por la devocion popular que lo invoca para encontrar lo perdido.",
+    "phrase": "Buscar a Dios es ya haberlo empezado a encontrar.",
+    "prayer": "San Antonio, ayudame a encontrar lo que necesito, especialmente la paz interior. Amen."
+  },
+  {
+    "month": 8,
+    "day": 4,
+    "name": "San Juan Maria Vianney",
+    "story": "Cura de Ars, patrono de los sacerdotes, reconocido por su entrega total a la confesion y al cuidado de su parroquia.",
+    "phrase": "El sacerdocio es el amor del corazon de Jesus.",
+    "prayer": "San Juan Maria Vianney, intercede por los sacerdotes y por mi propia conversion. Amen."
+  },
+  {
+    "month": 8,
+    "day": 27,
+    "name": "Santa Monica",
+    "story": "Madre de San Agustin, recordada por su perseverancia en la oracion durante años por la conversion de su hijo.",
+    "phrase": "Ninguna oracion hecha con lagrimas se pierde.",
+    "prayer": "Santa Monica, ayudame a no perder la esperanza al orar por quienes amo. Amen."
+  },
+  {
+    "month": 9,
+    "day": 27,
+    "name": "San Vicente de Paul",
+    "story": "Sacerdote frances dedicado por completo al servicio de los pobres y a la formacion del clero.",
+    "phrase": "El amor es inventivo hasta el infinito.",
+    "prayer": "San Vicente de Paul, dame un corazon sensible ante quien sufre necesidad. Amen."
+  },
+  {
+    "month": 10,
+    "day": 1,
+    "name": "Santa Teresita del Niño Jesus",
+    "story": "Carmelita conocida por su 'caminito' de confianza y amor en las pequeñas cosas de cada dia.",
+    "phrase": "Lo que le agrada a Dios es que ame mi pequeñez.",
+    "prayer": "Santa Teresita, enseñame a amar a Dios en los detalles sencillos de mi dia. Amen."
+  },
+  {
+    "month": 10,
+    "day": 4,
+    "name": "San Francisco de Asis",
+    "story": "Fundador de los franciscanos, vivio la pobreza y el amor a toda la creacion como caminos hacia Dios.",
+    "phrase": "Empieza haciendo lo necesario, despues lo posible, y de repente estaras haciendo lo imposible.",
+    "prayer": "San Francisco, ayudame a vivir con sencillez y a cuidar la creacion que Dios me confia. Amen."
+  },
+  {
+    "month": 11,
+    "day": 13,
+    "name": "San Martin de Porres",
+    "story": "Religioso dominico peruano, recordado por su humildad y su entrega generosa al cuidado de los enfermos y los pobres.",
+    "phrase": "Todo lo que existe en la tierra es de todos.",
+    "prayer": "San Martin de Porres, ayudame a servir sin distincion a quien lo necesite. Amen."
+  },
+  {
+    "month": 12,
+    "day": 12,
+    "name": "Nuestra Señora de Guadalupe",
+    "story": "Aparicion mariana en el Tepeyac, Mexico, signo de la ternura de Maria hacia los pueblos de America.",
+    "phrase": "No estoy yo aqui que soy tu Madre.",
+    "prayer": "Virgen de Guadalupe, cubre con tu manto a mi familia y a todos los que sufren hoy. Amen."
+  }
+]

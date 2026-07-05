@@ -1,0 +1,130 @@
+[
+  {
+    "id": "gozosos",
+    "name": "Misterios Gozosos",
+    "weekdays": [1, 6],
+    "mysteries": [
+      {
+        "title": "La Anunciacion",
+        "verseRef": "Lucas 1:26-38",
+        "meditation": "Maria recibe el anuncio del angel y responde con un si confiado, aun sin entender del todo el plan de Dios. Pidamos la gracia de decir si a la voluntad de Dios en nuestra vida."
+      },
+      {
+        "title": "La Visitacion",
+        "verseRef": "Lucas 1:39-56",
+        "meditation": "Maria se apresura a servir a su prima Isabel. Pidamos un corazon disponible para acompañar a quienes nos necesitan."
+      },
+      {
+        "title": "El Nacimiento de Jesus",
+        "verseRef": "Lucas 2:1-20",
+        "meditation": "Dios se hace pequeño y cercano en un pesebre. Pidamos la sencillez de corazon para reconocer a Dios en lo humilde."
+      },
+      {
+        "title": "La Presentacion en el Templo",
+        "verseRef": "Lucas 2:22-38",
+        "meditation": "Maria y Jose presentan a Jesus a Dios. Pidamos la gracia de ofrecer a Dios lo que mas amamos, con confianza."
+      },
+      {
+        "title": "El Niño Jesus perdido y hallado en el Templo",
+        "verseRef": "Lucas 2:41-52",
+        "meditation": "Maria y Jose buscan a Jesus con angustia y lo encuentran en la casa del Padre. Pidamos perseverancia para buscar a Dios aun cuando parece ausente."
+      }
+    ]
+  },
+  {
+    "id": "dolorosos",
+    "name": "Misterios Dolorosos",
+    "weekdays": [2, 5],
+    "mysteries": [
+      {
+        "title": "La Oracion en el Huerto",
+        "verseRef": "Mateo 26:36-46",
+        "meditation": "Jesus enfrenta el miedo y se abandona en la voluntad del Padre. Pidamos fortaleza para confiar en los momentos de angustia."
+      },
+      {
+        "title": "La Flagelacion",
+        "verseRef": "Juan 19:1",
+        "meditation": "Jesus asume el sufrimiento por amor a nosotros. Pidamos la gracia de ofrecer nuestros dolores con sentido."
+      },
+      {
+        "title": "La Coronacion de Espinas",
+        "verseRef": "Mateo 27:27-31",
+        "meditation": "Jesus es humillado y burlado. Pidamos humildad para soportar las ofensas sin perder la paz interior."
+      },
+      {
+        "title": "Jesus con la Cruz a Cuestas",
+        "verseRef": "Lucas 23:26-32",
+        "meditation": "Jesus carga la cruz camino al Calvario. Pidamos fuerza para llevar con paciencia las cargas de cada dia."
+      },
+      {
+        "title": "La Crucifixion y Muerte de Jesus",
+        "verseRef": "Juan 19:17-30",
+        "meditation": "Jesus entrega su vida por amor hasta el final. Pidamos la gracia de amar sin medida ni condiciones."
+      }
+    ]
+  },
+  {
+    "id": "gloriosos",
+    "name": "Misterios Gloriosos",
+    "weekdays": [3, 7],
+    "mysteries": [
+      {
+        "title": "La Resurreccion",
+        "verseRef": "Juan 20:1-18",
+        "meditation": "Jesus vence a la muerte y nos regala la esperanza. Pidamos una fe firme en la vida que no termina."
+      },
+      {
+        "title": "La Ascension",
+        "verseRef": "Hechos 1:6-11",
+        "meditation": "Jesus sube al cielo y nos envia como testigos. Pidamos vivir con la mirada puesta en el cielo sin abandonar nuestra mision en la tierra."
+      },
+      {
+        "title": "La Venida del Espiritu Santo",
+        "verseRef": "Hechos 2:1-13",
+        "meditation": "El Espiritu Santo llena de valentia a los apostoles. Pidamos su fuerza para vivir y anunciar la fe sin miedo."
+      },
+      {
+        "title": "La Asuncion de Maria",
+        "verseRef": "Apocalipsis 12:1",
+        "meditation": "Maria es llevada al cielo en cuerpo y alma. Pidamos su intercesion como madre que nos precede en la gloria."
+      },
+      {
+        "title": "La Coronacion de Maria como Reina",
+        "verseRef": "Lucas 1:48-49",
+        "meditation": "Maria es honrada como Reina y Madre. Pidamos vivir bajo su proteccion maternal cada dia."
+      }
+    ]
+  },
+  {
+    "id": "luminosos",
+    "name": "Misterios Luminosos",
+    "weekdays": [4],
+    "mysteries": [
+      {
+        "title": "El Bautismo de Jesus",
+        "verseRef": "Mateo 3:13-17",
+        "meditation": "El Padre proclama a Jesus como su Hijo amado. Pidamos vivir con dignidad nuestro propio bautismo."
+      },
+      {
+        "title": "Las Bodas de Cana",
+        "verseRef": "Juan 2:1-11",
+        "meditation": "Maria intercede y Jesus realiza su primer signo. Pidamos confiar en su intercesion en nuestras necesidades."
+      },
+      {
+        "title": "El Anuncio del Reino",
+        "verseRef": "Marcos 1:14-15",
+        "meditation": "Jesus invita a la conversion y a creer en el Evangelio. Pidamos un corazon abierto a su llamado cada dia."
+      },
+      {
+        "title": "La Transfiguracion",
+        "verseRef": "Mateo 17:1-8",
+        "meditation": "Jesus muestra su gloria para fortalecer la fe de los discipulos antes de la pasion. Pidamos luz para los momentos dificiles."
+      },
+      {
+        "title": "La Institucion de la Eucaristia",
+        "verseRef": "Lucas 22:14-20",
+        "meditation": "Jesus se entrega bajo el pan y el vino como alimento para siempre. Pidamos hambre y amor por la Eucaristia."
+      }
+    ]
+  }
+]

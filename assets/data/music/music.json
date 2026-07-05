@@ -1,0 +1,65 @@
+[
+  {
+    "id": "adoracion",
+    "name": "Adoracion",
+    "songs": [
+      {"title": "Aqui Estoy de Pie", "artist": "Miel San Marcos"},
+      {"title": "Sublime Gracia", "artist": "Tradicional"},
+      {"title": "Oceanos", "artist": "Hillsong (version en español)"}
+    ]
+  },
+  {
+    "id": "alabanza",
+    "name": "Alabanza",
+    "songs": [
+      {"title": "Cantale al Señor", "artist": "Coalo Zamorano"},
+      {"title": "Digno Es el Señor", "artist": "Miel San Marcos"},
+      {"title": "Alabare", "artist": "Tradicional"}
+    ]
+  },
+  {
+    "id": "maria",
+    "name": "Maria",
+    "songs": [
+      {"title": "Salve, Salve", "artist": "Tradicional"},
+      {"title": "Reina del Cielo", "artist": "Coro Catolico"},
+      {"title": "Ave Maria", "artist": "Schubert"}
+    ]
+  },
+  {
+    "id": "eucaristia",
+    "name": "Eucaristia",
+    "songs": [
+      {"title": "Pan de Vida", "artist": "Coro Catolico"},
+      {"title": "Cordero de Dios", "artist": "Tradicional"},
+      {"title": "Tantum Ergo", "artist": "Tradicional"}
+    ]
+  },
+  {
+    "id": "navidad",
+    "name": "Navidad",
+    "songs": [
+      {"title": "Noche de Paz", "artist": "Tradicional"},
+      {"title": "Adeste Fideles", "artist": "Tradicional"},
+      {"title": "Los Peces en el Rio", "artist": "Tradicional"}
+    ]
+  },
+  {
+    "id": "cuaresma",
+    "name": "Cuaresma",
+    "songs": [
+      {"title": "Perdona a Tu Pueblo, Señor", "artist": "Tradicional"},
+      {"title": "Junto a Ti, Maria", "artist": "Coro Catolico"},
+      {"title": "Perdon, Oh Dios Mio", "artist": "Tradicional"}
+    ]
+  },
+  {
+    "id": "pascua",
+    "name": "Pascua",
+    "songs": [
+      {"title": "Resucito", "artist": "Tradicional"},
+      {"title": "Aleluya, Cristo Resucito", "artist": "Coro Catolico"},
+      {"title": "Este Es el Dia", "artist": "Coro Catolico"}
+    ]
+  }
+]

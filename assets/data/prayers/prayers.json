@@ -1,0 +1,98 @@
+[
+  {
+    "id": "padre_nuestro",
+    "category": "Basicas",
+    "title": "Padre Nuestro",
+    "text": "Padre nuestro, que estas en el cielo, santificado sea tu Nombre; venga a nosotros tu reino; hagase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada dia; perdona nuestras ofensas, como tambien nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentacion, y libranos del mal. Amen."
+  },
+  {
+    "id": "ave_maria",
+    "category": "Basicas",
+    "title": "Ave Maria",
+    "text": "Dios te salve, Maria, llena eres de gracia, el Señor es contigo. Bendita tu eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesus. Santa Maria, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amen."
+  },
+  {
+    "id": "gloria",
+    "category": "Basicas",
+    "title": "Gloria al Padre",
+    "text": "Gloria al Padre, y al Hijo, y al Espiritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amen."
+  },
+  {
+    "id": "credo",
+    "category": "Basicas",
+    "title": "Credo (Simbolo de los Apostoles)",
+    "text": "Creo en Dios, Padre todopoderoso, creador del cielo y de la tierra. Creo en Jesucristo, su unico Hijo, nuestro Señor, que fue concebido por obra y gracia del Espiritu Santo, nacio de Santa Maria Virgen, padecio bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado, descendio a los infiernos, al tercer dia resucito de entre los muertos, subio a los cielos y esta sentado a la derecha de Dios, Padre todopoderoso. Desde alli ha de venir a juzgar a vivos y muertos. Creo en el Espiritu Santo, la santa Iglesia catolica, la comunion de los santos, el perdon de los pecados, la resurreccion de la carne y la vida eterna. Amen."
+  },
+  {
+    "id": "angelus",
+    "category": "Maria",
+    "title": "Angelus",
+    "text": "El Angel del Señor anuncio a Maria, y ella concibio por obra del Espiritu Santo. Dios te salve, Maria... He aqui la esclava del Señor, hagase en mi segun tu palabra. Dios te salve, Maria... Y el Verbo se hizo carne y habito entre nosotros. Dios te salve, Maria... Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amen."
+  },
+  {
+    "id": "magnificat",
+    "category": "Maria",
+    "title": "Magnificat",
+    "text": "Mi alma engrandece al Señor y mi espiritu se alegra en Dios, mi Salvador, porque ha puesto los ojos en la humildad de su esclava. Desde ahora me llamaran bienaventurada todas las generaciones, porque ha hecho en mi maravillas el Poderoso, cuyo nombre es santo. Su misericordia llega a sus fieles de generacion en generacion. El despliega la fuerza de su brazo y dispersa a los soberbios de corazon. Derriba a los poderosos de su trono y enaltece a los humildes. Colma de bienes a los hambrientos y despide a los ricos con las manos vacias. Auxilia a Israel, su siervo, acordandose de su misericordia, como lo prometio a nuestros padres, en favor de Abraham y su descendencia por siempre."
+  },
+  {
+    "id": "salve",
+    "category": "Maria",
+    "title": "Salve Regina",
+    "text": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra; Dios te salve. A ti llamamos los desterrados hijos de Eva; a ti suspiramos, gimiendo y llorando en este valle de lagrimas. Ea, pues, Señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordiosos, y despues de este destierro, muestranos a Jesus, fruto bendito de tu vientre. Oh clementisima, oh piadosa, oh dulce Virgen Maria. Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amen."
+  },
+  {
+    "id": "san_miguel",
+    "category": "Proteccion",
+    "title": "Oracion a San Miguel Arcangel",
+    "text": "San Miguel Arcangel, defiendenos en la lucha; se nuestro amparo contra la maldad y asechanzas del demonio. Reprimalo Dios, pedimos suplicantes, y tu, Principe de la Milicia Celestial, arroja al infierno con el divino poder a Satanas y a los demas espiritus malignos que andan dispersos por el mundo para la perdicion de las almas. Amen."
+  },
+  {
+    "id": "angel_guarda",
+    "category": "Proteccion",
+    "title": "Santo Angel de la Guarda",
+    "text": "Angel de mi guarda, dulce compañia, no me desampares ni de noche ni de dia; no me dejes solo, que me perderia. Guiame siempre por el buen camino, y llevame a Dios."
+  },
+  {
+    "id": "ofrecimiento_manana",
+    "category": "Mañana",
+    "title": "Ofrecimiento de la mañana",
+    "text": "Señor, te ofrezco este nuevo dia, con sus alegrias y sus dificultades. Que todo lo que haga, piense o diga sea para tu gloria y el bien de quienes me rodean. Acompañame en cada paso y ayudame a ver tu presencia en todo lo que viva hoy. Amen."
+  },
+  {
+    "id": "oracion_noche",
+    "category": "Noche",
+    "title": "Oracion de la noche",
+    "text": "Señor, al terminar este dia te doy gracias por tu compañia. Perdona mis faltas y bendice mi descanso. Cuida de quienes amo y de quienes sufren esta noche. Que despierte mañana dispuesto a servirte mejor. Amen."
+  },
+  {
+    "id": "antes_dormir",
+    "category": "Antes de dormir",
+    "title": "Antes de dormir",
+    "text": "Señor, en tus manos encomiendo mi cuerpo y mi alma. Gracias por este dia que termina. Dame un sueño tranquilo y renueva mis fuerzas para servirte con alegria mañana. Amen."
+  },
+  {
+    "id": "antes_trabajar",
+    "category": "Antes de trabajar",
+    "title": "Antes de trabajar",
+    "text": "Señor, bendice el trabajo de mis manos y de mi mente. Dame paciencia, honestidad y alegria en cada tarea. Que mi esfuerzo de hoy sirva para el bien de otros y para tu gloria. Amen."
+  },
+  {
+    "id": "antes_estudiar",
+    "category": "Antes de estudiar",
+    "title": "Antes de estudiar",
+    "text": "Señor, ilumina mi mente y dame concentracion para estudiar hoy. Ayudame a comprender lo que aprendo y a usarlo para servir a los demas. Amen."
+  },
+  {
+    "id": "antes_viajar",
+    "category": "Antes de viajar",
+    "title": "Antes de viajar",
+    "text": "Señor, acompañame en este viaje. Cuida mi camino de ida y de vuelta, protege a quienes viajan conmigo y a quienes me esperan. Que llegue con bien a mi destino. Amen."
+  },
+  {
+    "id": "accion_gracias",
+    "category": "Accion de gracias",
+    "title": "Accion de gracias",
+    "text": "Gracias, Señor, por la vida, por la fe, por mi familia y por cada persona que pones en mi camino. Gracias por los momentos dificiles que me han hecho crecer y por los momentos de alegria que me recuerdan tu bondad. Todo te lo debo a ti. Amen."
+  }
+]
