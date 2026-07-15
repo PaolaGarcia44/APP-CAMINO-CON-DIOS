@@ -3,7 +3,7 @@ description: >
   Aplicacion catolica offline-first: Biblia en orden, Rosario guiado,
   oraciones, reflexiones y vida espiritual diaria.
 publish_to: "none"
-version: 0.5.0+5
+version: 0.6.0+6
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
@@ -27,6 +27,9 @@ dependencies:
   intl: ^0.19.0
   share_plus: ^10.0.0
   url_launcher: ^6.3.0
+
+  # Audio (musica de fondo del Rosario, reproduccion offline)
+  audioplayers: ^6.1.0
 
   # Notificaciones locales (sin servicios externos)
   flutter_local_notifications: ^17.2.2
@@ -53,7 +56,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/audio/
     - assets/data/bible/
+    - assets/data/bible/books/
     - assets/data/prayers/
     - assets/data/quotes/
     - assets/data/reflections/

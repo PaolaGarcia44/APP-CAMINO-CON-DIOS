@@ -73,8 +73,11 @@ class BibleReaderScreen extends ConsumerWidget {
             icon: const Icon(Icons.share_outlined),
             onPressed: () {
               chapterAsync.whenData((chapter) {
-                final text = '$bookName $chapterNumber\n\n${chapter.verses.join('\n')}';
-                Share.share(text);
+                final body = [
+                  for (var i = 0; i < chapter.verses.length; i++)
+                    '${chapter.verseNumber(i)}  ${chapter.verses[i]}',
+                ].join('\n');
+                Share.share('$bookName $chapterNumber\n\n$body');
               });
             },
           ),
@@ -89,7 +92,7 @@ class BibleReaderScreen extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.secondaryContainer,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Text(
-                  'Contenido de muestra: se completara con una version de la Biblia con licencia.',
+                  'Este capitulo no esta disponible por el momento.',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
@@ -99,6 +102,7 @@ class BibleReaderScreen extends ConsumerWidget {
                 itemCount: chapter.verses.length,
                 itemBuilder: (context, i) {
                   final verse = chapter.verses[i];
+                  final verseNumber = chapter.verseNumber(i);
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 14),
                     child: GestureDetector(
@@ -108,7 +112,7 @@ class BibleReaderScreen extends ConsumerWidget {
                               FavoriteItem(
                                 id: id,
                                 type: FavoriteType.verse,
-                                title: '$bookName $chapterNumber:${i + 1}',
+                                title: '$bookName $chapterNumber:$verseNumber',
                                 content: verse,
                                 dateAdded: DateTime.now(),
                               ),
@@ -127,7 +131,7 @@ class BibleReaderScreen extends ConsumerWidget {
                           ),
                           children: [
                             TextSpan(
-                              text: '${i + 1}  ',
+                              text: '$verseNumber  ',
                               style: const TextStyle(fontWeight: FontWeight.bold),
                             ),
                             TextSpan(text: verse),

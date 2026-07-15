@@ -13,7 +13,8 @@ tiene el SDK de Flutter instalado. Sigue los pasos de abajo para completarlo.
 
 Modulos con funcionalidad real: Inicio, Biblia (lectura secuencial con
 progreso, favoritos, marcadores, busqueda, tamaño de letra), Rosario guiado
-(misterios del dia, contador de cuentas, vibracion opcional), Oraciones
+(misterio del dia automatico, flechas adelante/atras, contador de cuentas,
+vibracion opcional y musica de fondo offline con canto gregoriano), Oraciones
 (categorias completas), Frase del dia, Reflexion diaria, Diario espiritual
 (CRUD + exportar/importar), Favoritos, Musica catolica (enlaces a YouTube/
 Spotify), Calendario liturgico (tiempo y color calculados por algoritmo),
@@ -96,25 +97,30 @@ cambiantes entre versiones).
   y Musica son contenido de solo lectura, asi que las pantallas consumen el
   datasource directamente a traves de un provider (`lib/presentation/providers/content_providers.dart`),
   sin una capa de repositorio que no aportaria nada.
-- **Contenido con derechos de autor**: el texto biblico usado (`assets/data/bible/sample_chapters.json`)
-  es un parafraseo original de muestra, no una traduccion con licencia. La
-  estructura de libros/capitulos (`books_index.json`) ya cubre los 73 libros
-  del canon catolico con su numero real de capitulos, para que la lectura
-  secuencial funcione en toda la Biblia; falta reemplazar el contenido cuando
-  se consiga una version con licencia. El Evangelio del dia (calendario
-  liturgico) y el santoral completo quedan igual: estructura lista, contenido
-  pendiente.
-- **Oraciones tradicionales**: Padre Nuestro, Ave Maria, Gloria, Credo, Salve,
-  Angelus, Magnificat, San Miguel Arcangel y Angel de la Guarda se incluyeron
-  con su texto real, por ser oraciones tradicionales de dominio publico (no
-  traducciones modernas con derechos de autor).
+- **Texto biblico completo (dominio publico)**: la Biblia ya trae el texto
+  integro de los 73 libros del canon catolico, con todos sus capitulos y
+  versiculos reales. Se usa la traduccion **"Santa Biblia libre
+  Latinoamericano"** (`spabll`, eBible.org), que es de **dominio publico** e
+  incluye los libros deuterocanonicos (Tobias, Judit, Sabiduria, Eclesiastico,
+  Baruc, 1-2 Macabeos) y las secciones griegas de Daniel (Susana, Bel y el
+  Dragon) y Ester. Cada libro vive en su propio archivo
+  `assets/data/bible/books/<id>.json` (`bookId`, `chapters`, con `numbers` y
+  `verses`) y se carga de forma diferida. El Evangelio del dia (calendario
+  liturgico) y el santoral completo siguen con estructura lista y contenido
+  pendiente de ampliar.
+- **Oraciones tradicionales**: la biblioteca de oraciones (`assets/data/prayers/prayers.json`)
+  reune oraciones catolicas tradicionales de dominio publico (Padre Nuestro,
+  Ave Maria, Credo, Salve, Memorare, oracion de San Francisco, Santo Tomas,
+  etc.), organizadas por bloques tematicos.
+- **Musica de fondo del Rosario (dominio publico)**: los cantos en
+  `assets/audio/` provienen de "Gregorian Chant Mass" (archive.org, dominio
+  publico). Se reproducen en bucle con `audioplayers` mientras se reza, con
+  control de reproduccion, seleccion de canto y volumen. Todo es offline.
 
 ## Proximos pasos sugeridos
 
 1. Generar `android/` e `ios/` (paso 2) y confirmar que compila.
-2. Reemplazar el contenido de muestra de la Biblia por una version con
-   licencia adecuada.
-3. Ampliar el santoral (`assets/data/saints/saints.json`) a los 365 dias.
-4. Conectar una fuente con licencia para el Evangelio del dia.
-5. Diseñar el icono de la app y la pantalla de splash nativa (hoy es una
+2. Ampliar el santoral (`assets/data/saints/saints.json`) a los 365 dias.
+3. Conectar una fuente con licencia para el Evangelio del dia.
+4. Diseñar el icono de la app y la pantalla de splash nativa (hoy es una
    pantalla Flutter animada, no un splash nativo del sistema operativo).

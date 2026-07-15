@@ -75,9 +75,10 @@ final routerProvider = Provider<GoRouter>((ref) {
               builder: (context, state) => const PrayersHomeScreen(),
               routes: [
                 GoRoute(
-                  path: ':category',
-                  builder: (context, state) =>
-                      PrayerCategoryScreen(category: Uri.decodeComponent(state.pathParameters['category']!)),
+                  path: ':index',
+                  builder: (context, state) => PrayerCategoryScreen(
+                    categoryIndex: int.tryParse(state.pathParameters['index'] ?? '') ?? 0,
+                  ),
                 ),
               ],
             ),

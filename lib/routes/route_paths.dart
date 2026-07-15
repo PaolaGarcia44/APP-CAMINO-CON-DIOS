@@ -14,7 +14,9 @@ class RoutePaths {
   static String bibleRead(String bookId, int chapter) => '/bible/read/$bookId/$chapter';
 
   static const prayers = '/prayers';
-  static String prayerCategory(String category) => '/prayers/${Uri.encodeComponent(category)}';
+  // Se navega por indice (numerico) para evitar problemas de codificacion en la
+  // URL con nombres de categoria que llevan tildes, ñ o espacios (p. ej. "Mañana").
+  static String prayerCategory(int index) => '/prayers/$index';
 
   static const rosary = '/rosary';
 

@@ -28,11 +28,17 @@ class NotificationService {
       // Si no se puede determinar la zona horaria del dispositivo, se usa UTC.
     }
 
-    const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosInit = DarwinInitializationSettings();
-    const settings = InitializationSettings(android: androidInit, iOS: iosInit);
-    await _plugin.initialize(settings);
-    _initialized = true;
+    try {
+      const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
+      const iosInit = DarwinInitializationSettings();
+      const settings = InitializationSettings(android: androidInit, iOS: iosInit);
+      await _plugin.initialize(settings);
+      _initialized = true;
+    } catch (_) {
+      // En plataformas sin soporte de notificaciones locales (web y algunos
+      // escritorios) el plugin no se puede inicializar; la app sigue
+      // funcionando normalmente, solo sin recordatorios.
+    }
   }
 
   static Future<void> requestPermissions() async {
@@ -84,6 +90,7 @@ class NotificationService {
   }
 
   static Future<void> scheduleDefaultReminders() async {
+    if (!_initialized) return; // Sin plugin disponible no hay nada que agendar.
     await requestPermissions();
     await _scheduleDaily(
       id: idMorning,
@@ -111,5 +118,8 @@ class NotificationService {
     );
   }
 
-  static Future<void> cancelAll() => _plugin.cancelAll();
+  static Future<void> cancelAll() async {
+    if (!_initialized) return;
+    await _plugin.cancelAll();
+  }
 }

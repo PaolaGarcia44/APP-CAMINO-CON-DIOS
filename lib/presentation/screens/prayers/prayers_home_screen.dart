@@ -21,6 +21,12 @@ const _categoryIcons = {
   'Familia': Icons.family_restroom_outlined,
   'Salud': Icons.healing_outlined,
   'Difuntos': Icons.church_outlined,
+  'Confianza': Icons.volunteer_activism_outlined,
+  'Paz': Icons.spa_outlined,
+  'Jesus': Icons.favorite,
+  'Eucaristia': Icons.wine_bar_outlined,
+  'Santos': Icons.groups_outlined,
+  'Iglesia': Icons.account_balance_outlined,
 };
 
 class PrayersHomeScreen extends ConsumerWidget {
@@ -63,7 +69,7 @@ class PrayersHomeScreen extends ConsumerWidget {
                   (context, i) {
                     final category = categories[i];
                     return AppCard(
-                      onTap: () => context.push(RoutePaths.prayerCategory(category)),
+                      onTap: () => context.push(RoutePaths.prayerCategory(i)),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

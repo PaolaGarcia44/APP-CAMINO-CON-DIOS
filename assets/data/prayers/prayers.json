@@ -172,5 +172,2249 @@
     "category": "Accion de gracias",
     "title": "Bendicion de la mesa",
     "text": "Bendicenos, Señor, y bendice estos alimentos que por tu bondad vamos a recibir. Bendice las manos que los prepararon, da pan a los que no lo tienen y hambre de Ti a los que tenemos pan. Por Jesucristo nuestro Señor. Amen."
+  },
+  {
+    "id": "confiteor",
+    "category": "Basicas",
+    "title": "Yo confieso (Confiteor)",
+    "text": "Yo confieso ante Dios todopoderoso y ante ustedes, hermanos, que he pecado mucho de pensamiento, palabra, obra y omision. Por mi culpa, por mi culpa, por mi gran culpa. Por eso ruego a Santa Maria, siempre Virgen, a los angeles, a los santos y a ustedes, hermanos, que intercedan por mi ante Dios, nuestro Señor. Amen."
+  },
+  {
+    "id": "gloria_patri_jaculatoria",
+    "category": "Basicas",
+    "title": "Jaculatorias (oraciones cortas)",
+    "text": "Jesus mio, misericordia. — Corazon de Jesus, en Vos confio. — Dios mio y todas mis cosas. — Sagrado Corazon de Jesus, en Ti confio. — Maria, Madre de gracia, Madre de misericordia, en la vida y en la muerte amparanos, gran Señora. — Jesus, Maria y Jose, en ustedes descanse mi corazon y mi alma. Amen."
+  },
+  {
+    "id": "bendita_pureza",
+    "category": "Maria",
+    "title": "Bendita sea tu pureza",
+    "text": "Bendita sea tu pureza y eternamente lo sea, pues todo un Dios se recrea en tan graciosa belleza. A Ti, celestial princesa, Virgen Sagrada Maria, te ofrezco en este dia alma, vida y corazon. Mirame con compasion, no me dejes, Madre mia. Amen."
+  },
+  {
+    "id": "acordaos_memorare",
+    "category": "Maria",
+    "title": "Acordaos (Memorare)",
+    "text": "Acordaos, oh piadosisima Virgen Maria, que jamas se ha oido decir que ninguno de los que han acudido a tu proteccion, implorado tu asistencia y reclamado tu socorro, haya sido desamparado de ti. Animado por esta confianza, a ti tambien acudo, oh Madre, Virgen de las virgenes, y gimiendo bajo el peso de mis pecados me atrevo a comparecer ante ti. No deseches mis suplicas, oh Madre del Verbo divino, antes bien, escuchalas y acogelas benignamente. Amen."
+  },
+  {
+    "id": "bajo_tu_amparo",
+    "category": "Maria",
+    "title": "Bajo tu amparo",
+    "text": "Bajo tu amparo nos acogemos, Santa Madre de Dios; no deseches las suplicas que te dirigimos en nuestras necesidades; antes bien, libranos siempre de todo peligro, oh Virgen gloriosa y bendita. Amen."
+  },
+  {
+    "id": "guadalupe",
+    "category": "Maria",
+    "title": "Oracion a la Virgen de Guadalupe",
+    "text": "Santa Maria de Guadalupe, Madre del verdadero Dios por quien se vive, tu que te apareciste al humilde Juan Diego y le dijiste: No estoy yo aqui que soy tu Madre?, cubre con tu manto a mis seres queridos, consuela a los que sufren y guia a mi pueblo por el camino de la fe. En tus manos pongo mis alegrias y mis penas. Amen."
+  },
+  {
+    "id": "consagracion_virgen",
+    "category": "Maria",
+    "title": "Consagracion a la Virgen Maria",
+    "text": "Oh Señora mia, oh Madre mia! Yo me ofrezco enteramente a ti, y en prueba de mi filial afecto te consagro en este dia mis ojos, mis oidos, mi lengua, mi corazon; en una palabra, todo mi ser. Ya que soy todo tuyo, oh Madre de bondad, guardame y defiendeme como cosa y posesion tuya. Amen."
+  },
+  {
+    "id": "serenidad",
+    "category": "Confianza",
+    "title": "Oracion de la serenidad",
+    "text": "Señor, concedeme serenidad para aceptar las cosas que no puedo cambiar, valor para cambiar aquellas que puedo, y sabiduria para reconocer la diferencia. Viviendo un dia a la vez, disfrutando un momento a la vez, aceptando las dificultades como el camino hacia la paz. Amen."
+  },
+  {
+    "id": "nada_te_turbe",
+    "category": "Confianza",
+    "title": "Nada te turbe (Santa Teresa de Jesus)",
+    "text": "Nada te turbe, nada te espante; todo se pasa, Dios no se muda. La paciencia todo lo alcanza; quien a Dios tiene, nada le falta: solo Dios basta. Eleva tu pensamiento, al cielo sube, por nada te acongojes, nada te turbe. Amen."
+  },
+  {
+    "id": "abandono_foucauld",
+    "category": "Confianza",
+    "title": "Oracion del abandono",
+    "text": "Padre mio, me abandono a Ti; haz de mi lo que quieras. Lo que hagas de mi, te lo agradezco, estoy dispuesto a todo, lo acepto todo, con tal que tu voluntad se cumpla en mi y en todas tus criaturas. No deseo nada mas, Dios mio. Pongo mi vida en tus manos, te la doy con todo el amor de que soy capaz, porque te amo y necesito darme, ponerme en tus manos sin medida, con infinita confianza, porque Tu eres mi Padre. Amen."
+  },
+  {
+    "id": "angustia_confianza",
+    "category": "Confianza",
+    "title": "Oracion en momentos de angustia",
+    "text": "Señor, hoy mi corazon esta inquieto y cansado. Vengo a Ti con mis miedos y mi ansiedad, y los pongo en tus manos. Recuerdame que no estoy solo, que Tu vas delante de mi y que nada me puede separar de tu amor. Dame paz en medio de la tormenta y confianza para dar el siguiente paso. En Ti descanso, Señor. Amen."
+  },
+  {
+    "id": "san_francisco_paz",
+    "category": "Paz",
+    "title": "Oracion por la paz (San Francisco)",
+    "text": "Señor, hazme un instrumento de tu paz. Donde haya odio, que yo lleve el amor; donde haya ofensa, el perdon; donde haya discordia, la union; donde haya duda, la fe; donde haya error, la verdad; donde haya desesperacion, la esperanza; donde haya tinieblas, la luz; donde haya tristeza, la alegria. Maestro, que no busque tanto ser consolado como consolar; ser comprendido como comprender; ser amado como amar. Porque dando se recibe, olvidando se encuentra, perdonando se es perdonado, y muriendo se resucita a la vida eterna. Amen."
+  },
+  {
+    "id": "por_la_paz",
+    "category": "Paz",
+    "title": "Oracion por la paz del mundo",
+    "text": "Señor Jesus, Principe de la paz, te pedimos por nuestro mundo herido por la guerra y la violencia. Convierte los corazones endurecidos, consuela a las victimas, protege a los inocentes y da sabiduria a quienes gobiernan. Que aprendamos a resolver nuestras diferencias con el dialogo y el perdon, y que tu paz reine en las familias, en los pueblos y en el mundo entero. Amen."
+  },
+  {
+    "id": "jesus_en_ti_confio",
+    "category": "Jesus",
+    "title": "Jesus, en Ti confio (Divina Misericordia)",
+    "text": "Jesus, confio en Ti. Oh Sangre y Agua que brotaste del Corazon de Jesus como fuente de misericordia para nosotros, en Ti confio. Jesus misericordioso, que tu misericordia sea mas grande que mi miseria; sana mis heridas, perdona mis pecados y lleva mi corazon a confiar plenamente en tu amor. Amen."
+  },
+  {
+    "id": "sagrado_corazon",
+    "category": "Jesus",
+    "title": "Consagracion al Sagrado Corazon",
+    "text": "Corazon Sagrado de Jesus, yo me consagro a Ti. Toma mi vida, mis pensamientos, mis palabras y mis obras. Reina en mi corazon y en mi familia; sea Tu el centro de mi vida. Ensename a amar como Tu amas, a perdonar como Tu perdonas y a servir como Tu serviste. Sagrado Corazon de Jesus, en Ti confio; Sagrado Corazon de Jesus, ten misericordia de nosotros. Amen."
+  },
+  {
+    "id": "corazon_santo",
+    "category": "Jesus",
+    "title": "Ofrecimiento de obras al Corazon de Jesus",
+    "text": "Oh Jesus, por medio del Inmaculado Corazon de Maria, te ofrezco mis oraciones, obras, alegrias y sufrimientos de este dia, en reparacion de nuestros pecados y por todas las intenciones por las que Tu te ofreces continuamente en la Eucaristia. Te los ofrezco especialmente por la Iglesia, por el Papa y por la conversion de los pecadores. Amen."
+  },
+  {
+    "id": "antes_comulgar",
+    "category": "Eucaristia",
+    "title": "Oracion antes de comulgar",
+    "text": "Señor mio Jesucristo, creo firmemente que estas realmente presente en este Santisimo Sacramento. Te amo sobre todas las cosas y deseo recibirte en mi alma. Ven a mi corazon; limpialo de todo pecado y llenalo de tu gracia. Que al recibirte quede unido a Ti para siempre y nunca me aparte de tu amor. Amen."
+  },
+  {
+    "id": "despues_comulgar",
+    "category": "Eucaristia",
+    "title": "Oracion despues de comulgar",
+    "text": "Gracias, Señor Jesus, porque has venido a mi alma. Quedate conmigo, porque sin Ti nada puedo. Se Tu la luz que guie mis pasos, la fuerza en mis debilidades y la paz de mi corazon. Que tu presencia se note en mi manera de hablar, de perdonar y de servir a los demas. Maria, Madre mia, ayudame a dar gracias por este don tan grande. Amen."
+  },
+  {
+    "id": "ante_santisimo",
+    "category": "Eucaristia",
+    "title": "Oracion ante el Santisimo",
+    "text": "Aqui estoy, Señor, ante tu presencia en el Sagrario. No tengo grandes palabras; solo quiero estar contigo y dejarte mirar mi corazon. Gracias por esperarme siempre. Ensename a amar el silencio, a adorarte y a llevar tu paz a quienes me rodean. Jesus Sacramentado, sea por siempre bendito y alabado. Amen."
+  },
+  {
+    "id": "san_jose",
+    "category": "Santos",
+    "title": "Oracion a San Jose",
+    "text": "Glorioso San Jose, esposo de Maria y padre protector de Jesus, a ti me encomiendo hoy. Tu, que fuiste hombre justo y trabajador fiel, cuida de mi familia, de mi trabajo y de mis necesidades. Ensename a confiar en Dios en el silencio y a cumplir su voluntad con amor. Patrono de la buena muerte, asisteme ahora y en la hora de mi partida. Amen."
+  },
+  {
+    "id": "san_judas",
+    "category": "Santos",
+    "title": "Oracion a San Judas Tadeo",
+    "text": "Glorioso apostol San Judas Tadeo, patrono de los casos dificiles y desesperados, acude en mi ayuda en esta necesidad tan grande. Alcanzame de Dios consuelo y auxilio, y la gracia que ahora te pido (menciona tu peticion), si es para bien de mi alma. Prometo, oh bendito San Judas, acordarme siempre de este gran favor y animar a otros a confiar en tu intercesion. Amen."
+  },
+  {
+    "id": "san_antonio",
+    "category": "Santos",
+    "title": "Oracion a San Antonio de Padua",
+    "text": "San Antonio glorioso, que recibiste de Dios el don de ayudar a los que buscan lo que han perdido, ayudame a encontrar lo que necesito y, sobre todo, a no perder nunca la fe, la esperanza y el amor. Ensename a ser generoso con los pobres, como Tu lo fuiste, y a buscar siempre a Dios por encima de todas las cosas. Amen."
+  },
+  {
+    "id": "por_el_papa",
+    "category": "Iglesia",
+    "title": "Oracion por el Papa y la Iglesia",
+    "text": "Señor, te pedimos por tu Iglesia extendida por todo el mundo. Guarda al Papa, a los obispos y a todos los fieles en la unidad y en la verdad. Fortalece a los que sufren persecucion por tu nombre, renueva el ardor de los tibios y atrae a los que estan lejos. Que tu Iglesia sea signo de tu amor y casa abierta para todos. Amen."
+  },
+  {
+    "id": "por_los_sacerdotes",
+    "category": "Iglesia",
+    "title": "Oracion por los sacerdotes",
+    "text": "Señor Jesus, Sumo y Eterno Sacerdote, cuida a los sacerdotes que has llamado a tu servicio. Sostenlos en las dificultades, dales alegria en su entrega y fidelidad en su vocacion. Que sean hombres de oracion, pastores segun tu Corazon, cercanos a los pobres y a los que sufren. Suscita tambien, Señor, nuevas y santas vocaciones. Amen."
+  },
+  {
+    "id": "por_la_conversion",
+    "category": "Familia",
+    "title": "Oracion por un ser querido alejado de Dios",
+    "text": "Padre bueno, te confio a la persona que amo y que hoy vive lejos de Ti. Tu conoces su corazon mejor que yo. Toca su vida con tu gracia, ponle en el camino personas y señales que lo acerquen a Ti, y dame a mi paciencia para acompañarlo con amor y no con reproches. Confio en que tu misericordia es mas grande que cualquier distancia. Amen."
+  },
+  {
+    "id": "por_el_trabajo",
+    "category": "Antes de trabajar",
+    "title": "Oracion para encontrar trabajo",
+    "text": "Señor, Tu conoces mis necesidades y las de mi familia. Te pido que me ayudes a encontrar un trabajo digno donde pueda ganarme el sustento honradamente y servir a los demas. Dame animo para no desalentarme, sabiduria para buscar y confianza en tu providencia. Proveedor fiel, no me abandones. San Jose obrero, ruega por mi. Amen."
+  },
+  {
+    "id": "credo_niceno",
+    "category": "Basicas",
+    "title": "Credo (Niceno-Constantinopolitano)",
+    "text": "Creo en un solo Dios, Padre todopoderoso, Creador del cielo y de la tierra, de todo lo visible y lo invisible. Creo en un solo Señor, Jesucristo, Hijo unico de Dios, nacido del Padre antes de todos los siglos: Dios de Dios, Luz de Luz, Dios verdadero de Dios verdadero, engendrado, no creado, de la misma naturaleza del Padre, por quien todo fue hecho; que por nosotros los hombres y por nuestra salvacion bajo del cielo, y por obra del Espiritu Santo se encarno de Maria, la Virgen, y se hizo hombre. Y por nuestra causa fue crucificado en tiempos de Poncio Pilato; padecio y fue sepultado, y resucito al tercer dia, segun las Escrituras, y subio al cielo, y esta sentado a la derecha del Padre; y de nuevo vendra con gloria para juzgar a vivos y muertos, y su reino no tendra fin. Creo en el Espiritu Santo, Señor y dador de vida, que procede del Padre y del Hijo, que con el Padre y el Hijo recibe una misma adoracion y gloria, y que hablo por los profetas. Creo en la Iglesia, que es una, santa, catolica y apostolica. Confieso que hay un solo bautismo para el perdon de los pecados. Espero la resurreccion de los muertos y la vida del mundo futuro. Amen."
+  },
+  {
+    "id": "bendicion_biblica",
+    "category": "Basicas",
+    "title": "Bendicion (Numeros 6)",
+    "text": "Que el Señor te bendiga y te guarde. Que el Señor haga brillar su rostro sobre ti y te conceda su gracia. Que el Señor te muestre su rostro y te conceda la paz. En el nombre del Padre, y del Hijo, y del Espiritu Santo. Amen."
+  },
+  {
+    "id": "regina_caeli",
+    "category": "Maria",
+    "title": "Regina Caeli (tiempo pascual)",
+    "text": "Reina del cielo, alegrate; aleluya. Porque el que mereciste llevar en tu seno; aleluya, ha resucitado, segun lo predijo; aleluya. Ruega al Señor por nosotros; aleluya. Gozate y alegrate, Virgen Maria; aleluya, porque verdaderamente ha resucitado el Señor; aleluya. Oh Dios, que por la resurreccion de tu Hijo, nuestro Señor Jesucristo, has llenado de alegria al mundo, concedenos, por intercesion de la Virgen Maria su Madre, llegar a los gozos de la vida eterna. Por el mismo Jesucristo nuestro Señor. Amen."
+  },
+  {
+    "id": "inmaculada",
+    "category": "Maria",
+    "title": "Oh Maria sin pecado concebida",
+    "text": "Oh Maria, sin pecado concebida, ruega por nosotros que recurrimos a ti. Virgen Inmaculada, Madre de Dios y Madre nuestra, mirame con ojos de misericordia, alcanzame de tu Hijo el perdon de mis pecados y la gracia de vivir siempre en tu amor. En ti confio, no me dejes caer. Amen."
+  },
+  {
+    "id": "virgen_carmen",
+    "category": "Maria",
+    "title": "Oracion a la Virgen del Carmen",
+    "text": "Oh hermosa Flor del Carmelo, Vid florida, esplendor del cielo, Virgen Madre singular, Madre tierna de corazon, a los hijos que a ti clamamos, protege bajo tu escapulario. Estrella del mar, guianos a puerto seguro; ampara a los que sufren, consuela a los tristes y acompaña a los que van a partir de esta vida, para que lleguemos contigo a la gloria. Amen."
+  },
+  {
+    "id": "salmo_91",
+    "category": "Proteccion",
+    "title": "Al amparo del Altisimo (Salmo 91)",
+    "text": "El que habita al amparo del Altisimo vive a la sombra del Todopoderoso. Digo al Señor: Refugio mio, alcazar mio, Dios mio, en Ti confio. El te librara de la red del cazador y de la peste maligna; te cubrira con sus plumas y bajo sus alas te refugiaras. No temeras el terror de la noche, porque el Señor da a sus angeles ordenes de guardarte en todos tus caminos. Amen."
+  },
+  {
+    "id": "preciosa_sangre",
+    "category": "Proteccion",
+    "title": "Oracion a la Preciosa Sangre de Cristo",
+    "text": "Señor Jesus, por tu Preciosa Sangre derramada en la cruz, protegenos de todo mal. Que tu Sangre nos cubra, nos limpie y nos defienda del enemigo. Sella con ella nuestra vida, nuestro hogar y a las personas que amamos. Eterno Padre, te ofrecemos la Sangre de tu Hijo por la salvacion de las almas. Amen."
+  },
+  {
+    "id": "bendicion_hogar",
+    "category": "Proteccion",
+    "title": "Bendicion del hogar",
+    "text": "Señor, bendice esta casa y a quienes viven en ella. Que sea un lugar de paz, de amor y de fe. Aleja de aqui todo mal, toda discordia y todo peligro. Que tu angel la guarde de dia y de noche, y que quien entre por esta puerta encuentre siempre tu presencia. En el nombre del Padre, y del Hijo, y del Espiritu Santo. Amen."
+  },
+  {
+    "id": "al_despertar",
+    "category": "Mañana",
+    "title": "Al despertar",
+    "text": "Gracias, Señor, por el descanso de esta noche y por el don de un nuevo dia. Te ofrezco mi primer pensamiento y mi primera palabra. Ayudame a vivir hoy con fe, a trabajar con amor y a tratar a cada persona con bondad. Que en todo lo que haga hoy pueda glorificarte. Amen."
+  },
+  {
+    "id": "ofrecimiento_maria_manana",
+    "category": "Mañana",
+    "title": "Ofrecimiento del dia a Maria",
+    "text": "Madre mia, al comenzar este dia me pongo bajo tu proteccion. Toma mis manos, mis pasos y mis palabras, y ofrecelos a tu Hijo Jesus. Cuidame de todo peligro, guardame del pecado y ensename a hacer en todo la voluntad de Dios. Contigo, Madre, quiero vivir este dia. Amen."
+  },
+  {
+    "id": "examen_conciencia",
+    "category": "Noche",
+    "title": "Examen de conciencia",
+    "text": "Señor, antes de dormir quiero mirar este dia contigo. Gracias por el bien que recibi y por el que pude hacer. Perdona lo que hice mal: mis faltas de amor, de paciencia y de fe. Ayudame a reconocer mis errores sin desanimarme, a pedir perdon y a proponerme ser mejor mañana. En tu misericordia descanso. Amen."
+  },
+  {
+    "id": "gracias_final_dia",
+    "category": "Noche",
+    "title": "Gracias al final del dia",
+    "text": "Señor, termina este dia y te doy gracias por todo lo vivido. Por lo bueno, gracias; por lo dificil, tambien, porque me acerca mas a Ti. Bendice a mi familia y a quienes hoy me acompañaron. Cuida esta noche a los que trabajan, a los que sufren y a los que estan solos. Que despierte mañana con un corazon renovado. Amen."
+  },
+  {
+    "id": "en_tus_manos",
+    "category": "Antes de dormir",
+    "title": "En tus manos encomiendo mi espiritu",
+    "text": "En tus manos, Señor, encomiendo mi espiritu. Tu me has creado y me sostienes; a Ti me entrego confiado. Velame mientras duermo y quedate a mi lado. Que mi ultimo pensamiento del dia sea para Ti y el primero al despertar tambien. Descanse mi cuerpo y vele mi corazon junto al tuyo. Amen."
+  },
+  {
+    "id": "trabajo_ofrecimiento",
+    "category": "Antes de trabajar",
+    "title": "Ofrecimiento del trabajo",
+    "text": "Señor, te ofrezco el trabajo de hoy, grande o pequeño, agradable o pesado. Que lo haga con esmero, con honradez y por amor a Ti y a los demas. Convierte mi esfuerzo en oracion y mi cansancio en ofrenda. Que al terminar pueda decir que trabaje como si trabajara para Ti. Amen."
+  },
+  {
+    "id": "santo_tomas_estudio",
+    "category": "Antes de estudiar",
+    "title": "Oracion antes del estudio (Santo Tomas de Aquino)",
+    "text": "Concedeme, Señor Dios misericordioso, desear con ardor lo que te agrada, buscarlo con prudencia, reconocerlo con verdad y cumplirlo con perfeccion, para alabanza y gloria de tu nombre. Ordena mi vida, dame inteligencia para comprender, memoria para retener y palabra para expresar lo que aprendo. Ilumina mi mente con la luz de tu sabiduria. Amen."
+  },
+  {
+    "id": "antes_examen",
+    "category": "Antes de estudiar",
+    "title": "Oracion antes de un examen",
+    "text": "Señor, pongo en tus manos este examen. Serena mis nervios, aclara mi mente y ayudame a recordar lo que estudie con esfuerzo. Que haga mi mejor esfuerzo con honestidad y confie en Ti sea cual sea el resultado. Espiritu Santo, dame paz y sabiduria. Amen."
+  },
+  {
+    "id": "san_rafael_viaje",
+    "category": "Antes de viajar",
+    "title": "Oracion del viajero (San Rafael Arcangel)",
+    "text": "San Rafael Arcangel, que acompañaste al joven Tobias en su camino y lo trajiste sano y salvo a casa, acompaña tambien mi viaje. Guarda el camino de ida y de vuelta, protege a los que viajan conmigo y a los que me esperan, y llevanos con bien a nuestro destino. Angel de la guarda, no te apartes de mi lado. Amen."
+  },
+  {
+    "id": "oracion_gratitud",
+    "category": "Accion de gracias",
+    "title": "Oracion de gratitud",
+    "text": "Gracias, Señor, por todo lo que me has dado, incluso por lo que no supe pedir. Gracias por la vida, por la salud, por las personas que me quieren y por las oportunidades de cada dia. Ensename a tener un corazon agradecido, que sepa reconocer tu bondad en lo grande y en lo pequeño, y a compartir con los demas lo que de Ti recibo. Amen."
+  },
+  {
+    "id": "te_doy_gracias",
+    "category": "Accion de gracias",
+    "title": "Te doy gracias, Señor",
+    "text": "Te doy gracias, Señor, con todo mi corazon, porque escuchaste las palabras de mi boca. Tu bondad y tu fidelidad no tienen fin; cuando te llame, me respondiste y diste fuerza a mi alma. Grande es tu gloria y grande tu amor por mi. Que mi vida entera sea una accion de gracias. Amen."
+  },
+  {
+    "id": "veni_sancte",
+    "category": "Espiritu Santo",
+    "title": "Ven, Espiritu Santo (secuencia)",
+    "text": "Ven, Espiritu Santo, y envia desde el cielo un rayo de tu luz. Ven, Padre de los pobres, ven a dar tus dones, ven a ser la luz del alma. Consolador que llenas el corazon, dulce huesped del alma, descanso en el trabajo, alivio en la fatiga, consuelo en el llanto. Oh luz santisima, llena lo mas intimo de tu pueblo. Lava lo que esta manchado, riega lo que es arido, sana lo que esta enfermo. Da a tus fieles, que en Ti confian, tus siete sagrados dones. Amen."
+  },
+  {
+    "id": "espiritu_aclara",
+    "category": "Espiritu Santo",
+    "title": "Espiritu Santo, Tu que todo lo aclaras",
+    "text": "Espiritu Santo, Tu que me aclaras todo, que iluminas todos los caminos para que alcance mi ideal; Tu que me das el don divino de perdonar y olvidar el mal que me hacen, en este dialogo contigo quiero agradecerte por todo y confirmar una vez mas que nunca quiero apartarme de Ti. Guiame siempre por el buen camino y no me dejes solo. Amen."
+  },
+  {
+    "id": "siete_dones",
+    "category": "Espiritu Santo",
+    "title": "Oracion por los siete dones",
+    "text": "Espiritu Santo, derrama en mi tus siete dones: sabiduria, para gustar de las cosas de Dios; entendimiento, para comprender tu Palabra; consejo, para elegir el bien; fortaleza, para vencer las dificultades; ciencia, para reconocerte en la creacion; piedad, para amarte como Padre; y temor de Dios, para no ofenderte nunca. Renueva mi corazon y hazme testigo tuyo. Amen."
+  },
+  {
+    "id": "sagrada_familia",
+    "category": "Familia",
+    "title": "Oracion a la Sagrada Familia",
+    "text": "Jesus, Maria y Jose, en ustedes contemplamos el esplendor del verdadero amor; a ustedes nos dirigimos con confianza. Sagrada Familia de Nazaret, haz tambien de nuestras familias lugares de comunion y oracion, escuelas del Evangelio y pequeñas iglesias domesticas. Que nunca mas haya en las familias violencia, division ni desunion; que quien haya sido herido pronto conozca el consuelo y la sanacion. Sagrada Familia de Nazaret, ruega por nosotros. Amen."
+  },
+  {
+    "id": "bendicion_hijos",
+    "category": "Familia",
+    "title": "Bendicion de los padres a los hijos",
+    "text": "Señor, bendice a mis hijos. Guarda su cuerpo y su alma, su mente y su corazon. Que crezcan sanos, buenos y sabios; que te conozcan y te amen. Aparta de ellos todo mal y todo peligro, dales amigos buenos y un futuro lleno de esperanza. Yo los pongo hoy en tus manos, porque Tu los amas aun mas que yo. Amen."
+  },
+  {
+    "id": "san_rafael_salud",
+    "category": "Salud",
+    "title": "San Rafael, medicina de Dios",
+    "text": "Glorioso San Rafael Arcangel, cuyo nombre significa medicina de Dios, intercede por la salud de mi cuerpo y de mi alma. Lleva mi suplica ante el trono del Altisimo y alcanzame el remedio que necesito, si es para bien mio. Acompaña a los enfermos, guia a los medicos y da consuelo a quienes cuidan de los que sufren. Amen."
+  },
+  {
+    "id": "paz_interior_salud",
+    "category": "Salud",
+    "title": "Oracion por la salud del alma",
+    "text": "Señor, sana las heridas de mi corazon: la tristeza, la ansiedad, el miedo y los recuerdos que me pesan. Dame tu paz, esa que el mundo no puede dar. Ayudame a soltar lo que no puedo cambiar y a confiar en que Tu cuidas de mi. Renueva mi mente y mi animo, y ensename a descansar en Ti. Amen."
+  },
+  {
+    "id": "de_profundis",
+    "category": "Difuntos",
+    "title": "Desde lo hondo (Salmo 130)",
+    "text": "Desde lo hondo a Ti grito, Señor; Señor, escucha mi voz. Esten atentos tus oidos a mi suplica. Si llevas cuenta de los delitos, Señor, quien podra resistir? Pero de Ti procede el perdon. Mi alma espera en el Señor, espera en su Palabra. Porque del Señor viene la misericordia y la redencion abundante. Dales, Señor, el descanso eterno, y brille para ellos la luz perpetua. Amen."
+  },
+  {
+    "id": "difunto_reciente",
+    "category": "Difuntos",
+    "title": "Oracion por un ser querido fallecido",
+    "text": "Señor de la vida, recibe en tu casa a mi ser querido que ha partido de este mundo. Perdona sus faltas, abrele las puertas del cielo y dale el descanso que Tu prometes a los que confian en Ti. Consuela nuestro dolor con la esperanza de la resurreccion y ayudanos a vivir de tal modo que un dia volvamos a encontrarnos en tu presencia. Que descanse en paz. Amen."
+  },
+  {
+    "id": "salmo23_confianza",
+    "category": "Confianza",
+    "title": "El Señor es mi pastor (Salmo 23)",
+    "text": "El Señor es mi pastor, nada me falta. En verdes praderas me hace descansar y me conduce hacia aguas tranquilas; El repara mis fuerzas. Aunque camine por cañadas oscuras, nada temo, porque Tu vas conmigo: tu vara y tu cayado me sosiegan. Tu bondad y tu misericordia me acompañan todos los dias de mi vida, y habitare en la casa del Señor por años sin termino. Amen."
+  },
+  {
+    "id": "paz_interior",
+    "category": "Paz",
+    "title": "Oracion por la paz interior",
+    "text": "Señor, dame la paz que solo Tu puedes dar. Calma mi corazon agitado, silencia mis miedos y ordena mis pensamientos. Que no me robe la paz lo que no puedo controlar. Ensename a vivir el presente, a confiar en tu providencia y a descansar en tu amor. Que tu paz reine en mi y se extienda a todos los que me rodean. Amen."
+  },
+  {
+    "id": "manso_humilde",
+    "category": "Jesus",
+    "title": "Jesus manso y humilde de corazon",
+    "text": "Corazon de Jesus, manso y humilde, haz mi corazon semejante al tuyo. Ensename tu mansedumbre ante las ofensas, tu humildad ante los honores, tu paciencia ante el dolor y tu obediencia a la voluntad del Padre. Que aprenda de Ti, que eres manso y humilde de corazon, y encuentre en Ti el descanso de mi alma. Amen."
+  },
+  {
+    "id": "nino_jesus",
+    "category": "Jesus",
+    "title": "Oracion al Niño Jesus",
+    "text": "Divino Niño Jesus, que quisiste hacerte pequeño por amor a nosotros, ten misericordia de mi. Tu que dijiste: pidan y recibiran, escucha mi oracion y concedeme lo que te pido, si es para bien de mi alma. Yo confio en Ti; Tu te encargas de todo. Bendice a mi familia, cuida a los niños del mundo y llename de tu ternura. Divino Niño Jesus, en Ti confio. Amen."
+  },
+  {
+    "id": "tantum_ergo",
+    "category": "Eucaristia",
+    "title": "Adoremos postrados (Tantum Ergo)",
+    "text": "Adoremos postrados tan grande Sacramento; y las antiguas figuras cedan el lugar al nuevo rito; y la fe supla el defecto de los sentidos. Al Padre y al Hijo sean dadas alabanza y jubilo, salud, honor, poder y bendicion; y al que de uno y de otro procede, sea dada igual alabanza. Amen. Nos diste, Señor, el Pan del cielo que contiene en si todo deleite."
+  },
+  {
+    "id": "santa_teresita",
+    "category": "Santos",
+    "title": "Oracion a Santa Teresita del Niño Jesus",
+    "text": "Santa Teresita del Niño Jesus, que prometiste pasar tu cielo haciendo el bien en la tierra y hacer caer una lluvia de rosas, intercede por mi ante Dios. Ensename tu caminito de confianza y amor, a hacer las cosas pequeñas con gran amor y a abandonarme en las manos del Padre como un niño. Alcanzame la gracia que ahora necesito y aumenta mi fe. Amen."
+  },
+  {
+    "id": "san_benito",
+    "category": "Santos",
+    "title": "Oracion de San Benito (contra el mal)",
+    "text": "Glorioso San Benito, modelo de los que buscan a Dios, protegeme con el signo de la Santa Cruz. Que la Cruz sea mi luz y nunca el demonio mi guia. Apartame de todo mal de cuerpo y alma, y ayudame a no beber jamas el veneno del pecado. Que en toda tentacion pueda decir contigo: apartate, Satanas, y no me aconsejes cosas vanas. San Benito, ruega por nosotros. Amen."
+  },
+  {
+    "id": "por_vocaciones",
+    "category": "Iglesia",
+    "title": "Oracion por las vocaciones",
+    "text": "Señor de la mies, envia obreros a tu mies. Suscita en el corazon de muchos jovenes el deseo de seguirte de cerca como sacerdotes, religiosos, religiosas y misioneros. Da a las familias generosidad para acompañar estas vocaciones y valentia a los llamados para decir si. Que nunca falten en tu Iglesia pastores segun tu Corazon. Maria, Madre de la Iglesia, ruega por las vocaciones. Amen."
+  },
+  {
+    "id": "por_misioneros",
+    "category": "Iglesia",
+    "title": "Oracion por los misioneros",
+    "text": "Señor, bendice a los misioneros que llevan tu Evangelio hasta los rincones mas lejanos de la tierra. Dales salud, valor y alegria en medio de las dificultades. Protege a quienes son perseguidos por tu nombre y toca el corazon de los que aun no te conocen. Hazme tambien a mi misionero en mi ambiente, con mi ejemplo y mi oracion. Amen."
+  },
+  {
+    "id": "bas_acto_fe",
+    "category": "Basicas",
+    "title": "Acto de fe",
+    "text": "Dios mio, creo firmemente todas las verdades que Tu has revelado y que la Iglesia nos enseña, porque Tu, que eres la Verdad misma, no puedes engañarte ni engañarnos. En esta fe quiero vivir y morir. Amen."
+  },
+  {
+    "id": "bas_acto_esperanza",
+    "category": "Basicas",
+    "title": "Acto de esperanza",
+    "text": "Dios mio, espero de tu bondad, por tus promesas y por los meritos de Jesucristo, la vida eterna y las gracias necesarias para alcanzarla. En Ti espero; no quede yo defraudado para siempre. Amen."
+  },
+  {
+    "id": "bas_acto_caridad",
+    "category": "Basicas",
+    "title": "Acto de caridad",
+    "text": "Dios mio, te amo sobre todas las cosas con todo mi corazon, porque eres infinitamente bueno; y por tu amor amo a mi projimo como a mi mismo. Ensename a amarte mas cada dia. Amen."
+  },
+  {
+    "id": "bas_trinidad",
+    "category": "Basicas",
+    "title": "Bendita sea la Santisima Trinidad",
+    "text": "Bendita sea la Santisima Trinidad, Padre, Hijo y Espiritu Santo, ahora y siempre. A Ti, un solo Dios en tres Personas, la alabanza, el honor y la gloria por los siglos de los siglos. Amen."
+  },
+  {
+    "id": "bas_bendito_sea_dios",
+    "category": "Basicas",
+    "title": "Bendito sea Dios",
+    "text": "Bendito sea Dios. Bendito sea su santo Nombre. Bendito sea Jesucristo, verdadero Dios y verdadero hombre. Bendito sea el Nombre de Jesus. Bendito sea Dios en sus angeles y en sus santos. Amen."
+  },
+  {
+    "id": "bas_ofrecimiento_jornada",
+    "category": "Basicas",
+    "title": "Ofrecimiento de la jornada",
+    "text": "Señor, te ofrezco cuanto haga, piense y sufra hoy. Que todo sea por tu gloria, en union con el sacrificio de Jesus y por la salvacion del mundo. Amen."
+  },
+  {
+    "id": "bas_aspiraciones",
+    "category": "Basicas",
+    "title": "Aspiraciones para el dia",
+    "text": "Todo por Ti, Señor. Hagase tu voluntad. Jesus, en Ti confio. Dios mio, ayudame. Señor, que yo te ame cada dia mas. Maria, Madre mia, ruega por mi. Amen."
+  },
+  {
+    "id": "bas_dios_mio_todo",
+    "category": "Basicas",
+    "title": "Dios mio y todas mis cosas",
+    "text": "Dios mio y todas mis cosas: Tu me bastas, Señor; nada me falta si te tengo a Ti. Aparta de mi corazon lo que no seas Tu y ocupa Tu solo el primer lugar en mi vida. Amen."
+  },
+  {
+    "id": "bas_te_deum",
+    "category": "Basicas",
+    "title": "Te Deum (alabanza)",
+    "text": "A Ti, oh Dios, te alabamos; a Ti, Señor, te reconocemos. Todos los angeles y los santos te aclaman. Santo, Santo, Santo es el Señor, Dios del universo. Que tu misericordia venga sobre nosotros, porque en Ti, Señor, confiamos. Amen."
+  },
+  {
+    "id": "bas_veni_creator",
+    "category": "Basicas",
+    "title": "Ven, Espiritu Creador",
+    "text": "Ven, Espiritu Creador, visita las almas de tus fieles y llena de la divina gracia los corazones que Tu mismo creaste. Enciende con tu luz nuestros sentidos, infunde tu amor en nuestros corazones y sostennos con tu fortaleza. Amen."
+  },
+  {
+    "id": "mar_consagracion_montfort",
+    "category": "Maria",
+    "title": "Consagracion tradicional a la Virgen Maria (San Luis Maria de Montfort)",
+    "text": "Yo, pecador infiel, renuevo y ratifico hoy en tus manos, oh Maria, las promesas de mi Bautismo: renuncio para siempre a Satanas, a sus pompas y a sus obras, y me entrego enteramente a Jesucristo para llevar mi cruz en pos de El todos los dias de mi vida. Y para serle mas fiel de lo que he sido hasta ahora, te escojo hoy, oh Maria, en presencia de toda la corte celestial, por mi Madre y Señora. Te entrego y consagro, como esclavo tuyo, mi cuerpo y mi alma, mis bienes interiores y exteriores, y el valor mismo de mis buenas obras pasadas, presentes y futuras, dandote entero derecho de disponer de mi y de todo lo que me pertenece, sin reserva, segun tu voluntad, para mayor gloria de Dios en el tiempo y en la eternidad. Amen."
+  },
+  {
+    "id": "mar_tres_avemarias",
+    "category": "Maria",
+    "title": "Devocion de las tres Avemarias",
+    "text": "Santisima Virgen Maria, por el poder, la sabiduria y el amor que te concedio la Santisima Trinidad, guardame hoy y siempre de todo pecado. Rezo estas tres Avemarias en honor de tu pureza. Madre mia, librame en la vida y en la hora de mi muerte. Amen."
+  },
+  {
+    "id": "mar_ave_maris_stella",
+    "category": "Maria",
+    "title": "Ave, Estrella del mar",
+    "text": "Salve, Estrella del mar, Madre santa de Dios y siempre Virgen, puerta feliz del cielo. Guianos por el camino seguro, muestranos a Jesus y presenta nuestras suplicas ante su trono. Estrella del mar, brilla en nuestra noche. Amen."
+  },
+  {
+    "id": "mar_fatima",
+    "category": "Maria",
+    "title": "Oracion de Fatima",
+    "text": "Oh Jesus, perdona nuestros pecados, libranos del fuego del infierno, lleva al cielo a todas las almas, especialmente a las mas necesitadas de tu misericordia. Señora del Rosario de Fatima, ruega por nosotros. Amen."
+  },
+  {
+    "id": "mar_medalla_milagrosa",
+    "category": "Maria",
+    "title": "Oracion de la Medalla Milagrosa",
+    "text": "Oh Maria sin pecado concebida, ruega por nosotros que recurrimos a ti, y por todos los que no recurren a ti. Virgen de la Medalla Milagrosa, cubrenos con tu proteccion y alcanzanos las gracias que necesitamos. Amen."
+  },
+  {
+    "id": "mar_perpetuo_socorro",
+    "category": "Maria",
+    "title": "Virgen del Perpetuo Socorro",
+    "text": "Madre del Perpetuo Socorro, a ti acudo con confianza en mi necesidad. Tu que socorres a quien te invoca, extiende tu mano y ayudame. Alcanzame de tu Hijo la gracia que necesito y la fuerza para ser fiel. Amen."
+  },
+  {
+    "id": "mar_auxiliadora",
+    "category": "Maria",
+    "title": "Maria Auxiliadora",
+    "text": "Maria Auxiliadora de los cristianos, ruega por nosotros. Defiende a la Iglesia, protege a nuestras familias y ayudame a vencer las tentaciones. Contigo, Madre, nada temo. Amen."
+  },
+  {
+    "id": "mar_dolores",
+    "category": "Maria",
+    "title": "Nuestra Señora de los Dolores",
+    "text": "Santa Maria de los Dolores, que junto a la cruz compartiste el sufrimiento de tu Hijo, ensename a llevar mis penas con fe. Consuela a las madres que sufren y a los que lloran, y guardanos bajo tu manto. Amen."
+  },
+  {
+    "id": "mar_rosario",
+    "category": "Maria",
+    "title": "Nuestra Señora del Rosario",
+    "text": "Virgen del Santo Rosario, que nos enseñas a contemplar el rostro de Cristo con tus ojos de Madre, ayudame a rezar con el corazon. Que cada Avemaria me acerque mas a Jesus. Reina del Rosario, ruega por nosotros. Amen."
+  },
+  {
+    "id": "mar_reina_paz",
+    "category": "Maria",
+    "title": "Reina de la Paz",
+    "text": "Maria, Reina de la Paz, alcanza para el mundo la paz que solo Dios puede dar. Serena los corazones enfrentados, reconcilia a las familias divididas y guardanos en la paz de tu Hijo. Amen."
+  },
+  {
+    "id": "pro_cristo_conmigo",
+    "category": "Proteccion",
+    "title": "Cristo conmigo",
+    "text": "Cristo conmigo, Cristo delante de mi, Cristo detras de mi, Cristo dentro de mi, Cristo debajo de mi, Cristo sobre mi, Cristo a mi derecha, Cristo a mi izquierda. Cristo me guarde hoy de todo mal. Amen."
+  },
+  {
+    "id": "pro_bajo_proteccion",
+    "category": "Proteccion",
+    "title": "Bajo tu proteccion hoy",
+    "text": "Señor, ponme hoy bajo tu proteccion. Cubreme con tu mano, aleja de mi todo peligro de cuerpo y alma, y que tu angel me acompañe en cada paso. En tus manos me pongo. Amen."
+  },
+  {
+    "id": "pro_tentaciones",
+    "category": "Proteccion",
+    "title": "Contra las tentaciones",
+    "text": "Señor Jesus, cuando me acose la tentacion, dame fuerza para resistir y no ofenderte. Recuerdame que Tu venciste al mal y que tu gracia me basta. No permitas que me aparte de Ti. Amen."
+  },
+  {
+    "id": "pro_liberacion",
+    "category": "Proteccion",
+    "title": "Oracion sencilla de liberacion",
+    "text": "Señor Jesus, por tu Preciosa Sangre y tu santa Cruz, aleja de mi y de mi casa todo mal, toda influencia del maligno y todo miedo. Llename de tu paz y de tu luz. Tuyo soy, protegeme. Amen."
+  },
+  {
+    "id": "pro_camino",
+    "category": "Proteccion",
+    "title": "Proteccion en el camino",
+    "text": "Señor, guarda mis caminos hoy. Aparta de mi los accidentes, los peligros y las malas compañias. Que tus angeles vayan delante de mi y me traigan de vuelta con bien a los mios. Amen."
+  },
+  {
+    "id": "pro_hijos",
+    "category": "Proteccion",
+    "title": "Proteccion para mis hijos",
+    "text": "Padre santo, protege a mis hijos de todo mal, dentro y fuera de casa. Guarda su cuerpo, su mente y su fe. Rodealos de tus angeles y no permitas que nada los aparte de Ti. Amen."
+  },
+  {
+    "id": "pro_familia_escudo",
+    "category": "Proteccion",
+    "title": "Escudo para mi familia",
+    "text": "Señor, sea tu Preciosa Sangre un escudo alrededor de mi familia. Protege a cada uno de los mios, a los que estan cerca y a los que estan lejos, y mantennos unidos en tu amor. Amen."
+  },
+  {
+    "id": "pro_noche",
+    "category": "Proteccion",
+    "title": "Guarda en la noche",
+    "text": "Señor, guarda esta noche mi casa y a quienes duermen en ella. Aleja todo peligro, todo temor y toda inquietud. Que tus angeles velen mientras descansamos. Amen."
+  },
+  {
+    "id": "pro_salmo_121",
+    "category": "Proteccion",
+    "title": "El Señor te guarda (Salmo 121)",
+    "text": "Levanto mis ojos a los montes: de donde me vendra el auxilio? El auxilio me viene del Señor, que hizo el cielo y la tierra. El guarda tu vida; el Señor te guarda de todo mal a la ida y a la vuelta. Amen."
+  },
+  {
+    "id": "pro_angeles",
+    "category": "Proteccion",
+    "title": "A los santos angeles",
+    "text": "Santos angeles de Dios, defendednos en la batalla para que no perezcamos. Guardad nuestros pasos, iluminad nuestra mente y llevadnos por el camino de la salvacion. Amen."
+  },
+  {
+    "id": "pro_sello_sangre",
+    "category": "Proteccion",
+    "title": "Sello de la Sangre de Cristo",
+    "text": "Sello con la Sangre de Cristo mi mente, mi corazon, mi cuerpo, mi hogar y a mi familia. Que nada impuro entre donde esta su Sangre. Jesus, protegenos con el precio de tu Cruz. Amen."
+  },
+  {
+    "id": "pro_benito",
+    "category": "Proteccion",
+    "title": "Cruz de San Benito",
+    "text": "Que la Santa Cruz sea mi luz y no sea el demonio mi guia. Apartate, Satanas; no me sugieras cosas vanas: bebe tu mismo tu veneno. San Benito, defiendeme del mal. Amen."
+  },
+  {
+    "id": "pro_corazon_refugio",
+    "category": "Proteccion",
+    "title": "Amparo del Corazon de Jesus",
+    "text": "Dulce Corazon de Jesus, se mi amparo y mi refugio. Escondeme en tus llagas, defiendeme del enemigo y no permitas que me aparte de Ti ni de dia ni de noche. Amen."
+  },
+  {
+    "id": "pro_manto",
+    "category": "Proteccion",
+    "title": "Bajo el manto de Maria",
+    "text": "Madre mia, cubreme con tu manto. Guardame de todo peligro, de toda tentacion y de todo mal. Como una madre defiende a su hijo, defiendeme tu. Contigo estoy seguro. Amen."
+  },
+  {
+    "id": "pro_peligro",
+    "category": "Proteccion",
+    "title": "En medio del peligro",
+    "text": "Señor, en el peligro no me dejes solo. Tu eres mi roca y mi fortaleza; en Ti me refugio. Calma mi miedo, guarda mi vida y la de los mios, y llevanos a puerto seguro. Amen."
+  },
+  {
+    "id": "man_gracias_dia",
+    "category": "Mañana",
+    "title": "Gracias por el nuevo dia",
+    "text": "Gracias, Señor, por este nuevo dia que me regalas. No se lo que traera, pero se que Tu iras conmigo. Ayudame a vivirlo con fe, esperanza y amor, y a reconocerte en cada momento. Amen."
+  },
+  {
+    "id": "man_consagracion_corazon",
+    "category": "Mañana",
+    "title": "Consagracion de la mañana",
+    "text": "Corazon de Jesus, te consagro este dia: mis pensamientos, mis palabras y mis obras. Reina en mi vida y en mi trabajo, y que todo lo que haga hoy sea para tu gloria. Amen."
+  },
+  {
+    "id": "man_laudes",
+    "category": "Mañana",
+    "title": "Bendito seas al amanecer",
+    "text": "Bendito seas, Señor, en la luz de esta mañana. Tu que renuevas cada dia tus misericordias, renueva tambien mi corazon y ponlo a tu servicio. Que hoy camine en tu presencia. Amen."
+  },
+  {
+    "id": "man_salmo_5",
+    "category": "Mañana",
+    "title": "Escucha mi voz al amanecer (Salmo 5)",
+    "text": "Señor, por la mañana escucha mi voz; por la mañana te expongo mi causa y quedo a la espera. Guiame por tu justicia y allana ante mi tu camino, para que hoy camine seguro. Amen."
+  },
+  {
+    "id": "man_pido_luz",
+    "category": "Mañana",
+    "title": "Pido luz para hoy",
+    "text": "Espiritu Santo, ilumina mi mente al comenzar el dia. Ayudame a distinguir el bien del mal, a elegir lo que agrada a Dios y a evitar todo lo que me aparta de El. Amen."
+  },
+  {
+    "id": "man_ofrezco_jornada",
+    "category": "Mañana",
+    "title": "Ofrezco mi jornada",
+    "text": "Señor, te ofrezco mi trabajo, mis descansos, mis alegrias y mis dificultades de hoy. Que cada cosa, por pequeña que sea, la haga por amor a Ti y por el bien de los demas. Amen."
+  },
+  {
+    "id": "man_por_familia",
+    "category": "Mañana",
+    "title": "Por mi familia al comenzar",
+    "text": "Padre bueno, al comenzar el dia te encomiendo a mi familia. Cuida a cada uno en su camino, protegelos de todo mal y mantennos unidos en tu amor hasta volver a reunirnos esta noche. Amen."
+  },
+  {
+    "id": "man_espiritu",
+    "category": "Mañana",
+    "title": "Ven, Espiritu Santo, esta mañana",
+    "text": "Ven, Espiritu Santo, y lléname al comenzar el dia. Dame tu sabiduria para decidir, tu fortaleza para trabajar y tu paz para vivir sin ansiedad. Guia mis pasos hoy. Amen."
+  },
+  {
+    "id": "man_paciencia",
+    "category": "Mañana",
+    "title": "Pido paciencia hoy",
+    "text": "Señor, dame paciencia para este dia: paciencia con los demas, paciencia conmigo mismo y paciencia para esperar tus tiempos. Que no pierda la calma ni la caridad ante ninguna contrariedad. Amen."
+  },
+  {
+    "id": "man_alegria",
+    "category": "Mañana",
+    "title": "Un dia con alegria",
+    "text": "Señor, regalame hoy un corazon alegre. Que tu gozo sea mi fuerza, que sepa sonreir a quien encuentre y llevar tu paz a donde vaya. Que mi alegria nazca de saberme amado por Ti. Amen."
+  },
+  {
+    "id": "man_servir",
+    "category": "Mañana",
+    "title": "Que hoy sepa servir",
+    "text": "Señor Jesus, que hoy sepa servir como Tu serviste. Abre mis ojos a las necesidades de quienes me rodean y hazme instrumento de tu bondad en cada gesto, palabra y obra. Amen."
+  },
+  {
+    "id": "man_confianza",
+    "category": "Mañana",
+    "title": "Confio este dia a Dios",
+    "text": "Señor, en tus manos pongo este dia. No se lo que vendra, pero confio en que Tu tienes cuidado de mi. Aparta mis miedos, sostiene mi esperanza y hazme fiel en lo poco. Amen."
+  },
+  {
+    "id": "man_proposito",
+    "category": "Mañana",
+    "title": "Proposito de la mañana",
+    "text": "Señor, hoy quiero evitar el pecado que mas me cuesta y crecer en la virtud que mas necesito. Ayudame con tu gracia a cumplir este proposito y a comenzar de nuevo si caigo. Amen."
+  },
+  {
+    "id": "man_bendice",
+    "category": "Mañana",
+    "title": "Bendice este dia, Señor",
+    "text": "Bendice, Señor, este dia y todo lo que en el haga. Bendice a las personas que voy a encontrar, mi trabajo, mi descanso y mis conversaciones. Que todo se haga en tu presencia. Amen."
+  },
+  {
+    "id": "man_madre",
+    "category": "Mañana",
+    "title": "Buenos dias, Madre",
+    "text": "Buenos dias, Madre mia. Al comenzar la jornada me pongo en tus manos. Toma mi dia y ofrecelo a Jesus; guardame del pecado y ayudame a parecerme un poco mas a ti. Amen."
+  },
+  {
+    "id": "man_angel",
+    "category": "Mañana",
+    "title": "Angel de mi guarda, acompañame hoy",
+    "text": "Angel de mi guarda, que Dios puso a mi lado, acompañame hoy en todos mis caminos. Ilumina mi mente, guarda mi corazon y defiendeme de todo peligro de cuerpo y alma. Amen."
+  },
+  {
+    "id": "man_te_busco",
+    "category": "Mañana",
+    "title": "Desde el amanecer te busco",
+    "text": "Dios mio, desde el amanecer te busco; mi alma tiene sed de Ti. Saciame con tu amor por la mañana y vivire alegre este dia bajo la sombra de tus alas. Amen."
+  },
+  {
+    "id": "noc_completas",
+    "category": "Noche",
+    "title": "Visita esta casa (completas)",
+    "text": "Visita, Señor, esta casa y aleja de ella las asechanzas del enemigo. Que tus santos angeles habiten en ella y nos guarden en paz, y que tu bendicion permanezca siempre sobre nosotros. Amen."
+  },
+  {
+    "id": "noc_salmo_4",
+    "category": "Noche",
+    "title": "En paz me acuesto (Salmo 4)",
+    "text": "En paz me acuesto y en seguida me duermo, porque solo Tu, Señor, me haces vivir tranquilo. Alza sobre nosotros la luz de tu rostro y guarda mi descanso esta noche. Amen."
+  },
+  {
+    "id": "noc_perdona",
+    "category": "Noche",
+    "title": "Perdona lo de hoy",
+    "text": "Señor, antes de dormir te pido perdon por las faltas de este dia: por lo que hice mal y por el bien que deje de hacer. Borra mis pecados con tu misericordia y dame un corazon nuevo mañana. Amen."
+  },
+  {
+    "id": "noc_encomiendo",
+    "category": "Noche",
+    "title": "Te encomiendo a los mios",
+    "text": "Señor, antes de dormir te encomiendo a las personas que amo. Cuidalas esta noche, consuela a las que sufren, protege a las que estan lejos y reune un dia a todos en tu paz. Amen."
+  },
+  {
+    "id": "noc_gratitud",
+    "category": "Noche",
+    "title": "Gracias por lo vivido",
+    "text": "Gracias, Señor, por todo lo que vivi hoy: por lo bueno que me diste y por lo dificil que me acerco a Ti. Recibe mi jornada como una ofrenda y dame un descanso sereno. Amen."
+  },
+  {
+    "id": "noc_descanso",
+    "category": "Noche",
+    "title": "Dame descanso",
+    "text": "Señor, estoy cansado; ven a darme descanso. Suelta las tensiones de este dia, calma mis preocupaciones y renueva mis fuerzas mientras duermo, para servirte mejor mañana. Amen."
+  },
+  {
+    "id": "noc_por_los_que_sufren",
+    "category": "Noche",
+    "title": "Por los que sufren esta noche",
+    "text": "Señor, esta noche pienso en los que no pueden dormir: los enfermos, los solos, los que tienen miedo y los que lloran. Consuelalos con tu presencia y dales tu paz. Amen."
+  },
+  {
+    "id": "noc_reconciliacion",
+    "category": "Noche",
+    "title": "En paz antes de dormir",
+    "text": "Señor, no quiero dormir enojado con nadie. Perdona a quien me ofendio y ayudame a pedir perdon a quien ofendi. Que me acueste en paz contigo y con los demas. Amen."
+  },
+  {
+    "id": "noc_madre",
+    "category": "Noche",
+    "title": "Buenas noches, Madre",
+    "text": "Buenas noches, Madre mia. Al terminar el dia me pongo bajo tu manto. Guarda mi sueño, vela por los mios y ayudame a despertar dispuesto a amar mas a tu Hijo. Amen."
+  },
+  {
+    "id": "noc_angel",
+    "category": "Noche",
+    "title": "Angel de la guarda esta noche",
+    "text": "Angel de mi guarda, vela esta noche a mi lado. Aleja de mi todo mal y todo temor, guarda mi cuerpo y mi alma, y llevame en paz hasta la luz de mañana. Amen."
+  },
+  {
+    "id": "noc_en_tus_manos",
+    "category": "Noche",
+    "title": "En tus manos, Señor",
+    "text": "En tus manos, Señor, encomiendo mi espiritu al terminar el dia. Tu me creaste y me sostienes; a Ti me entrego. Que mi ultimo pensamiento sea para Ti. Amen."
+  },
+  {
+    "id": "noc_examen",
+    "category": "Noche",
+    "title": "Repaso del dia",
+    "text": "Señor, repaso contigo este dia: donde estuviste presente, donde te olvide, que bien hice y que debo mejorar. Gracias por tu paciencia y ayudame a comenzar de nuevo mañana. Amen."
+  },
+  {
+    "id": "noc_proteccion",
+    "category": "Noche",
+    "title": "Guarda mi sueño",
+    "text": "Señor, guarda mi sueño y el de toda mi casa. Que descansemos bajo tu proteccion, libres de todo peligro, y despertemos renovados para alabarte. Amen."
+  },
+  {
+    "id": "noc_ofrezco_descanso",
+    "category": "Noche",
+    "title": "Ofrezco mi descanso",
+    "text": "Señor, hasta mi descanso quiero ofrecertelo. Que al dormir siga confiando en Ti, y que este sueño repare mi cuerpo y mi alma para servirte mañana con mas amor. Amen."
+  },
+  {
+    "id": "noc_paz_corazon",
+    "category": "Noche",
+    "title": "Serena mi corazon",
+    "text": "Señor, serena mi corazon esta noche. Aparta de mi las preocupaciones y los pensamientos que me quitan la paz. Que descanse en Ti, sabiendo que Tu velas por mi. Amen."
+  },
+  {
+    "id": "noc_gracias_familia",
+    "category": "Noche",
+    "title": "Gracias por mi familia",
+    "text": "Gracias, Señor, por mi familia y por este hogar. Bendice a cada uno mientras duerme, sana lo que hoy nos hirio y danos un nuevo dia para amarnos mejor. Amen."
+  },
+  {
+    "id": "noc_esperanza",
+    "category": "Noche",
+    "title": "Esperando un nuevo dia",
+    "text": "Señor, me duermo con la esperanza de un nuevo dia. Guarda esta noche y regalame mañana la oportunidad de comenzar de nuevo, mas cerca de Ti. Amen."
+  },
+  {
+    "id": "dor_jesus_maria_jose",
+    "category": "Antes de dormir",
+    "title": "Jesus, Maria y Jose",
+    "text": "Jesus, Maria y Jose, os doy el corazon y el alma mia. Jesus, Maria y Jose, asistidme en mi ultima agonia. Jesus, Maria y Jose, en vuestras manos descanse mi cuerpo y mi alma esta noche. Amen."
+  },
+  {
+    "id": "dor_señor_cuida",
+    "category": "Antes de dormir",
+    "title": "Señor, cuida mi sueño",
+    "text": "Señor, ya termino el dia y me voy a descansar. Cuida mi sueño, aleja las pesadillas y los temores, y despiertame mañana con fuerzas nuevas para servirte. Amen."
+  },
+  {
+    "id": "dor_gracias_dia",
+    "category": "Antes de dormir",
+    "title": "Gracias antes de dormir",
+    "text": "Gracias, Dios mio, por este dia que me diste. Perdona lo que hice mal y guarda lo bueno que hubo en el. Ahora descanso confiado en tu amor. Amen."
+  },
+  {
+    "id": "dor_corazon_jesus",
+    "category": "Antes de dormir",
+    "title": "Descanso en el Corazon de Jesus",
+    "text": "Corazon de Jesus, en Ti descanso. Recibe mi cansancio, mis alegrias y mis penas de hoy. Junto a Ti quiero dormir tranquilo, seguro de tu amor. Amen."
+  },
+  {
+    "id": "dor_maria_vela",
+    "category": "Antes de dormir",
+    "title": "Madre, vela mi sueño",
+    "text": "Madre mia, vela mi sueño esta noche como velaste el del Niño Jesus. Guardame de todo mal y haz que despierte con el corazon lleno de tu ternura. Amen."
+  },
+  {
+    "id": "dor_perdona",
+    "category": "Antes de dormir",
+    "title": "Perdon antes de dormir",
+    "text": "Señor, antes de cerrar los ojos te pido perdon por lo que hoy no hice bien. Limpia mi corazon y dejame dormir en paz contigo y con todos. Amen."
+  },
+  {
+    "id": "dor_encomiendo_seres",
+    "category": "Antes de dormir",
+    "title": "Encomiendo a mis seres queridos",
+    "text": "Señor, antes de dormir pongo en tus manos a mis seres queridos. Cuidalos esta noche donde esten y reune un dia a toda mi familia en tu casa. Amen."
+  },
+  {
+    "id": "dor_angel_noche",
+    "category": "Antes de dormir",
+    "title": "Angel, no me dejes solo",
+    "text": "Angel de mi guarda, dulce compañia, no me desampares ni de noche ni de dia. Guarda mi descanso y llevame en paz hasta la luz de mañana. Amen."
+  },
+  {
+    "id": "dor_confio",
+    "category": "Antes de dormir",
+    "title": "Me duermo confiando",
+    "text": "Me duermo, Señor, confiando en Ti. Tu no duermes ni te adormeces; Tu velas por mi. Descanso tranquilo porque estoy en tus manos. Amen."
+  },
+  {
+    "id": "dor_salmo_63",
+    "category": "Antes de dormir",
+    "title": "En la noche te recuerdo (Salmo 63)",
+    "text": "Señor, en el lecho te recuerdo y velando medito en Ti, porque fuiste mi auxilio. A la sombra de tus alas canto de alegria; mi alma esta unida a Ti. Amen."
+  },
+  {
+    "id": "dor_ofrezco_noche",
+    "category": "Antes de dormir",
+    "title": "Ofrezco esta noche",
+    "text": "Señor, te ofrezco las horas de esta noche. Que hasta mientras duermo mi corazon siga junto a Ti, y que este descanso me prepare para amarte mas mañana. Amen."
+  },
+  {
+    "id": "dor_paz",
+    "category": "Antes de dormir",
+    "title": "Duerme en paz mi corazon",
+    "text": "Señor, aquieta mi corazon para dormir. Suelta lo que me preocupa, calla mis pensamientos y dame tu paz, esa que el mundo no puede dar. Amen."
+  },
+  {
+    "id": "dor_ninos",
+    "category": "Antes de dormir",
+    "title": "Oracion sencilla de la noche",
+    "text": "Jesus, antes de dormir te doy las gracias por hoy. Cuida a papa y a mama, a los que quiero y a los que sufren, y llevame contento hasta mañana. Amen."
+  },
+  {
+    "id": "dor_gratitud_descanso",
+    "category": "Antes de dormir",
+    "title": "Gracias por el descanso",
+    "text": "Gracias, Señor, por el don del descanso. Tu conoces mi cansancio; renuevame mientras duermo y devuelveme la alegria y las fuerzas al amanecer. Amen."
+  },
+  {
+    "id": "dor_proteccion_hogar",
+    "category": "Antes de dormir",
+    "title": "Guarda mi hogar esta noche",
+    "text": "Señor, guarda esta noche mi hogar y a todos los que duermen bajo este techo. Que tus angeles lo rodeen y que amanezcamos en tu paz. Amen."
+  },
+  {
+    "id": "dor_ultimo_pensamiento",
+    "category": "Antes de dormir",
+    "title": "Mi ultimo pensamiento",
+    "text": "Señor, que mi ultimo pensamiento del dia sea para Ti y el primero al despertar tambien. Me duermo bendiciendo tu Nombre y descansando en tu amor. Amen."
+  },
+  {
+    "id": "dor_entrego_espiritu",
+    "category": "Antes de dormir",
+    "title": "A Ti me entrego",
+    "text": "En tus manos, Padre, entrego mi espiritu esta noche. Tu me guardaste durante el dia; guardame ahora en el descanso y devuelveme a la vida mañana renovado. Amen."
+  },
+  {
+    "id": "dor_serena",
+    "category": "Antes de dormir",
+    "title": "Quita mis temores",
+    "text": "Señor, quita de mi todo temor antes de dormir. Tu estas conmigo; nada me puede dañar bajo tu cuidado. Con esa certeza cierro los ojos en paz. Amen."
+  },
+  {
+    "id": "tra_bendice_trabajo",
+    "category": "Antes de trabajar",
+    "title": "Bendice mi trabajo",
+    "text": "Señor, bendice el trabajo de mis manos y de mi mente. Dame constancia, honradez y alegria, y que mi esfuerzo de hoy sirva para el bien de otros y para tu gloria. Amen."
+  },
+  {
+    "id": "tra_ofrezco",
+    "category": "Antes de trabajar",
+    "title": "Ofrezco mi trabajo",
+    "text": "Señor, te ofrezco el trabajo de hoy, grande o pequeño, agradable o pesado. Convierte mi esfuerzo en oracion y mi cansancio en ofrenda. Que trabaje como si trabajara para Ti. Amen."
+  },
+  {
+    "id": "tra_paciencia",
+    "category": "Antes de trabajar",
+    "title": "Paciencia en el trabajo",
+    "text": "Señor, dame paciencia con las personas y con las dificultades de este trabajo. Que no pierda la calma ni la caridad, y que sepa tratar a todos con respeto y bondad. Amen."
+  },
+  {
+    "id": "tra_companeros",
+    "category": "Antes de trabajar",
+    "title": "Por mis compañeros",
+    "text": "Señor, bendice a las personas con quienes trabajo. Ayudame a colaborar con ellas sin envidias ni rencores, a perdonar pronto y a construir un ambiente de respeto y paz. Amen."
+  },
+  {
+    "id": "tra_tarea_dificil",
+    "category": "Antes de trabajar",
+    "title": "Ante una tarea dificil",
+    "text": "Señor, tengo por delante una tarea que me supera. Dame serenidad, claridad y perseverancia. Que haga mi parte con esmero y confie en Ti el resultado. Todo lo puedo en Ti. Amen."
+  },
+  {
+    "id": "tra_san_jose",
+    "category": "Antes de trabajar",
+    "title": "San Jose obrero",
+    "text": "San Jose obrero, que trabajaste con tus manos junto a Jesus, ensename a santificar mi trabajo. Alcanzame amor a mis deberes, honradez en mis tareas y descanso merecido. Ruega por mi. Amen."
+  },
+  {
+    "id": "tra_gratitud",
+    "category": "Antes de trabajar",
+    "title": "Gracias por mi trabajo",
+    "text": "Gracias, Señor, por el trabajo que me das; es un regalo y una manera de servirte. Que no me queje de sus cargas, sino que lo cumpla con gratitud y responsabilidad. Amen."
+  },
+  {
+    "id": "tra_por_los_sin_trabajo",
+    "category": "Antes de trabajar",
+    "title": "Por los que no tienen trabajo",
+    "text": "Señor, mientras comienzo mi jornada, pienso en quienes buscan trabajo y no lo encuentran. Consuela su angustia, abreles puertas y provee lo que necesitan sus familias. Amen."
+  },
+  {
+    "id": "tra_concentracion",
+    "category": "Antes de trabajar",
+    "title": "Concentracion y orden",
+    "text": "Señor, dame concentracion y orden para mi trabajo de hoy. Aparta las distracciones, ayudame a priorizar lo importante y a terminar bien lo que empiezo. Amen."
+  },
+  {
+    "id": "tra_servir",
+    "category": "Antes de trabajar",
+    "title": "Servir a traves del trabajo",
+    "text": "Señor, que mi trabajo sea un servicio. Que a traves de lo que hago pueda ayudar a otros, aliviar alguna necesidad y hacer un poco mejor el mundo que me rodea. Amen."
+  },
+  {
+    "id": "tra_integridad",
+    "category": "Antes de trabajar",
+    "title": "Honradez en el trabajo",
+    "text": "Señor, guardame de toda deshonestidad. Que sea integro cuando nadie me ve, que cumpla mi palabra y que gane el pan con las manos limpias y la conciencia tranquila. Amen."
+  },
+  {
+    "id": "tra_reunion",
+    "category": "Antes de trabajar",
+    "title": "Antes de una reunion",
+    "text": "Señor, antes de esta reunion dame prudencia para escuchar, claridad para hablar y respeto por los demas. Que busquemos juntos lo mejor y que reine el entendimiento. Amen."
+  },
+  {
+    "id": "tra_decision",
+    "category": "Antes de trabajar",
+    "title": "Antes de una decision",
+    "text": "Señor, tengo que tomar una decision importante en mi trabajo. Ilumina mi mente, quita mis miedos y ayudame a elegir lo justo y lo bueno, buscando siempre tu voluntad. Amen."
+  },
+  {
+    "id": "tra_jefe",
+    "category": "Antes de trabajar",
+    "title": "Por quienes me dirigen",
+    "text": "Señor, bendice a quienes me dirigen en el trabajo. Dales sabiduria y justicia, y a mi humildad para obedecer en lo bueno y respeto para dialogar en lo dificil. Amen."
+  },
+  {
+    "id": "tra_humildad",
+    "category": "Antes de trabajar",
+    "title": "Humildad en el trabajo",
+    "text": "Señor, guardame de la soberbia y de la vanidad en mi trabajo. Que no busque quedar por encima de nadie, sino cumplir mi deber con sencillez y ayudar a quien lo necesite. Amen."
+  },
+  {
+    "id": "tra_manos",
+    "category": "Antes de trabajar",
+    "title": "Bendice mis manos",
+    "text": "Señor, bendice estas manos que hoy van a trabajar. Que sean manos que construyen, que ayudan y que no hacen daño a nadie. Guia cada cosa que emprendan hoy. Amen."
+  },
+  {
+    "id": "tra_espiritu_trabajo",
+    "category": "Antes de trabajar",
+    "title": "Espiritu Santo en mi trabajo",
+    "text": "Espiritu Santo, acompaña mi trabajo de hoy. Dame ingenio para resolver, calma en la presion y alegria en el deber cumplido. Que en todo te reconozca y te sirva. Amen."
+  },
+  {
+    "id": "est_memoria",
+    "category": "Antes de estudiar",
+    "title": "Por la memoria y el entendimiento",
+    "text": "Señor, dame memoria para retener lo que estudio, entendimiento para comprenderlo y palabra para expresarlo. Que el estudio de hoy me haga crecer y me sirva para el bien. Amen."
+  },
+  {
+    "id": "est_concentracion",
+    "category": "Antes de estudiar",
+    "title": "Concentracion para estudiar",
+    "text": "Señor, aparta las distracciones y dame concentracion. Ayudame a aprovechar bien este tiempo de estudio, a no dejarme vencer por la pereza y a terminar lo que comienzo. Amen."
+  },
+  {
+    "id": "est_espiritu_sabiduria",
+    "category": "Antes de estudiar",
+    "title": "Espiritu de sabiduria",
+    "text": "Espiritu Santo, fuente de toda sabiduria, ilumina mi mente al estudiar. Abre mi inteligencia a la verdad y ayudame a poner lo que aprendo al servicio de Dios y de los demas. Amen."
+  },
+  {
+    "id": "est_antes_clase",
+    "category": "Antes de estudiar",
+    "title": "Antes de la clase",
+    "text": "Señor, antes de esta clase dispon mi corazon para aprender. Dame atencion para escuchar, humildad para preguntar y constancia para estudiar despues lo que hoy reciba. Amen."
+  },
+  {
+    "id": "est_perseverancia",
+    "category": "Antes de estudiar",
+    "title": "Perseverancia en el estudio",
+    "text": "Señor, cuando el estudio se haga largo y pesado, dame perseverancia. Que no me rinda ante la dificultad y que recuerde por que y para quien me esfuerzo. Amen."
+  },
+  {
+    "id": "est_comprender",
+    "category": "Antes de estudiar",
+    "title": "Para comprender lo que estudio",
+    "text": "Señor, no quiero solo memorizar, sino comprender. Dame luz para entender lo que estudio, relacionarlo y aplicarlo con sabiduria en mi vida y en mi trabajo. Amen."
+  },
+  {
+    "id": "est_gratitud",
+    "category": "Antes de estudiar",
+    "title": "Gracias por poder estudiar",
+    "text": "Gracias, Señor, por la oportunidad de estudiar y aprender; no todos la tienen. Que la aproveche con responsabilidad y la use para servir y no solo para mi provecho. Amen."
+  },
+  {
+    "id": "est_proyecto",
+    "category": "Antes de estudiar",
+    "title": "Antes de un trabajo o proyecto",
+    "text": "Señor, ante este trabajo que debo realizar, dame orden, creatividad y disciplina. Ayudame a empezar a tiempo, a hacerlo con esmero y a entregarlo con honradez. Amen."
+  },
+  {
+    "id": "est_nervios",
+    "category": "Antes de estudiar",
+    "title": "Calma antes de estudiar",
+    "text": "Señor, calma mi mente inquieta para poder estudiar. Aparta la ansiedad y la prisa, dame serenidad y confianza, y ayudame a hacer mi parte con paz. Amen."
+  },
+  {
+    "id": "est_maestros",
+    "category": "Antes de estudiar",
+    "title": "Por mis maestros",
+    "text": "Señor, bendice a quienes me enseñan. Dales paciencia y sabiduria, y a mi respeto y gratitud para aprender de ellos. Que juntos busquemos la verdad. Amen."
+  },
+  {
+    "id": "est_para_el_bien",
+    "category": "Antes de estudiar",
+    "title": "Que use el saber para el bien",
+    "text": "Señor, que todo lo que aprenda lo use para el bien y nunca para el mal. Que el conocimiento me haga mas humilde, mas util y mas servicial con los demas. Amen."
+  },
+  {
+    "id": "est_san_jose_cupertino",
+    "category": "Antes de estudiar",
+    "title": "San Jose de Cupertino (estudiantes)",
+    "text": "San Jose de Cupertino, patrono de los estudiantes, intercede por mi ante Dios. Alcanzame calma, memoria y claridad, y ayudame a rendir con honradez en mis examenes. Ruega por mi. Amen."
+  },
+  {
+    "id": "est_sabiduria_salomon",
+    "category": "Antes de estudiar",
+    "title": "Pido sabiduria (como Salomon)",
+    "text": "Señor, dame un corazon docil y sabio para aprender y discernir. No busco solo saber mas, sino saber vivir mejor y agradarte a Ti. Concedeme tu sabiduria. Amen."
+  },
+  {
+    "id": "est_luz_mente",
+    "category": "Antes de estudiar",
+    "title": "Luz para mi mente",
+    "text": "Señor, Tu que eres la Verdad, ilumina mi mente. Aparta la confusion y la pereza, y dame amor por el estudio y sed de aprender lo que es verdadero, bueno y bello. Amen."
+  },
+  {
+    "id": "est_antes_leer",
+    "category": "Antes de estudiar",
+    "title": "Antes de leer y estudiar",
+    "text": "Señor, abre mi entendimiento antes de abrir este libro. Que lo que lea quede en mi mente y de fruto en mi vida. Bendice este tiempo de estudio. Amen."
+  },
+  {
+    "id": "est_humildad",
+    "category": "Antes de estudiar",
+    "title": "Humildad para aprender",
+    "text": "Señor, dame humildad para reconocer lo que no se y paciencia para aprenderlo. Que no me desanime por los errores, sino que aprenda de ellos y siga adelante. Amen."
+  },
+  {
+    "id": "est_examen_gracias",
+    "category": "Antes de estudiar",
+    "title": "Despues de estudiar",
+    "text": "Gracias, Señor, por este tiempo de estudio. Guarda en mi lo aprendido y dame descanso. Manaña, con tu ayuda, seguire esforzandome con alegria. Amen."
+  },
+  {
+    "id": "via_san_cristobal",
+    "category": "Antes de viajar",
+    "title": "San Cristobal, patrono de los viajeros",
+    "text": "Glorioso San Cristobal, que llevaste a Cristo sobre tus hombros, protege mi viaje. Guarda el camino de ida y de vuelta, aparta todo accidente y llevame con bien a mi destino. Ruega por mi. Amen."
+  },
+  {
+    "id": "via_angel_camino",
+    "category": "Antes de viajar",
+    "title": "Angel de la guarda en el camino",
+    "text": "Angel de mi guarda, acompañame en este viaje. Ve delante de mi por el camino, aparta los peligros y traeme sano y salvo de regreso a los mios. Amen."
+  },
+  {
+    "id": "via_virgen_camino",
+    "category": "Antes de viajar",
+    "title": "Virgen del Camino",
+    "text": "Madre mia, Virgen del Camino, guia mis pasos en este viaje. Cubreme con tu manto, dame prudencia al conducir y llevame con bien a donde voy y de regreso a casa. Amen."
+  },
+  {
+    "id": "via_avion",
+    "category": "Antes de viajar",
+    "title": "Antes de un vuelo",
+    "text": "Señor, pongo este vuelo en tus manos. Sostiene esta nave, guarda a la tripulacion y a los pasajeros, calma mi temor y llevanos con bien a tierra. En Ti confio. Amen."
+  },
+  {
+    "id": "via_largo",
+    "category": "Antes de viajar",
+    "title": "Antes de un viaje largo",
+    "text": "Señor, ante este viaje largo te pido proteccion y paciencia. Guarda cada tramo del camino, dame prudencia y descanso, y reune con alegria a los que se despiden. Amen."
+  },
+  {
+    "id": "via_por_los_que_esperan",
+    "category": "Antes de viajar",
+    "title": "Por los que me esperan",
+    "text": "Señor, mientras viajo, cuida tambien a quienes me esperan. Calma su inquietud, guardalos en tu paz y concede que pronto volvamos a estar juntos con bien. Amen."
+  },
+  {
+    "id": "via_bendicion_vehiculo",
+    "category": "Antes de viajar",
+    "title": "Bendicion del vehiculo",
+    "text": "Señor, bendice este vehiculo y a quienes viajamos en el. Que nos lleve con seguridad, que respetemos las normas y a los demas, y que lleguemos sanos y salvos. Amen."
+  },
+  {
+    "id": "via_llegada",
+    "category": "Antes de viajar",
+    "title": "Al llegar con bien",
+    "text": "Gracias, Señor, por haberme traido con bien a mi destino. Tu me acompañaste en el camino; sigue conmigo aqui y guarda tambien mi regreso. Amen."
+  },
+  {
+    "id": "via_regreso",
+    "category": "Antes de viajar",
+    "title": "Por el viaje de regreso",
+    "text": "Señor, ahora emprendo el regreso a casa. Guarda este camino como guardaste la ida, y devuelveme con bien a los brazos de quienes me esperan. Amen."
+  },
+  {
+    "id": "via_salmo_121",
+    "category": "Antes de viajar",
+    "title": "El Señor guarda tu camino (Salmo 121)",
+    "text": "El Señor guarda tu ida y tu vuelta ahora y por siempre. No permitira que resbale tu pie; El, que no duerme, te guarda de todo mal. Guardame en este viaje, Señor. Amen."
+  },
+  {
+    "id": "via_compañeros",
+    "category": "Antes de viajar",
+    "title": "Por mis compañeros de viaje",
+    "text": "Señor, bendice a quienes viajan conmigo. Danos paciencia y buen humor en el camino, cuida a cada uno y llevanos juntos, sanos y salvos, hasta el final del viaje. Amen."
+  },
+  {
+    "id": "via_peregrino",
+    "category": "Antes de viajar",
+    "title": "Oracion del peregrino",
+    "text": "Señor, hazme un buen peregrino en este viaje y en la vida. Que camine hacia Ti con el corazon abierto, sin miedo, y que cada paso me acerque mas a tu casa. Amen."
+  },
+  {
+    "id": "via_trafico",
+    "category": "Antes de viajar",
+    "title": "En medio del trafico",
+    "text": "Señor, dame paciencia en medio del trafico y las demoras. Que no pierda la calma ni la caridad, que conduzca con prudencia y que respete a los demas en el camino. Amen."
+  },
+  {
+    "id": "via_viaje_dificil",
+    "category": "Antes de viajar",
+    "title": "Ante un viaje dificil",
+    "text": "Señor, este viaje me preocupa. Calma mi temor, guarda cada kilometro y dame confianza en que Tu vas conmigo. Nada temere si Tu me acompañas. Amen."
+  },
+  {
+    "id": "via_proteccion_carretera",
+    "category": "Antes de viajar",
+    "title": "Proteccion en la carretera",
+    "text": "Señor, guarda a todos los que hoy van por los caminos. Aparta los accidentes, da prudencia a los conductores y proteccion a los peatones. Llevanos a todos con bien. Amen."
+  },
+  {
+    "id": "via_tempestad",
+    "category": "Antes de viajar",
+    "title": "Jesus, calma la tempestad",
+    "text": "Señor Jesus, que calmaste el viento y el mar, calma cualquier tormenta en este viaje. Danos travesia serena y llevanos con bien a la orilla. En Ti confiamos. Amen."
+  },
+  {
+    "id": "via_san_rafael2",
+    "category": "Antes de viajar",
+    "title": "San Rafael, guia del camino",
+    "text": "San Rafael Arcangel, que guiaste al joven Tobias y lo trajiste sano a casa, guia tambien mi camino. Acompañame en la ida y en la vuelta y guardame de todo mal. Amen."
+  },
+  {
+    "id": "via_vacaciones",
+    "category": "Antes de viajar",
+    "title": "Antes de un viaje de descanso",
+    "text": "Señor, gracias por este tiempo de descanso y viaje. Cuidanos en el camino, ayudanos a disfrutar sanamente y a volver renovados para nuestros deberes. Amen."
+  },
+  {
+    "id": "gra_por_la_vida",
+    "category": "Accion de gracias",
+    "title": "Gracias por la vida",
+    "text": "Gracias, Señor, por el don de la vida, por cada dia que me regalas y por el aliento que me sostiene. Ensename a no darla por sentada y a vivirla con sentido y gratitud. Amen."
+  },
+  {
+    "id": "gra_por_la_fe",
+    "category": "Accion de gracias",
+    "title": "Gracias por la fe",
+    "text": "Gracias, Señor, por el don de la fe, por conocerte y saberme amado por Ti. Aumenta mi fe, hazla firme en las pruebas y ayudame a compartirla con alegria. Amen."
+  },
+  {
+    "id": "gra_por_la_familia",
+    "category": "Accion de gracias",
+    "title": "Gracias por mi familia",
+    "text": "Gracias, Señor, por mi familia, por cada persona que me acompaña y me quiere. Bendice a los mios, sana lo que nos hiere y mantennos unidos en tu amor. Amen."
+  },
+  {
+    "id": "gra_pan_de_cada_dia",
+    "category": "Accion de gracias",
+    "title": "Gracias por el pan de cada dia",
+    "text": "Gracias, Señor, por el pan de cada dia, por el techo, el trabajo y lo necesario para vivir. Ensename a compartir con quien no tiene y a no olvidar tu providencia. Amen."
+  },
+  {
+    "id": "gra_favor_recibido",
+    "category": "Accion de gracias",
+    "title": "Gracias por un favor recibido",
+    "text": "Gracias, Señor, porque escuchaste mi oracion y me concediste tu ayuda. No quiero ser ingrato: recibe mi gratitud y ayudame a corresponder tu bondad amando mas a los demas. Amen."
+  },
+  {
+    "id": "gra_creacion",
+    "category": "Accion de gracias",
+    "title": "Gracias por la creacion",
+    "text": "Gracias, Señor, por la belleza de la creacion: el sol, el agua, las montañas y cada ser vivo. Ensename a cuidarla y a reconocerte a Ti en todo lo que existe. Amen."
+  },
+  {
+    "id": "gra_salud",
+    "category": "Accion de gracias",
+    "title": "Gracias por la salud",
+    "text": "Gracias, Señor, por la salud que me das. Ayudame a cuidar el cuerpo y el alma que me diste, y a usar mis fuerzas para servirte y para hacer el bien. Amen."
+  },
+  {
+    "id": "gra_nuevo_dia",
+    "category": "Accion de gracias",
+    "title": "Gracias por un nuevo dia",
+    "text": "Gracias, Señor, por un nuevo dia lleno de posibilidades. Que sepa aprovecharlo para amar, trabajar y crecer, y que al terminarlo pueda darte gracias de nuevo. Amen."
+  },
+  {
+    "id": "gra_te_deum",
+    "category": "Accion de gracias",
+    "title": "Alabanza y accion de gracias",
+    "text": "A Ti, Señor, la alabanza y la accion de gracias por todos tus beneficios. Grande eres y digno de toda alabanza; que toda mi vida sea un canto de gratitud a tu bondad. Amen."
+  },
+  {
+    "id": "gra_amigos",
+    "category": "Accion de gracias",
+    "title": "Gracias por mis amigos",
+    "text": "Gracias, Señor, por los amigos que pusiste en mi camino, por su cariño, su compañia y su apoyo. Bendicelos, cuidalos y ayudame a ser para ellos un amigo fiel. Amen."
+  },
+  {
+    "id": "gra_general",
+    "category": "Accion de gracias",
+    "title": "Por todos los beneficios",
+    "text": "Te doy gracias, Señor, por todos los beneficios que he recibido de tu bondad, conocidos y desconocidos. Todo lo tengo de Ti; a Ti sea la gloria por siempre. Amen."
+  },
+  {
+    "id": "gra_oracion_escuchada",
+    "category": "Accion de gracias",
+    "title": "Gracias por escucharme",
+    "text": "Gracias, Señor, porque siempre escuchas mi oracion, aunque no siempre respondas como yo quiero. Confio en que sabes lo que me conviene; hagase tu voluntad y no la mia. Amen."
+  },
+  {
+    "id": "gra_en_la_dificultad",
+    "category": "Accion de gracias",
+    "title": "Gratitud en la dificultad",
+    "text": "Señor, tambien en la dificultad quiero darte gracias, porque incluso lo dificil puede acercarme a Ti y hacerme crecer. Ayudame a confiar y a agradecer siempre. Amen."
+  },
+  {
+    "id": "gra_por_la_iglesia",
+    "category": "Accion de gracias",
+    "title": "Gracias por la Iglesia",
+    "text": "Gracias, Señor, por la Iglesia, por los sacramentos y por la comunidad de fe que me sostiene. Ayudame a amarla, a servirla y a ser en ella signo de tu amor. Amen."
+  },
+  {
+    "id": "gra_corazon_agradecido",
+    "category": "Accion de gracias",
+    "title": "Un corazon agradecido",
+    "text": "Señor, dame un corazon agradecido que sepa reconocer tus dones en lo grande y en lo pequeño. Que la gratitud me haga humilde, alegre y generoso con los demas. Amen."
+  },
+  {
+    "id": "gra_mesa",
+    "category": "Accion de gracias",
+    "title": "Gracias por los alimentos",
+    "text": "Bendito seas, Señor, por estos alimentos y por las manos que los prepararon. Da pan a quien no lo tiene y hambre de Ti a quienes lo tenemos. Gracias por proveernos. Amen."
+  },
+  {
+    "id": "esp_veni_creator",
+    "category": "Espiritu Santo",
+    "title": "Ven, Espiritu Creador",
+    "text": "Ven, Espiritu Creador, visita las almas de tus fieles y llena de gracia los corazones que Tu creaste. Enciende con tu luz nuestros sentidos e infunde tu amor en nuestro corazon. Amen."
+  },
+  {
+    "id": "esp_discernimiento",
+    "category": "Espiritu Santo",
+    "title": "Espiritu de discernimiento",
+    "text": "Espiritu Santo, dame luz para discernir tu voluntad. Ayudame a distinguir tu voz entre tantas voces y a elegir siempre el camino que agrada a Dios. Amen."
+  },
+  {
+    "id": "esp_frutos",
+    "category": "Espiritu Santo",
+    "title": "Por los frutos del Espiritu",
+    "text": "Espiritu Santo, produce en mi tus frutos: amor, alegria, paz, paciencia, bondad, fidelidad, mansedumbre y dominio de mi mismo. Transforma mi corazon a imagen de Jesus. Amen."
+  },
+  {
+    "id": "esp_decision",
+    "category": "Espiritu Santo",
+    "title": "Antes de una decision",
+    "text": "Espiritu Santo, antes de decidir vengo a Ti. Aparta mis miedos y mis intereses egoistas, ilumina mi mente y dame paz para elegir lo que es bueno y justo. Amen."
+  },
+  {
+    "id": "esp_valentia",
+    "category": "Espiritu Santo",
+    "title": "Valentia para dar testimonio",
+    "text": "Espiritu Santo, dame valentia para vivir y confesar mi fe sin miedo. Que no me avergüence del Evangelio y que mi vida hable de Ti a quienes me rodean. Amen."
+  },
+  {
+    "id": "esp_novena",
+    "category": "Espiritu Santo",
+    "title": "Oracion al Espiritu Santo",
+    "text": "Espiritu Santo, Tu que me aclaras todo, que iluminas mis caminos, que me das el don de perdonar: gracias por todo. Confirmo que nunca quiero apartarme de Ti. Guiame siempre. Amen."
+  },
+  {
+    "id": "esp_sanar",
+    "category": "Espiritu Santo",
+    "title": "Espiritu que sana",
+    "text": "Espiritu Santo, sana las heridas de mi corazon: los rencores, los miedos y las tristezas. Renuevame por dentro y devuelveme la paz y la alegria de vivir. Amen."
+  },
+  {
+    "id": "esp_renueva",
+    "category": "Espiritu Santo",
+    "title": "Renueva mi corazon",
+    "text": "Espiritu Santo, renueva mi corazon y toda mi vida. Envia tu aliento sobre mi y creame de nuevo; renueva en mi la fe, la esperanza y el amor. Amen."
+  },
+  {
+    "id": "esp_iglesia",
+    "category": "Espiritu Santo",
+    "title": "Espiritu Santo por la Iglesia",
+    "text": "Espiritu Santo, renueva a tu Iglesia. Da luz a los pastores, fervor a los fieles y unidad a todos los cristianos. Que un mismo Espiritu nos guie hacia el Padre. Amen."
+  },
+  {
+    "id": "esp_aliento",
+    "category": "Espiritu Santo",
+    "title": "Aliento de Dios",
+    "text": "Espiritu de Dios, aliento de vida, respira en mi. Que piense lo que es santo, que ame lo que es santo y que haga siempre lo que es santo, movido por Ti. Amen."
+  },
+  {
+    "id": "esp_fuego",
+    "category": "Espiritu Santo",
+    "title": "Fuego de amor",
+    "text": "Espiritu Santo, fuego de amor, enciende mi corazon frio. Quema en mi el egoismo y la tibieza, y hazme arder en amor a Dios y a mi projimo. Amen."
+  },
+  {
+    "id": "esp_guia",
+    "category": "Espiritu Santo",
+    "title": "Guiame, Espiritu Santo",
+    "text": "Espiritu Santo, guia mis pasos hoy. Ve delante de mi, camina a mi lado y no me dejes tomar caminos que me aparten de Dios. Condúceme a la verdad. Amen."
+  },
+  {
+    "id": "esp_sabiduria",
+    "category": "Espiritu Santo",
+    "title": "Espiritu de sabiduria",
+    "text": "Espiritu Santo, dame el don de sabiduria para gustar de las cosas de Dios y ponerlas por encima de todo. Que aprenda a mirar la vida con los ojos del cielo. Amen."
+  },
+  {
+    "id": "esp_paz",
+    "category": "Espiritu Santo",
+    "title": "Espiritu de paz",
+    "text": "Espiritu Santo, dame tu paz, esa que el mundo no puede dar. Serena mi corazon inquieto, ordena mis pensamientos y hazme instrumento de tu paz para los demas. Amen."
+  },
+  {
+    "id": "esp_consejo",
+    "category": "Espiritu Santo",
+    "title": "Espiritu de consejo",
+    "text": "Espiritu Santo, dame el don de consejo para elegir siempre el bien y aconsejar con acierto a quien me lo pida. Que tu luz guie mis decisiones grandes y pequeñas. Amen."
+  },
+  {
+    "id": "esp_fortaleza",
+    "category": "Espiritu Santo",
+    "title": "Espiritu de fortaleza",
+    "text": "Espiritu Santo, dame el don de fortaleza para vencer las dificultades y no rendirme ante el mal. Sosten mi debilidad y hazme firme en el bien. Amen."
+  },
+  {
+    "id": "fam_sagrada_familia",
+    "category": "Familia",
+    "title": "Oracion a la Sagrada Familia",
+    "text": "Jesus, Maria y Jose, en ustedes contemplamos el verdadero amor. Haz de mi familia un lugar de comunion y oracion; que nunca falte en ella el respeto, el perdon y la paz. Amen."
+  },
+  {
+    "id": "fam_padres",
+    "category": "Familia",
+    "title": "Por mis padres",
+    "text": "Señor, bendice a mis padres. Recompensa su amor y su esfuerzo, dales salud y paz, y ayudame a honrarlos, cuidarlos y agradecerles todo lo que hicieron por mi. Amen."
+  },
+  {
+    "id": "fam_monica",
+    "category": "Familia",
+    "title": "Por la conversion de un familiar (Santa Monica)",
+    "text": "Señor, como Santa Monica oro por su hijo Agustin, yo te confio a mi familiar alejado de Ti. Toca su corazon con tu gracia y devuelvelo a tu amor. No dejes perder a ninguno de los mios. Amen."
+  },
+  {
+    "id": "fam_embarazo",
+    "category": "Familia",
+    "title": "Por una madre que espera un hijo",
+    "text": "Señor, bendice a la madre que espera un hijo y a la vida que crece en su seno. Dale salud, paz y confianza, y trae al mundo con bien a esa criatura que ya amas. Amen."
+  },
+  {
+    "id": "fam_abuelos",
+    "category": "Familia",
+    "title": "Por los abuelos",
+    "text": "Señor, gracias por los abuelos, memoria y bendicion de la familia. Dales salud y compañia, premia su sabiduria y su cariño, y ayudanos a honrarlos y cuidarlos. Amen."
+  },
+  {
+    "id": "fam_unidad",
+    "category": "Familia",
+    "title": "Por la unidad de la familia",
+    "text": "Señor, mantén unida a mi familia. Donde haya distancia, acércanos; donde haya heridas, sananos; donde haya rencor, danos perdon. Que nada ni nadie nos separe de tu amor. Amen."
+  },
+  {
+    "id": "fam_crisis",
+    "category": "Familia",
+    "title": "Por una familia en crisis",
+    "text": "Señor, mi familia atraviesa un momento dificil. Trae paz donde hay conflicto, comprension donde hay distancia y esperanza donde hay cansancio. Sana nuestro hogar. Amen."
+  },
+  {
+    "id": "fam_gratitud",
+    "category": "Familia",
+    "title": "Gracias por mi familia",
+    "text": "Gracias, Señor, por mi familia, con sus alegrias y tambien sus dificultades. Ayudanos a amarnos con paciencia, a perdonarnos pronto y a caminar juntos hacia Ti. Amen."
+  },
+  {
+    "id": "fam_ausentes",
+    "category": "Familia",
+    "title": "Por los familiares lejos",
+    "text": "Señor, cuida a los miembros de mi familia que estan lejos. Guardalos en su camino, alivia la distancia y concede que pronto volvamos a reunirnos con alegria. Amen."
+  },
+  {
+    "id": "fam_mesa",
+    "category": "Familia",
+    "title": "Bendicion en familia",
+    "text": "Señor, reunidos como familia, te damos gracias por estos alimentos y por poder compartirlos. Bendice esta mesa, nuestro hogar y a cada uno de nosotros. Amen."
+  },
+  {
+    "id": "fam_recien_nacido",
+    "category": "Familia",
+    "title": "Por un recien nacido",
+    "text": "Señor, gracias por el don de este nuevo miembro de la familia. Bendicelo, dale salud y crecelo en tu amor. Ayuda a sus padres a educarlo en la fe y el bien. Amen."
+  },
+  {
+    "id": "fam_hogar",
+    "category": "Familia",
+    "title": "Por mi hogar",
+    "text": "Señor, haz de mi hogar una pequeña iglesia donde se rece, se perdone y se ame. Que quien entre en el sienta tu presencia y encuentre paz. Bendice esta casa. Amen."
+  },
+  {
+    "id": "fam_esposos",
+    "category": "Familia",
+    "title": "Por mi matrimonio",
+    "text": "Señor, gracias por la persona que pusiste a mi lado. Ayudanos a amarnos con paciencia y ternura, a perdonarnos pronto y a buscar juntos tu voluntad cada dia. Amen."
+  },
+  {
+    "id": "fam_reconciliacion",
+    "category": "Familia",
+    "title": "Reconciliacion en la familia",
+    "text": "Señor, sana las heridas entre los miembros de mi familia. Danos humildad para pedir perdon, generosidad para perdonar y amor para volver a empezar. Reconcilianos. Amen."
+  },
+  {
+    "id": "sal_por_una_cirugia",
+    "category": "Salud",
+    "title": "Antes de una cirugia",
+    "text": "Señor, pongo en tus manos esta cirugia. Guia las manos de los medicos, guarda mi vida y dame paz y confianza. Que todo salga bien segun tu voluntad, y sea para tu gloria. Amen."
+  },
+  {
+    "id": "sal_sanacion",
+    "category": "Salud",
+    "title": "Oracion pidiendo sanacion",
+    "text": "Señor Jesus, medico de cuerpos y almas, extiende tu mano y sana mi enfermedad si es para bien mio. Y si debo llevar esta cruz, dame fuerza para ofrecerla con fe. Amen."
+  },
+  {
+    "id": "sal_cronica",
+    "category": "Salud",
+    "title": "Ante una enfermedad prolongada",
+    "text": "Señor, esta enfermedad me acompaña desde hace tiempo y a veces me cansa. Dame paciencia y esperanza, alivia mi dolor y ayudame a unir mi sufrimiento al tuyo. Amen."
+  },
+  {
+    "id": "sal_cuidadores",
+    "category": "Salud",
+    "title": "Por quienes cuidan a los enfermos",
+    "text": "Señor, bendice a quienes cuidan a los enfermos. Dales fuerza en el cansancio, ternura en el trato y paciencia en las noches largas. Recompensa su entrega. Amen."
+  },
+  {
+    "id": "sal_medicos",
+    "category": "Salud",
+    "title": "Por los medicos y enfermeros",
+    "text": "Señor, bendice a los medicos, enfermeros y personal de salud. Dales sabiduria, manos firmes y corazon compasivo, y sostenlos en su servicio a los que sufren. Amen."
+  },
+  {
+    "id": "sal_resultado",
+    "category": "Salud",
+    "title": "Antes de un resultado medico",
+    "text": "Señor, espero un resultado que me preocupa. Calma mi ansiedad y dame confianza, porque sea cual sea la noticia, Tu estaras conmigo y no me soltaras de tu mano. Amen."
+  },
+  {
+    "id": "sal_dolor",
+    "category": "Salud",
+    "title": "En medio del dolor",
+    "text": "Señor, el dolor me abruma. Ven a sostenerme; que no me falte tu consuelo ni la esperanza. Une mi sufrimiento al de tu cruz y dale un sentido de amor. Amen."
+  },
+  {
+    "id": "sal_salus_infirmorum",
+    "category": "Salud",
+    "title": "Maria, Salud de los enfermos",
+    "text": "Maria, Salud de los enfermos, intercede por mi ante tu Hijo. Alivia mi dolencia, consuela mi corazon y alcanzame la gracia de la salud si conviene a mi alma. Amen."
+  },
+  {
+    "id": "sal_niño_enfermo",
+    "category": "Salud",
+    "title": "Por un niño enfermo",
+    "text": "Señor Jesus, que amabas a los niños, mira con ternura a este niño enfermo. Devuelvele la salud, alivia su dolor y consuela a sus padres. En tus manos lo ponemos. Amen."
+  },
+  {
+    "id": "sal_recuperacion",
+    "category": "Salud",
+    "title": "Gracias por la recuperacion",
+    "text": "Gracias, Señor, por la salud que me devuelves. Que no olvide este don ni a quienes me cuidaron, y que use mis fuerzas renovadas para servirte y hacer el bien. Amen."
+  },
+  {
+    "id": "sal_moribundos",
+    "category": "Salud",
+    "title": "Por los que estan graves",
+    "text": "Señor, ten misericordia de los que estan gravemente enfermos. Alivia su sufrimiento, dales tu paz y, si es tu voluntad, la salud; y si han de partir, recibelos en tu casa. Amen."
+  },
+  {
+    "id": "sal_hospital",
+    "category": "Salud",
+    "title": "Por los que estan en el hospital",
+    "text": "Señor, acompaña a los que hoy estan en un hospital: a los enfermos, a sus familias y a quienes los atienden. Dales consuelo, esperanza y tu presencia sanadora. Amen."
+  },
+  {
+    "id": "sal_ansiedad",
+    "category": "Salud",
+    "title": "Por la salud del alma",
+    "text": "Señor, sana mi corazon de la ansiedad, la tristeza y el miedo. Dame tu paz, ayudame a soltar lo que no puedo cambiar y a confiar en que cuidas de mi. Amen."
+  },
+  {
+    "id": "sal_san_camilo",
+    "category": "Salud",
+    "title": "Por los enfermos (San Camilo)",
+    "text": "San Camilo de Lelis, servidor de los enfermos, ruega por todos los que sufren en su cuerpo. Alcanzales alivio, buenos cuidadores y la fuerza de la fe. Amen."
+  },
+  {
+    "id": "sal_agradecimiento",
+    "category": "Salud",
+    "title": "Gracias por la salud",
+    "text": "Gracias, Señor, por la salud que hoy tengo. Ayudame a cuidarla y a no darla por segura, y a recordar en mi bienestar a los que hoy estan enfermos. Amen."
+  },
+  {
+    "id": "sal_esperanza",
+    "category": "Salud",
+    "title": "Esperanza en la enfermedad",
+    "text": "Señor, en medio de la enfermedad no dejes morir mi esperanza. Recuerdame que Tu venciste el dolor y la muerte, y que un dia enjugaras toda lagrima. En Ti confio. Amen."
+  },
+  {
+    "id": "dif_purgatorio",
+    "category": "Difuntos",
+    "title": "Por las almas del purgatorio",
+    "text": "Dales, Señor, el descanso eterno a las almas del purgatorio, y brille para ellas la luz perpetua. Que por tu misericordia lleguen pronto a gozar de tu presencia. Amen."
+  },
+  {
+    "id": "dif_padres",
+    "category": "Difuntos",
+    "title": "Por mis padres difuntos",
+    "text": "Señor, recibe en tu casa a mis padres que partieron de este mundo. Premia su amor, perdona sus faltas y concedeles el descanso eterno junto a Ti. Amen."
+  },
+  {
+    "id": "dif_hijo",
+    "category": "Difuntos",
+    "title": "Por un hijo fallecido",
+    "text": "Señor, te confio a mi hijo que ha partido. Recibelo en tus brazos, consuela mi dolor de padre y dame la esperanza cierta de volver a abrazarlo en tu Reino. Amen."
+  },
+  {
+    "id": "dif_olvidados",
+    "category": "Difuntos",
+    "title": "Por los que nadie reza",
+    "text": "Señor, ten misericordia de las almas por las que nadie reza. Recibelas en tu paz y concedeles la luz eterna, pues nadie queda fuera de tu amor. Amen."
+  },
+  {
+    "id": "dif_requiem",
+    "category": "Difuntos",
+    "title": "Descanso eterno",
+    "text": "Concede, Señor, el descanso eterno a nuestros difuntos, y brille para ellos la luz perpetua. Descansen en paz. Amen."
+  },
+  {
+    "id": "dif_cementerio",
+    "category": "Difuntos",
+    "title": "Oracion en el cementerio",
+    "text": "Señor de vivos y muertos, mira este lugar de descanso. Da a los que aqui reposan la vida eterna, consuela a quienes los recuerdan y afianza en todos la esperanza de la resurreccion. Amen."
+  },
+  {
+    "id": "dif_aniversario",
+    "category": "Difuntos",
+    "title": "En el aniversario de una muerte",
+    "text": "Señor, hoy recuerdo a mi ser querido que partio. Gracias por su vida y su amor. Dale el descanso eterno y renueva en mi la esperanza del reencuentro en tu casa. Amen."
+  },
+  {
+    "id": "dif_amigo",
+    "category": "Difuntos",
+    "title": "Por un amigo fallecido",
+    "text": "Señor, te encomiendo a mi amigo que ha muerto. Gracias por su amistad; perdona sus faltas y recibelo en tu paz. Danos la certeza de volver a encontrarnos en Ti. Amen."
+  },
+  {
+    "id": "dif_resurreccion",
+    "category": "Difuntos",
+    "title": "En la esperanza de la resurreccion",
+    "text": "Señor Jesus, Tu eres la resurreccion y la vida; quien cree en Ti no morira para siempre. Concede a nuestros difuntos resucitar contigo y vivir eternamente en tu gloria. Amen."
+  },
+  {
+    "id": "dif_buena_muerte",
+    "category": "Difuntos",
+    "title": "Por una buena muerte",
+    "text": "Señor, concede a nuestros difuntos el fruto de una buena muerte y de tu misericordia. Y a nosotros, cuando llegue la hora, la gracia de morir en tu amor. Amen."
+  },
+  {
+    "id": "dif_gracias_vida",
+    "category": "Difuntos",
+    "title": "Gracias por una vida",
+    "text": "Gracias, Señor, por la vida de quien hoy recordamos y por todo el bien que hizo. Recibelo en tu casa y haz que su ejemplo siga viviendo en nosotros. Amen."
+  },
+  {
+    "id": "dif_muerte_repentina",
+    "category": "Difuntos",
+    "title": "Por los que murieron de repente",
+    "text": "Señor, acoge en tu misericordia a quienes partieron sin tiempo de despedirse. Perdona sus faltas, recibelos en tu paz y consuela a sus familias en el dolor. Amen."
+  },
+  {
+    "id": "dif_de_profundis",
+    "category": "Difuntos",
+    "title": "Desde lo hondo clamo (Salmo 130)",
+    "text": "Desde lo hondo a Ti clamo, Señor; escucha mi voz. Si llevas cuenta de los delitos, quien resistira? Pero de Ti procede el perdon. Da a los difuntos el descanso eterno. Amen."
+  },
+  {
+    "id": "dif_esposo",
+    "category": "Difuntos",
+    "title": "Por un esposo o esposa fallecido",
+    "text": "Señor, te confio a mi esposo que partio de este mundo. Gracias por el amor que compartimos. Dale el descanso eterno y sosten mi soledad con tu esperanza. Amen."
+  },
+  {
+    "id": "dif_consuelo",
+    "category": "Difuntos",
+    "title": "Consuelo en el duelo",
+    "text": "Señor, mi corazon esta triste por la partida de un ser querido. Consuelame con tu presencia y con la certeza de que la muerte no tiene la ultima palabra, porque Tu la venciste. Amen."
+  },
+  {
+    "id": "dif_todos",
+    "category": "Difuntos",
+    "title": "Por todos los fieles difuntos",
+    "text": "Señor, ten misericordia de todos los fieles difuntos. Que descansen de sus trabajos, que sus faltas sean perdonadas y que gocen para siempre de tu luz. Amen."
+  },
+  {
+    "id": "con_miedo",
+    "category": "Confianza",
+    "title": "Cuando tengo miedo",
+    "text": "Señor, cuando el miedo me domine, recuerdame que Tu estas conmigo. Tu eres mi luz y mi salvacion, a quien temere? Toma mi mano y llename de tu paz. Amen."
+  },
+  {
+    "id": "con_incertidumbre",
+    "category": "Confianza",
+    "title": "En la incertidumbre",
+    "text": "Señor, no se lo que traera el futuro, pero se que Tu lo tienes en tus manos. Ayudame a dar el siguiente paso confiando en Ti, un dia a la vez. Amen."
+  },
+  {
+    "id": "con_soltar",
+    "category": "Confianza",
+    "title": "Aprender a soltar",
+    "text": "Señor, ayudame a soltar lo que no puedo controlar y a ponerlo en tus manos. Que no cargue yo con lo que solo Tu puedes llevar. En Ti descanso. Amen."
+  },
+  {
+    "id": "con_providencia",
+    "category": "Confianza",
+    "title": "Confio en tu providencia",
+    "text": "Señor, Tu vistes los lirios del campo y alimentas a las aves; cuanto mas cuidaras de mi. Aparta mi ansiedad por el mañana y ayudame a confiar en tu providencia. Amen."
+  },
+  {
+    "id": "con_tormenta",
+    "category": "Confianza",
+    "title": "Jesus en la tormenta",
+    "text": "Señor Jesus, cuando la tormenta arrecie y Tu parezcas dormido, no dejes que me hunda. Levantate y di a mis olas: calma. Aumenta mi fe y dame tu paz. Amen."
+  },
+  {
+    "id": "con_futuro",
+    "category": "Confianza",
+    "title": "Ante el futuro",
+    "text": "Señor, me preocupa el futuro y lo que no puedo prever. Recuerdame que Tu ya estas alli, esperandome. Camina conmigo y quita de mi corazon la angustia. Amen."
+  },
+  {
+    "id": "con_soledad",
+    "category": "Confianza",
+    "title": "Cuando me siento solo",
+    "text": "Señor, cuando me sienta solo, recuerdame que nunca me dejas. Tu estas mas cerca de mi que yo mismo. Lléname de tu presencia y de tu consuelo. Amen."
+  },
+  {
+    "id": "con_entregar",
+    "category": "Confianza",
+    "title": "Te entrego todo",
+    "text": "Padre, te entrego todo lo que soy y lo que tengo, mis planes y mis miedos. Haz de mi lo que quieras; confio en que tu voluntad es mi bien. En tus manos me pongo. Amen."
+  },
+  {
+    "id": "con_cuando_falla",
+    "category": "Confianza",
+    "title": "Cuando las cosas salen mal",
+    "text": "Señor, cuando mis planes fracasan y todo parece salir mal, ayudame a no perder la confianza. Tal vez preparas algo mejor. Sostenme y ensename a esperar en Ti. Amen."
+  },
+  {
+    "id": "con_salmo_27",
+    "category": "Confianza",
+    "title": "El Señor es mi luz (Salmo 27)",
+    "text": "El Señor es mi luz y mi salvacion, a quien temere? El Señor es la defensa de mi vida, quien me hara temblar? Espera en el Señor, se valiente, y espera en el Señor. Amen."
+  },
+  {
+    "id": "con_paz_mente",
+    "category": "Confianza",
+    "title": "Paz para la mente inquieta",
+    "text": "Señor, aquieta mi mente que da vueltas sin descanso. Aparta los pensamientos que me roban la paz y fija mi corazon en Ti, que eres mi roca firme. Amen."
+  },
+  {
+    "id": "con_total",
+    "category": "Confianza",
+    "title": "Confianza total",
+    "text": "Jesus, en Ti confio, plenamente y sin reservas. Tu sabes lo que necesito mejor que yo. Me abandono en tu amor, seguro de que cuidas cada detalle de mi vida. Amen."
+  },
+  {
+    "id": "con_cruz",
+    "category": "Confianza",
+    "title": "Ante una cruz pesada",
+    "text": "Señor, esta cruz me pesa y no la comprendo. Dame fuerza para llevarla contigo, sin desesperar, confiando en que del sufrimiento sabes sacar bien y vida. Amen."
+  },
+  {
+    "id": "con_paciencia_dios",
+    "category": "Confianza",
+    "title": "Esperar los tiempos de Dios",
+    "text": "Señor, dame paciencia para esperar tus tiempos, que no son los mios. Ayudame a confiar cuando la respuesta tarda, sabiendo que Tu nunca llegas tarde. Amen."
+  },
+  {
+    "id": "con_manos_padre",
+    "category": "Confianza",
+    "title": "En tus manos, Padre",
+    "text": "Padre, en tus manos encomiendo mi vida entera. Haz de mi lo que quieras; te lo agradezco todo, estoy dispuesto a todo, con tal que se cumpla en mi tu voluntad. Amen."
+  },
+  {
+    "id": "paz_familia",
+    "category": "Paz",
+    "title": "Paz en la familia",
+    "text": "Señor, danos la paz en la familia. Aparta las discusiones y los rencores, ensename a ceder y a perdonar, y haz de mi hogar un lugar de comprension y de amor. Amen."
+  },
+  {
+    "id": "paz_despues_conflicto",
+    "category": "Paz",
+    "title": "Despues de una discusion",
+    "text": "Señor, vengo herido tras una discusion. Calma mi enojo, quita el rencor de mi corazon y dame humildad para reconciliarme. Que reine de nuevo la paz. Amen."
+  },
+  {
+    "id": "paz_perdon",
+    "category": "Paz",
+    "title": "Gracia de perdonar",
+    "text": "Señor, dame la gracia de perdonar a quien me ofendio, como Tu me perdonas a mi. Libra mi corazon del resentimiento y devuélveme la paz. Amen."
+  },
+  {
+    "id": "paz_enemigos",
+    "category": "Paz",
+    "title": "Por los que me hacen daño",
+    "text": "Señor, Tu dijiste que amara a mis enemigos. Bendice a quienes me hacen daño, cambia sus corazones y el mio, y ayudame a responder al mal con el bien. Amen."
+  },
+  {
+    "id": "paz_ira",
+    "category": "Paz",
+    "title": "En medio de la ira",
+    "text": "Señor, siento que la ira me domina. Serena mi corazon antes de hablar o actuar, y ayudame a no pagar mal por mal. Dame tu mansedumbre y tu paz. Amen."
+  },
+  {
+    "id": "paz_pacificadores",
+    "category": "Paz",
+    "title": "Ser constructor de paz",
+    "text": "Señor, hazme constructor de paz. Que lleve la reconciliacion donde hay division, la calma donde hay pleito y una palabra buena donde hay tension. Amen."
+  },
+  {
+    "id": "paz_corazon",
+    "category": "Paz",
+    "title": "Paz para mi corazon",
+    "text": "Señor, dame tu paz, esa que el mundo no puede dar. Calma mis miedos, ordena mis pensamientos y haz que mi corazon descanse en Ti. Amen."
+  },
+  {
+    "id": "paz_hogar",
+    "category": "Paz",
+    "title": "Un hogar en paz",
+    "text": "Señor, que la paz reine en mi hogar. Que se hable con respeto, se escuche con cariño y se perdone pronto. Que quien entre aqui encuentre serenidad. Amen."
+  },
+  {
+    "id": "paz_nacion",
+    "category": "Paz",
+    "title": "Por la paz de mi pais",
+    "text": "Señor, te pido por la paz de mi pais. Convierte los corazones violentos, da justicia a los pueblos y sabiduria a los gobernantes. Que aprendamos a vivir como hermanos. Amen."
+  },
+  {
+    "id": "paz_guerra",
+    "category": "Paz",
+    "title": "Por los que sufren la guerra",
+    "text": "Señor, Principe de la paz, mira a los pueblos heridos por la guerra. Protege a los inocentes, consuela a las victimas y detén las manos que hacen daño. Danos la paz. Amen."
+  },
+  {
+    "id": "paz_rencor",
+    "category": "Paz",
+    "title": "Soltar el rencor",
+    "text": "Señor, quita de mi corazon el rencor que me hace daño. Ayudame a soltar la ofensa, a desear el bien de quien me hirio y a vivir libre y en paz. Amen."
+  },
+  {
+    "id": "paz_decisiones",
+    "category": "Paz",
+    "title": "Paz en las decisiones",
+    "text": "Señor, cuando deba decidir, dame tu paz como señal. Que elija con serenidad, sin dejarme llevar por el miedo o la prisa, buscando siempre lo que agrada a Ti. Amen."
+  },
+  {
+    "id": "paz_principe",
+    "category": "Paz",
+    "title": "Jesus, Principe de la paz",
+    "text": "Señor Jesus, Principe de la paz, reina en mi corazon y en el mundo. Donde hay odio, pon amor; donde hay guerra, pon reconciliacion; donde hay miedo, pon confianza. Amen."
+  },
+  {
+    "id": "paz_serenidad",
+    "category": "Paz",
+    "title": "Oracion de la serenidad",
+    "text": "Señor, concedeme serenidad para aceptar lo que no puedo cambiar, valor para cambiar lo que puedo y sabiduria para reconocer la diferencia. Un dia a la vez. Amen."
+  },
+  {
+    "id": "paz_interior_2",
+    "category": "Paz",
+    "title": "Descanso en Ti",
+    "text": "Señor, mi corazon esta inquieto y solo descansa en Ti. Calma mi interior, quita mi agitacion y dame el sosiego de saberme amado y cuidado por Ti. Amen."
+  },
+  {
+    "id": "paz_ambiente",
+    "category": "Paz",
+    "title": "Paz en mi ambiente",
+    "text": "Señor, ayudame a llevar la paz a mi trabajo, mi barrio y mis amistades. Que por donde pase deje calma y no tension, y que sea reflejo de tu paz. Amen."
+  },
+  {
+    "id": "paz_reconciliacion",
+    "category": "Paz",
+    "title": "Reconciliacion",
+    "text": "Señor, reconcilia lo que en mi esta dividido y reconcilia a los que estan enfrentados a mi alrededor. Danos humildad para tender la mano y hacer las paces. Amen."
+  },
+  {
+    "id": "jes_alma_cristo",
+    "category": "Jesus",
+    "title": "Alma de Cristo",
+    "text": "Alma de Cristo, santificame. Cuerpo de Cristo, salvame. Sangre de Cristo, embriagame. Pasion de Cristo, confortame. Oh buen Jesus, oyeme; dentro de tus llagas, escondeme, y no permitas que me aparte de Ti. Amen."
+  },
+  {
+    "id": "jes_nombre",
+    "category": "Jesus",
+    "title": "El dulce Nombre de Jesus",
+    "text": "Jesus, dulce Nombre, salud del alma, esperanza del pecador. Al invocar tu Nombre huye el enemigo y se llena de paz el corazon. Sea siempre bendito el Nombre de Jesus. Amen."
+  },
+  {
+    "id": "jes_llagas",
+    "category": "Jesus",
+    "title": "Por las llagas de Cristo",
+    "text": "Señor Jesus, por tus santas llagas, sana las mias. Escondeme en tu costado abierto, defiendeme del enemigo y guarda mi corazon en tu amor hasta el final. Amen."
+  },
+  {
+    "id": "jes_amigo",
+    "category": "Jesus",
+    "title": "Jesus, mi amigo",
+    "text": "Jesus, quiero tratarte como amigo, hablarte con confianza y escucharte en el silencio. Se el amigo fiel que nunca falla, y ensename a serlo yo con los demas. Amen."
+  },
+  {
+    "id": "jes_misericordia",
+    "category": "Jesus",
+    "title": "Jesus mio, misericordia",
+    "text": "Jesus mio, misericordia. Ten piedad de mi, pecador. Que tu misericordia sea mas grande que mi miseria, y que nunca desconfie de tu perdon. En Ti confio. Amen."
+  },
+  {
+    "id": "jes_rey",
+    "category": "Jesus",
+    "title": "Cristo, Rey de mi corazon",
+    "text": "Señor Jesus, reina en mi corazon y en toda mi vida. Sea Tu el centro de mis pensamientos, mis palabras y mis obras. Venga a nosotros tu Reino de amor y de paz. Amen."
+  },
+  {
+    "id": "jes_luz",
+    "category": "Jesus",
+    "title": "Jesus, luz del mundo",
+    "text": "Señor Jesus, luz del mundo, ilumina mi oscuridad. Aparta de mi las tinieblas del pecado y del miedo, y haz que camine siempre en tu luz. Amen."
+  },
+  {
+    "id": "jes_seguir",
+    "category": "Jesus",
+    "title": "Seguirte a Ti",
+    "text": "Señor Jesus, quiero seguirte de cerca. Ensename a tomar mi cruz cada dia, a negarme a mi mismo y a caminar tras de Ti con generosidad y alegria. Amen."
+  },
+  {
+    "id": "jes_salvador",
+    "category": "Jesus",
+    "title": "Jesus, mi Salvador",
+    "text": "Señor Jesus, mi Salvador, gracias porque diste tu vida por mi. Sin Ti estaria perdido; en Ti tengo la salvacion. Que viva agradecido y no me aparte jamas de Ti. Amen."
+  },
+  {
+    "id": "jes_sufrimiento",
+    "category": "Jesus",
+    "title": "Jesus en mi sufrimiento",
+    "text": "Señor Jesus, que sufriste por amor, acompañame en mi sufrimiento. Une mi dolor al tuyo, dale sentido y sostenme con tu consuelo. No me dejes solo en la cruz. Amen."
+  },
+  {
+    "id": "jes_divina_misericordia",
+    "category": "Jesus",
+    "title": "Jesus, en Ti confio",
+    "text": "Jesus misericordioso, confio en Ti. Oh Sangre y Agua que brotaste de tu Corazon como fuente de misericordia, en Ti confio. Sana mis heridas y perdona mis pecados. Amen."
+  },
+  {
+    "id": "jes_corazon_semejante",
+    "category": "Jesus",
+    "title": "Corazon de Jesus",
+    "text": "Corazon de Jesus, manso y humilde, haz mi corazon semejante al tuyo. Ensename tu mansedumbre, tu humildad y tu amor, y dame descanso para mi alma. Amen."
+  },
+  {
+    "id": "jes_eucaristia",
+    "category": "Jesus",
+    "title": "Jesus Sacramentado",
+    "text": "Jesus Sacramentado, presente en el Sagrario, te adoro y te amo. Gracias por quedarte con nosotros. Ven a mi corazon y no permitas que jamas me aparte de Ti. Amen."
+  },
+  {
+    "id": "jes_gracias_cruz",
+    "category": "Jesus",
+    "title": "Gracias por tu cruz",
+    "text": "Señor Jesus, gracias por amarme hasta la cruz. Que nunca olvide lo que te costo mi salvacion y que corresponda a tu amor amando a Dios y a los demas. Amen."
+  },
+  {
+    "id": "jes_ninos",
+    "category": "Jesus",
+    "title": "Jesus, amigo de los niños",
+    "text": "Señor Jesus, que amabas a los niños y los bendecias, bendice a los niños del mundo. Protegelos, dales un hogar seguro y haz de mi un corazon sencillo como el de ellos. Amen."
+  },
+  {
+    "id": "euc_adoro_te",
+    "category": "Eucaristia",
+    "title": "Adoro te devote",
+    "text": "Te adoro con devocion, oh Dios escondido, verdaderamente presente bajo estas figuras. A Ti se rinde por entero mi corazon, porque contemplandote todo desfallece. Aumenta mi fe, mi esperanza y mi amor. Amen."
+  },
+  {
+    "id": "euc_acto_fe",
+    "category": "Eucaristia",
+    "title": "Acto de fe en la Eucaristia",
+    "text": "Señor mio Jesucristo, creo firmemente que estas realmente presente en el Santisimo Sacramento, con tu Cuerpo, tu Sangre, tu Alma y tu Divinidad. Te adoro y te amo con todo mi corazon. Amen."
+  },
+  {
+    "id": "euc_gracias_misa",
+    "category": "Eucaristia",
+    "title": "Gracias despues de la Misa",
+    "text": "Gracias, Señor, por el don de la Eucaristia. Que lo que celebre y recibi en la Misa se haga vida en mi: que salga a amar, a servir y a llevar tu paz a los demas. Amen."
+  },
+  {
+    "id": "euc_visita",
+    "category": "Eucaristia",
+    "title": "Visita al Santisimo",
+    "text": "Aqui estoy, Señor, ante tu presencia en el Sagrario. Solo quiero estar contigo y dejarte mirar mi corazon. Gracias por esperarme siempre; sea por siempre bendito y alabado. Amen."
+  },
+  {
+    "id": "euc_sacrum_convivium",
+    "category": "Eucaristia",
+    "title": "Oh sagrado convite",
+    "text": "Oh sagrado convite en que Cristo es nuestro alimento, se celebra el memorial de su Pasion, el alma se llena de gracia y se nos da la prenda de la gloria futura. Amen."
+  },
+  {
+    "id": "euc_ofrecimiento",
+    "category": "Eucaristia",
+    "title": "Ofrecimiento en la Misa",
+    "text": "Señor, en esta Misa te ofrezco mi vida junto al sacrificio de Jesus: mis alegrias, mis penas y mi trabajo. Recibelos y transformalos, como el pan y el vino, en ofrenda para Ti. Amen."
+  },
+  {
+    "id": "euc_hambre",
+    "category": "Eucaristia",
+    "title": "Hambre de la Eucaristia",
+    "text": "Señor, despierta en mi hambre y amor por la Eucaristia. Que no me acostumbre a este don tan grande, sino que me acerque a Ti con fe, deseo y agradecimiento. Amen."
+  },
+  {
+    "id": "euc_adoracion",
+    "category": "Eucaristia",
+    "title": "Antes de la Adoracion",
+    "text": "Señor, me pongo ante Ti en la Adoracion. Quiero adorarte, agradecerte, pedirte perdon y confiarte mi vida. Habla a mi corazon en este silencio. Amen."
+  },
+  {
+    "id": "euc_pan_del_cielo",
+    "category": "Eucaristia",
+    "title": "Pan del cielo",
+    "text": "Nos diste, Señor, el Pan del cielo, que contiene en si todo deleite. Gracias por alimentarnos con tu Cuerpo; que este Pan nos de fuerza para el camino hacia Ti. Amen."
+  },
+  {
+    "id": "euc_amor_misa",
+    "category": "Eucaristia",
+    "title": "Amor a la Santa Misa",
+    "text": "Señor, dame amor a la Santa Misa, donde se renueva tu entrega en la cruz. Que participe con fe y atencion, y que cada Misa me una mas a Ti y a mis hermanos. Amen."
+  },
+  {
+    "id": "euc_tabernaculo",
+    "category": "Eucaristia",
+    "title": "Jesus en el Sagrario",
+    "text": "Jesus, prisionero de amor en el Sagrario, gracias por quedarte por mi. Cuando pase ante un templo, que mi corazon te salude y te adore. En Ti confio. Amen."
+  },
+  {
+    "id": "euc_comunion_espiritual",
+    "category": "Eucaristia",
+    "title": "Comunion espiritual",
+    "text": "Creo, Jesus mio, que estas presente en el Santisimo Sacramento. Te amo y deseo recibirte. Ya que ahora no puedo hacerlo sacramentalmente, ven al menos espiritualmente a mi corazon. Amen."
+  },
+  {
+    "id": "euc_buena_comunion",
+    "category": "Eucaristia",
+    "title": "Por una buena comunion",
+    "text": "Señor, prepara mi corazon para recibirte dignamente. Limpialo de todo pecado, enciende en el la fe y el amor, y que al comulgar quede unido a Ti para siempre. Amen."
+  },
+  {
+    "id": "euc_corpus",
+    "category": "Eucaristia",
+    "title": "En honor del Cuerpo de Cristo",
+    "text": "Adoremos postrados tan grande Sacramento. A Jesus, Pan de vida, honor y gloria; a su Cuerpo y su Sangre, alabanza sin fin. Bendito sea el Santisimo Sacramento del altar. Amen."
+  },
+  {
+    "id": "euc_gracias_don",
+    "category": "Eucaristia",
+    "title": "Gracias por la Eucaristia",
+    "text": "Gracias, Señor, porque te haces alimento para mi. Que nunca deje de asombrarme ante este misterio de amor y que viva agradecido por tenerte tan cerca. Amen."
+  },
+  {
+    "id": "euc_adoracion_silencio",
+    "category": "Eucaristia",
+    "title": "Contigo en silencio",
+    "text": "Señor, en el silencio ante el Sagrario, no tengo grandes palabras; solo quiero estar contigo. Ensename a adorarte, a callar y a llevar tu paz a los demas. Amen."
+  },
+  {
+    "id": "san_francisco",
+    "category": "Santos",
+    "title": "San Francisco de Asis",
+    "text": "San Francisco de Asis, pobre y humilde, ensename a amar la creacion y a los pobres como tu. Hazme instrumento de la paz de Dios y ayudame a seguir a Cristo con corazon sencillo. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_rita",
+    "category": "Santos",
+    "title": "Santa Rita de Casia (imposibles)",
+    "text": "Santa Rita, abogada de los casos imposibles, intercede por mi en esta necesidad que parece sin salida. Alcanzame de Dios el auxilio que pido, si es para bien de mi alma. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_martin",
+    "category": "Santos",
+    "title": "San Martin de Porres",
+    "text": "San Martin de Porres, humilde servidor de los pobres y los enfermos, ruega por mi. Ensename la caridad sencilla y alcanzame salud de cuerpo y alma. Amen."
+  },
+  {
+    "id": "san_rosa",
+    "category": "Santos",
+    "title": "Santa Rosa de Lima",
+    "text": "Santa Rosa de Lima, flor de America, ensename a amar a Jesus con todo el corazon y a servir a los necesitados. Alcanzame perseverancia en la oracion y en el bien. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_juan_bosco",
+    "category": "Santos",
+    "title": "San Juan Bosco",
+    "text": "San Juan Bosco, padre y maestro de los jovenes, ruega por los ninos y jovenes. Ensename a educar con bondad y alegria, y a acercar las almas a Dios. Amen."
+  },
+  {
+    "id": "san_ignacio",
+    "category": "Santos",
+    "title": "San Ignacio de Loyola",
+    "text": "San Ignacio de Loyola, ensename a buscar en todo la mayor gloria de Dios. Alcanzame generosidad para dar sin medida y para hacer siempre la voluntad del Señor. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_clara",
+    "category": "Santos",
+    "title": "Santa Clara de Asis",
+    "text": "Santa Clara, luz de pobreza y de oracion, ensename a poner mi confianza solo en Dios. Alcanzame un corazon libre, sencillo y enamorado de Cristo. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_agustin",
+    "category": "Santos",
+    "title": "San Agustin",
+    "text": "San Agustin, que buscaste a Dios y lo hallaste, ruega por los que andan lejos de El. Ensename que nuestro corazon esta inquieto hasta que descansa en Dios. Amen."
+  },
+  {
+    "id": "san_pio",
+    "category": "Santos",
+    "title": "San Pio de Pietrelcina",
+    "text": "San Pio de Pietrelcina, hombre de oracion y de cruz, ruega por mi. Ensename a rezar, esperar y no preocuparme, confiando todo en las manos de Dios. Amen."
+  },
+  {
+    "id": "san_pedro_pablo",
+    "category": "Santos",
+    "title": "Santos Pedro y Pablo",
+    "text": "Santos Apostoles Pedro y Pablo, columnas de la Iglesia, rueguen por ella y por el Papa. Alcancennos fe firme y valor para anunciar el Evangelio. Amen."
+  },
+  {
+    "id": "san_expedito",
+    "category": "Santos",
+    "title": "San Expedito (causas urgentes)",
+    "text": "San Expedito, patrono de las causas justas y urgentes, acude pronto en mi ayuda. Alcanzame de Dios la gracia que necesito sin demora, si es para bien de mi alma. Ruega por mi. Amen."
+  },
+  {
+    "id": "san_charbel",
+    "category": "Santos",
+    "title": "San Charbel",
+    "text": "San Charbel, monje de silencio y milagros, intercede por mi ante Dios. Alcanzame salud, fe y paz interior, y ayudame a buscar a Dios en el silencio y la oracion. Amen."
+  },
+  {
+    "id": "san_cayetano",
+    "category": "Santos",
+    "title": "San Cayetano (pan y trabajo)",
+    "text": "San Cayetano, patrono del pan y del trabajo, ruega por quienes buscan sustento. Alcanzame trabajo digno, provee lo necesario a mi familia y ensename a confiar en la Providencia. Amen."
+  },
+  {
+    "id": "san_lucia",
+    "category": "Santos",
+    "title": "Santa Lucia (la vista y la luz)",
+    "text": "Santa Lucia, que llevas la luz en tu nombre, ruega por los que sufren de la vista y por quienes andan en tinieblas. Alcanzanos la luz de Cristo para el cuerpo y el alma. Amen."
+  },
+  {
+    "id": "san_gabriel",
+    "category": "Santos",
+    "title": "San Gabriel Arcangel",
+    "text": "San Gabriel Arcangel, mensajero de la Buena Noticia, ayudame a escuchar y acoger la Palabra de Dios como Maria. Lleva mis oraciones ante el trono del Señor. Amen."
+  },
+  {
+    "id": "igl_unidad",
+    "category": "Iglesia",
+    "title": "Por la unidad de los cristianos",
+    "text": "Señor Jesus, que oraste para que todos seamos uno, concede la unidad a los cristianos. Derriba los muros que nos separan y reúnenos en una sola fe y un solo amor. Amen."
+  },
+  {
+    "id": "igl_perseguidos",
+    "category": "Iglesia",
+    "title": "Por los cristianos perseguidos",
+    "text": "Señor, sostiene a los cristianos perseguidos por tu Nombre. Dales valor y fidelidad, consuela a los que sufren y toca el corazon de sus perseguidores. Amen."
+  },
+  {
+    "id": "igl_conversion",
+    "category": "Iglesia",
+    "title": "Por la conversion de los pecadores",
+    "text": "Señor, ten misericordia de los pecadores, entre los cuales me cuento. Toca los corazones alejados de Ti, atraelos con tu amor y llevalos de nuevo a tu casa. Amen."
+  },
+  {
+    "id": "igl_obispos",
+    "category": "Iglesia",
+    "title": "Por los obispos",
+    "text": "Señor, guarda a nuestros obispos, sucesores de los Apostoles. Dales sabiduria, santidad y celo por las almas, y que apacienten a tu pueblo segun tu Corazon. Amen."
+  },
+  {
+    "id": "igl_religiosos",
+    "category": "Iglesia",
+    "title": "Por los religiosos y religiosas",
+    "text": "Señor, bendice a los religiosos y religiosas que se entregaron a Ti. Sostenlos en su vocacion, dales alegria en la entrega y fecundidad en su servicio. Amen."
+  },
+  {
+    "id": "igl_catequistas",
+    "category": "Iglesia",
+    "title": "Por los catequistas",
+    "text": "Señor, bendice a los catequistas que transmiten la fe. Dales sabiduria y paciencia, y haz que su testimonio ayude a muchos a conocerte y amarte. Amen."
+  },
+  {
+    "id": "igl_parroquia",
+    "category": "Iglesia",
+    "title": "Por mi parroquia",
+    "text": "Señor, bendice a mi parroquia y a cuantos formamos parte de ella. Haz de ella una familia unida en la fe, la oracion y la caridad, abierta a todos. Amen."
+  },
+  {
+    "id": "igl_evangelizacion",
+    "category": "Iglesia",
+    "title": "Por la evangelizacion",
+    "text": "Señor, envia obreros a tu mies. Haz que tu Evangelio llegue a todos los pueblos y hazme a mi tambien testigo tuyo con mi palabra y mi ejemplo. Amen."
+  },
+  {
+    "id": "igl_pobres",
+    "category": "Iglesia",
+    "title": "Por los pobres de la Iglesia",
+    "text": "Señor, mira a los pobres, que son tus predilectos. Mueve a tu Iglesia a servirlos con amor y hazme a mi generoso y cercano con quien mas necesita. Amen."
+  },
+  {
+    "id": "igl_jovenes",
+    "category": "Iglesia",
+    "title": "Por los jovenes de la Iglesia",
+    "text": "Señor, acompaña a los jovenes. Dales fe, esperanza y valentia para seguirte, y suscita entre ellos santos y generosos que trabajen por tu Reino. Amen."
+  },
+  {
+    "id": "igl_difuntos_clero",
+    "category": "Iglesia",
+    "title": "Por los pastores difuntos",
+    "text": "Señor, da el descanso eterno a los sacerdotes, obispos y religiosos que ya partieron. Premia su servicio y recibelos en la gloria de tu Reino. Amen."
+  },
+  {
+    "id": "igl_papa2",
+    "category": "Iglesia",
+    "title": "Por el Santo Padre",
+    "text": "Señor, guarda al Papa, dale salud y fortaleza, ilumina su ministerio y hazlo firme en la fe. Que guie a tu Iglesia con sabiduria y amor. Amen."
+  },
+  {
+    "id": "igl_perseverancia",
+    "category": "Iglesia",
+    "title": "Por la fidelidad de los fieles",
+    "text": "Señor, sostiene a tu pueblo en la fe. Da fervor a los tibios, consuelo a los que dudan y perseverancia a todos, para que ninguno se aparte de Ti. Amen."
+  },
+  {
+    "id": "igl_espiritu",
+    "category": "Iglesia",
+    "title": "Ven, Espiritu, renueva tu Iglesia",
+    "text": "Ven, Espiritu Santo, y renueva la faz de la Iglesia. Enciende en ella el fuego de tu amor, dale unidad, santidad y celo misionero. Amen."
+  },
+  {
+    "id": "igl_maria_madre",
+    "category": "Iglesia",
+    "title": "Maria, Madre de la Iglesia",
+    "text": "Maria, Madre de la Iglesia, cuida de todos los hijos de tu Hijo. Protege al Papa, a los pastores y a los fieles, y mantennos unidos en la fe y la caridad. Amen."
+  },
+  {
+    "id": "igl_gracias",
+    "category": "Iglesia",
+    "title": "Gracias por la Iglesia",
+    "text": "Gracias, Señor, por la Iglesia, madre y maestra en la fe, y por los sacramentos que en ella recibo. Ayudame a amarla, a servirla y a hacerla crecer con mi vida. Amen."
   }
 ]
