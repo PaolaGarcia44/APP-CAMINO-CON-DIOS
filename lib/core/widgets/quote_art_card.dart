@@ -8,13 +8,27 @@ import 'package:share_plus/share_plus.dart';
 
 import '../theme/app_colors.dart';
 
-/// Tarjeta artistica para la frase del dia: obra de arte de fondo, frase
-/// encima y opcion de compartirla como imagen (novedad de la version 0.3).
+/// Tarjeta artistica para el mensaje del dia: obra de arte de fondo, texto
+/// encima y opcion de compartirlo como imagen o texto.
 class QuoteArtCard extends StatefulWidget {
   final String quoteText;
   final String appName;
 
-  const QuoteArtCard({super.key, required this.quoteText, required this.appName});
+  /// Cita biblica del mensaje (p. ej. "Juan 14:27"), si la tiene.
+  final String? reference;
+  final bool isFavorite;
+  final VoidCallback? onToggleFavorite;
+
+  const QuoteArtCard({
+    super.key,
+    required this.quoteText,
+    required this.appName,
+    this.reference,
+    this.isFavorite = false,
+    this.onToggleFavorite,
+  });
+
+  String get _shareText => reference == null ? quoteText : '$quoteText\n— $reference';
 
   @override
   State<QuoteArtCard> createState() => _QuoteArtCardState();
@@ -28,8 +42,7 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
     if (_sharing) return;
     setState(() => _sharing = true);
     try {
-      final boundary =
-          _captureKey.currentContext!.findRenderObject()! as RenderRepaintBoundary;
+      final boundary = _captureKey.currentContext!.findRenderObject()! as RenderRepaintBoundary;
       final image = await boundary.toImage(pixelRatio: 3);
       final byteData = await image.toByteData(format: ui.ImageByteFormat.png);
       final dir = await getTemporaryDirectory();
@@ -37,7 +50,7 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
       await file.writeAsBytes(byteData!.buffer.asUint8List());
       await Share.shareXFiles(
         [XFile(file.path, mimeType: 'image/png')],
-        text: widget.quoteText,
+        text: widget._shareText,
       );
     } catch (_) {
       if (mounted) {
@@ -84,8 +97,7 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(Icons.format_quote_rounded,
-                          color: AppColors.goldSoft, size: 34),
+                      const Icon(Icons.format_quote_rounded, color: AppColors.goldSoft, size: 34),
                       const SizedBox(height: 10),
                       Text(
                         widget.quoteText,
@@ -95,6 +107,13 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
                           fontStyle: FontStyle.italic,
                         ),
                       ),
+                      if (widget.reference != null) ...[
+                        const SizedBox(height: 8),
+                        Text(
+                          widget.reference!,
+                          style: theme.textTheme.labelLarge?.copyWith(color: AppColors.goldSoft),
+                        ),
+                      ],
                       const SizedBox(height: 18),
                       Row(
                         children: [
@@ -121,15 +140,22 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
           ),
         ),
         const SizedBox(height: 8),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+        Wrap(
+          alignment: WrapAlignment.end,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          spacing: 4,
           children: [
+            if (widget.onToggleFavorite != null)
+              IconButton(
+                tooltip: widget.isFavorite ? 'Quitar de favoritos' : 'Guardar en favoritos',
+                onPressed: widget.onToggleFavorite,
+                icon: Icon(widget.isFavorite ? Icons.favorite : Icons.favorite_border),
+              ),
             TextButton.icon(
-              onPressed: () => Share.share(widget.quoteText),
+              onPressed: () => Share.share(widget._shareText),
               icon: const Icon(Icons.notes_rounded, size: 18),
-              label: const Text('Compartir texto'),
+              label: const Text('Texto'),
             ),
-            const SizedBox(width: 4),
             FilledButton.icon(
               onPressed: _sharing ? null : _shareAsImage,
               icon: _sharing
@@ -139,7 +165,7 @@ class _QuoteArtCardState extends State<QuoteArtCard> {
                       child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                     )
                   : const Icon(Icons.image_outlined, size: 18),
-              label: const Text('Compartir imagen'),
+              label: const Text('Imagen'),
             ),
           ],
         ),

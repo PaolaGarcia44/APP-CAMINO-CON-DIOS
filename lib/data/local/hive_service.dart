@@ -12,14 +12,7 @@ class HiveService {
   static Future<void> init() async {
     if (_initialized) return;
     await Hive.initFlutter();
-    await Future.wait([
-      Hive.openBox(HiveBoxes.settings),
-      Hive.openBox(HiveBoxes.bibleProgress),
-      Hive.openBox(HiveBoxes.bibleBookmarks),
-      Hive.openBox(HiveBoxes.favorites),
-      Hive.openBox(HiveBoxes.journal),
-      Hive.openBox(HiveBoxes.dailyContentCache),
-    ]);
+    await Future.wait(HiveBoxes.all.map(Hive.openBox));
     _initialized = true;
   }
 

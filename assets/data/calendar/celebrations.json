@@ -1,0 +1,854 @@
+{
+ "version": 1,
+ "description": "Calendario Romano General con celebraciones propias de America Latina y Colombia. Las celebraciones moviles (Pascua, Ceniza, Pentecostes, etc.) se calculan en la app.",
+ "celebrations": [
+  {
+   "month": 1,
+   "day": 1,
+   "name": "Santa María, Madre de Dios",
+   "rank": "solemnidad",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 2,
+   "name": "Santos Basilio Magno y Gregorio Nacianceno",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 3,
+   "name": "Santísimo Nombre de Jesús",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 17,
+   "name": "San Antonio, abad",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 21,
+   "name": "Santa Inés, virgen y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 1,
+   "day": 24,
+   "name": "San Francisco de Sales",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 25,
+   "name": "Conversión de San Pablo, apóstol",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 26,
+   "name": "Santos Timoteo y Tito, obispos",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 28,
+   "name": "Santo Tomás de Aquino",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 1,
+   "day": 31,
+   "name": "San Juan Bosco",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 2,
+   "day": 2,
+   "name": "Presentación del Señor",
+   "rank": "fiesta",
+   "color": "blanco",
+   "overridesSunday": true
+  },
+  {
+   "month": 2,
+   "day": 3,
+   "name": "San Blas, obispo y mártir",
+   "rank": "memoria_libre",
+   "color": "rojo"
+  },
+  {
+   "month": 2,
+   "day": 5,
+   "name": "Santa Águeda, virgen y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 2,
+   "day": 6,
+   "name": "Santos Pablo Miki y compañeros, mártires",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 2,
+   "day": 10,
+   "name": "Santa Escolástica, virgen",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 2,
+   "day": 11,
+   "name": "Nuestra Señora de Lourdes",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 2,
+   "day": 14,
+   "name": "Santos Cirilo y Metodio",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 2,
+   "day": 22,
+   "name": "Cátedra de San Pedro, apóstol",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 2,
+   "day": 23,
+   "name": "San Policarpo, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 3,
+   "day": 7,
+   "name": "Santas Perpetua y Felicidad, mártires",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 3,
+   "day": 19,
+   "name": "San José, esposo de la Virgen María",
+   "rank": "solemnidad",
+   "color": "blanco",
+   "transfer": "san_jose"
+  },
+  {
+   "month": 3,
+   "day": 23,
+   "name": "Santo Toribio de Mogrovejo, obispo",
+   "rank": "memoria_libre",
+   "color": "blanco",
+   "region": "America Latina"
+  },
+  {
+   "month": 3,
+   "day": 25,
+   "name": "Anunciación del Señor",
+   "rank": "solemnidad",
+   "color": "blanco",
+   "transfer": "anunciacion"
+  },
+  {
+   "month": 4,
+   "day": 7,
+   "name": "San Juan Bautista de La Salle",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 4,
+   "day": 11,
+   "name": "San Estanislao, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 4,
+   "day": 25,
+   "name": "San Marcos, evangelista",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 4,
+   "day": 29,
+   "name": "Santa Catalina de Siena, virgen y doctora",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 1,
+   "name": "San José Obrero",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 2,
+   "name": "San Atanasio, obispo y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 3,
+   "name": "Santos Felipe y Santiago, apóstoles",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 5,
+   "day": 13,
+   "name": "Nuestra Señora de Fátima",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 14,
+   "name": "San Matías, apóstol",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 5,
+   "day": 22,
+   "name": "Santa Rita de Casia",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 26,
+   "name": "San Felipe Neri",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 5,
+   "day": 31,
+   "name": "Visitación de la Virgen María",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 6,
+   "day": 1,
+   "name": "San Justino, mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 6,
+   "day": 3,
+   "name": "Santos Carlos Lwanga y compañeros, mártires",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 6,
+   "day": 5,
+   "name": "San Bonifacio, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 6,
+   "day": 11,
+   "name": "San Bernabé, apóstol",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 6,
+   "day": 13,
+   "name": "San Antonio de Padua",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 6,
+   "day": 21,
+   "name": "San Luis Gonzaga",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 6,
+   "day": 24,
+   "name": "Natividad de San Juan Bautista",
+   "rank": "solemnidad",
+   "color": "blanco",
+   "transfer": "san_juan_bautista"
+  },
+  {
+   "month": 6,
+   "day": 28,
+   "name": "San Ireneo, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 6,
+   "day": 29,
+   "name": "Santos Pedro y Pablo, apóstoles",
+   "rank": "solemnidad",
+   "color": "rojo"
+  },
+  {
+   "month": 7,
+   "day": 3,
+   "name": "Santo Tomás, apóstol",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 7,
+   "day": 9,
+   "name": "Nuestra Señora de Chiquinquirá, Patrona de Colombia",
+   "rank": "solemnidad",
+   "color": "blanco",
+   "region": "Colombia"
+  },
+  {
+   "month": 7,
+   "day": 11,
+   "name": "San Benito, abad",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 15,
+   "name": "San Buenaventura, obispo y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 16,
+   "name": "Nuestra Señora del Carmen",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 22,
+   "name": "Santa María Magdalena",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 25,
+   "name": "Santiago, apóstol",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 7,
+   "day": 26,
+   "name": "Santos Joaquín y Ana, padres de la Virgen María",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 29,
+   "name": "Santos Marta, María y Lázaro",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 7,
+   "day": 31,
+   "name": "San Ignacio de Loyola",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 1,
+   "name": "San Alfonso María de Ligorio",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 4,
+   "name": "San Juan María Vianney, presbítero",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 6,
+   "name": "Transfiguración del Señor",
+   "rank": "fiesta",
+   "color": "blanco",
+   "overridesSunday": true
+  },
+  {
+   "month": 8,
+   "day": 8,
+   "name": "Santo Domingo de Guzmán",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 10,
+   "name": "San Lorenzo, diácono y mártir",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 8,
+   "day": 11,
+   "name": "Santa Clara, virgen",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 14,
+   "name": "San Maximiliano María Kolbe, mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 8,
+   "day": 15,
+   "name": "Asunción de la Virgen María",
+   "rank": "solemnidad",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 20,
+   "name": "San Bernardo, abad y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 21,
+   "name": "San Pío X, papa",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 22,
+   "name": "Santa María Virgen, Reina",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 23,
+   "name": "Santa Rosa de Lima, Patrona de América",
+   "rank": "fiesta",
+   "color": "blanco",
+   "region": "America Latina"
+  },
+  {
+   "month": 8,
+   "day": 24,
+   "name": "San Bartolomé, apóstol",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 8,
+   "day": 27,
+   "name": "Santa Mónica",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 28,
+   "name": "San Agustín, obispo y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 8,
+   "day": 29,
+   "name": "Martirio de San Juan Bautista",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 9,
+   "day": 3,
+   "name": "San Gregorio Magno, papa y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 8,
+   "name": "Natividad de la Virgen María",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 9,
+   "name": "San Pedro Claver, presbítero",
+   "rank": "memoria",
+   "color": "blanco",
+   "region": "Colombia"
+  },
+  {
+   "month": 9,
+   "day": 13,
+   "name": "San Juan Crisóstomo, obispo y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 14,
+   "name": "Exaltación de la Santa Cruz",
+   "rank": "fiesta",
+   "color": "rojo",
+   "overridesSunday": true
+  },
+  {
+   "month": 9,
+   "day": 15,
+   "name": "Nuestra Señora de los Dolores",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 16,
+   "name": "Santos Cornelio y Cipriano, mártires",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 9,
+   "day": 20,
+   "name": "Santos Andrés Kim Taegon, Pablo Chong Hasang y compañeros",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 9,
+   "day": 21,
+   "name": "San Mateo, apóstol y evangelista",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 9,
+   "day": 23,
+   "name": "San Pío de Pietrelcina",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 27,
+   "name": "San Vicente de Paúl",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 29,
+   "name": "Santos Arcángeles Miguel, Gabriel y Rafael",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 9,
+   "day": 30,
+   "name": "San Jerónimo, presbítero y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 1,
+   "name": "Santa Teresa del Niño Jesús",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 2,
+   "name": "Santos Ángeles Custodios",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 4,
+   "name": "San Francisco de Asís",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 5,
+   "name": "Santa Faustina Kowalska",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 7,
+   "name": "Nuestra Señora del Rosario",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 11,
+   "name": "San Juan XXIII, papa",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 15,
+   "name": "Santa Teresa de Jesús, virgen y doctora",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 17,
+   "name": "San Ignacio de Antioquía, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 10,
+   "day": 18,
+   "name": "San Lucas, evangelista",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 10,
+   "day": 22,
+   "name": "San Juan Pablo II, papa",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 10,
+   "day": 28,
+   "name": "Santos Simón y Judas, apóstoles",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 11,
+   "day": 1,
+   "name": "Todos los Santos",
+   "rank": "solemnidad",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 2,
+   "name": "Conmemoración de todos los fieles difuntos",
+   "rank": "conmemoracion",
+   "color": "morado",
+   "overridesSunday": true
+  },
+  {
+   "month": 11,
+   "day": 3,
+   "name": "San Martín de Porres, religioso",
+   "rank": "memoria",
+   "color": "blanco",
+   "region": "America Latina"
+  },
+  {
+   "month": 11,
+   "day": 4,
+   "name": "San Carlos Borromeo, obispo",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 9,
+   "name": "Dedicación de la Basílica de Letrán",
+   "rank": "fiesta",
+   "color": "blanco",
+   "overridesSunday": true
+  },
+  {
+   "month": 11,
+   "day": 10,
+   "name": "San León Magno, papa y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 11,
+   "name": "San Martín de Tours, obispo",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 12,
+   "name": "San Josafat, obispo y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 11,
+   "day": 17,
+   "name": "Santa Isabel de Hungría",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 21,
+   "name": "Presentación de la Virgen María",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 11,
+   "day": 22,
+   "name": "Santa Cecilia, virgen y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 11,
+   "day": 24,
+   "name": "Santos Andrés Dung-Lac y compañeros, mártires",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 11,
+   "day": 30,
+   "name": "San Andrés, apóstol",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 12,
+   "day": 3,
+   "name": "San Francisco Javier, presbítero",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 6,
+   "name": "San Nicolás, obispo",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 7,
+   "name": "San Ambrosio, obispo y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 8,
+   "name": "Inmaculada Concepción de la Virgen María",
+   "rank": "solemnidad",
+   "color": "blanco",
+   "transfer": "inmaculada"
+  },
+  {
+   "month": 12,
+   "day": 9,
+   "name": "San Juan Diego Cuauhtlatoatzin",
+   "rank": "memoria_libre",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 12,
+   "name": "Nuestra Señora de Guadalupe",
+   "rank": "fiesta",
+   "color": "blanco",
+   "region": "America"
+  },
+  {
+   "month": 12,
+   "day": 13,
+   "name": "Santa Lucía, virgen y mártir",
+   "rank": "memoria",
+   "color": "rojo"
+  },
+  {
+   "month": 12,
+   "day": 14,
+   "name": "San Juan de la Cruz, presbítero y doctor",
+   "rank": "memoria",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 25,
+   "name": "Natividad del Señor",
+   "rank": "solemnidad",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 26,
+   "name": "San Esteban, protomártir",
+   "rank": "fiesta",
+   "color": "rojo"
+  },
+  {
+   "month": 12,
+   "day": 27,
+   "name": "San Juan, apóstol y evangelista",
+   "rank": "fiesta",
+   "color": "blanco"
+  },
+  {
+   "month": 12,
+   "day": 28,
+   "name": "Santos Inocentes, mártires",
+   "rank": "fiesta",
+   "color": "rojo"
+  }
+ ]
+}

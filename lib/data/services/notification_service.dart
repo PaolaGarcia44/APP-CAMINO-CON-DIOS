@@ -1,22 +1,56 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest_all.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
-/// Notificaciones locales (sin Firebase ni servicios externos). Los ids
-/// de las notificaciones diarias estan fijos para poder actualizarlas o
-/// cancelarlas de forma individual.
+import '../../domain/entities/planned_notification.dart';
+
+/// Canales de notificacion de Android. Cada uno aparece por separado en los
+/// ajustes del sistema, para que el usuario pueda silenciarlos uno a uno.
+enum NotificationChannel {
+  dailyMessage('luz_daily_message', 'Mensaje del dia', 'Mensaje de fe y esperanza cada mañana'),
+  reading('luz_bible_reading', 'Lectura biblica', 'Recordatorio para continuar la lectura de la Palabra'),
+  reflection('luz_reflection', 'Reflexion diaria', 'Aviso de la reflexion del dia'),
+  specialDates('luz_special_dates', 'Fechas especiales', 'Solemnidades y fiestas de la Iglesia'),
+  agenda('luz_agenda', 'Recordatorios de Agenda', 'Avisos de las tareas de tu Agenda');
+
+  final String id;
+  final String title;
+  final String description;
+  const NotificationChannel(this.id, this.title, this.description);
+
+  Importance get importance =>
+      this == NotificationChannel.agenda ? Importance.high : Importance.defaultImportance;
+
+  static NotificationChannel forKind(NotificationKind kind) => switch (kind) {
+        NotificationKind.dailyMessage => dailyMessage,
+        NotificationKind.reading => reading,
+        NotificationKind.reflection => reflection,
+        NotificationKind.specialDates => specialDates,
+        NotificationKind.agenda => agenda,
+      };
+}
+
+/// Envoltorio de flutter_local_notifications (notificaciones locales, sin
+/// Firebase ni servicios externos).
 class NotificationService {
   NotificationService._();
 
   static final _plugin = FlutterLocalNotificationsPlugin();
   static bool _initialized = false;
+  static String? _launchPayload;
+  static final _taps = StreamController<String>.broadcast();
 
-  static const idMorning = 1;
-  static const idReading = 2;
-  static const idReflection = 3;
-  static const idRosary = 4;
+  /// Rutas a abrir cuando el usuario toca una notificacion con la app abierta.
+  static Stream<String> get taps => _taps.stream;
+
+  static bool get isAvailable => _initialized;
+
+  static AndroidFlutterLocalNotificationsPlugin? get _android =>
+      _plugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
 
   static Future<void> init() async {
     if (_initialized) return;
@@ -29,97 +63,162 @@ class NotificationService {
     }
 
     try {
-      const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
-      const iosInit = DarwinInitializationSettings();
-      const settings = InitializationSettings(android: androidInit, iOS: iosInit);
-      await _plugin.initialize(settings);
+      const androidInit = AndroidInitializationSettings('ic_stat_notification');
+      const iosInit = DarwinInitializationSettings(
+        requestAlertPermission: false,
+        requestBadgePermission: false,
+        requestSoundPermission: false,
+      );
+      await _plugin.initialize(
+        const InitializationSettings(android: androidInit, iOS: iosInit),
+        onDidReceiveNotificationResponse: (response) {
+          final payload = response.payload;
+          if (payload != null && payload.isNotEmpty) _taps.add(payload);
+        },
+      );
       _initialized = true;
-    } catch (_) {
-      // En plataformas sin soporte de notificaciones locales (web y algunos
-      // escritorios) el plugin no se puede inicializar; la app sigue
+
+      final launch = await _plugin.getNotificationAppLaunchDetails();
+      if (launch?.didNotificationLaunchApp ?? false) {
+        _launchPayload = launch!.notificationResponse?.payload;
+      }
+
+      final android = _android;
+      if (android != null) {
+        for (final channel in NotificationChannel.values) {
+          await android.createNotificationChannel(AndroidNotificationChannel(
+            channel.id,
+            channel.title,
+            description: channel.description,
+            importance: channel.importance,
+          ));
+        }
+      }
+    } catch (e) {
+      // En plataformas sin soporte de notificaciones locales (web, pruebas y
+      // algunos escritorios) el plugin no se puede inicializar; la app sigue
       // funcionando normalmente, solo sin recordatorios.
+      debugPrint('Notificaciones no disponibles: $e');
     }
   }
 
-  static Future<void> requestPermissions() async {
-    final android = _plugin.resolvePlatformSpecificImplementation<
-        AndroidFlutterLocalNotificationsPlugin>();
-    await android?.requestNotificationsPermission();
-    await android?.requestExactAlarmsPermission();
-
-    final ios =
-        _plugin.resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>();
-    await ios?.requestPermissions(alert: true, badge: true, sound: true);
+  /// Ruta de la notificacion que abrio la app (solo se entrega una vez).
+  static String? takeLaunchPayload() {
+    final payload = _launchPayload;
+    _launchPayload = null;
+    return payload;
   }
 
-  static tz.TZDateTime _nextInstanceOfTime(TimeOfDay time) {
-    final now = tz.TZDateTime.now(tz.local);
-    var scheduled =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, time.hour, time.minute);
-    if (scheduled.isBefore(now)) {
-      scheduled = scheduled.add(const Duration(days: 1));
+  /// Pide permiso para mostrar notificaciones (Android 13+ e iOS).
+  /// Devuelve false si el usuario lo nego.
+  static Future<bool> requestPermission() async {
+    if (!_initialized) return false;
+    try {
+      final android = _android;
+      if (android != null) {
+        return await android.requestNotificationsPermission() ?? true;
+      }
+      final ios = _plugin.resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>();
+      return await ios?.requestPermissions(alert: true, badge: true, sound: true) ?? true;
+    } catch (_) {
+      return false;
     }
-    return scheduled;
   }
 
-  static Future<void> _scheduleDaily({
-    required int id,
-    required String title,
-    required String body,
-    required TimeOfDay time,
-  }) async {
-    await _plugin.zonedSchedule(
-      id,
-      title,
-      body,
-      _nextInstanceOfTime(time),
-      const NotificationDetails(
-        android: AndroidNotificationDetails(
-          'luz_para_hoy_daily',
-          'Recordatorios diarios',
-          channelDescription: 'Recordatorios de lectura, oracion y reflexion diaria',
-          importance: Importance.defaultImportance,
-        ),
-        iOS: DarwinNotificationDetails(),
+  static Future<bool> areNotificationsAllowed() async {
+    if (!_initialized) return false;
+    try {
+      return await _android?.areNotificationsEnabled() ?? true;
+    } catch (_) {
+      return true;
+    }
+  }
+
+  /// En Android 12+ las alarmas exactas requieren un permiso especial. Sin
+  /// el, los avisos llegan igual pero pueden retrasarse algunos minutos.
+  static Future<bool> canScheduleExact() async {
+    if (!_initialized) return false;
+    try {
+      return await _android?.canScheduleExactNotifications() ?? true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Abre la pantalla del sistema para permitir alarmas exactas.
+  static Future<void> requestExactAlarms() async {
+    if (!_initialized) return;
+    try {
+      await _android?.requestExactAlarmsPermission();
+    } catch (_) {}
+  }
+
+  /// Programa [n]. Los recordatorios de Agenda usan alarma exacta cuando el
+  /// sistema lo permite; el resto puede llegar con unos minutos de margen.
+  static Future<void> schedule(PlannedNotification n) async {
+    if (!_initialized) return;
+    final channel = NotificationChannel.forKind(n.kind);
+    final exact = n.kind == NotificationKind.agenda;
+    final when = tz.TZDateTime(
+      tz.local,
+      n.when.year,
+      n.when.month,
+      n.when.day,
+      n.when.hour,
+      n.when.minute,
+    );
+    // Una notificacion unica en el pasado no se puede programar.
+    if (n.repeat == null && !when.isAfter(tz.TZDateTime.now(tz.local))) return;
+
+    final details = NotificationDetails(
+      android: AndroidNotificationDetails(
+        channel.id,
+        channel.title,
+        channelDescription: channel.description,
+        importance: channel.importance,
+        priority: exact ? Priority.high : Priority.defaultPriority,
+        styleInformation: BigTextStyleInformation(n.body),
+        category: exact ? AndroidNotificationCategory.reminder : null,
       ),
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      matchDateTimeComponents: DateTimeComponents.time,
+      iOS: const DarwinNotificationDetails(),
     );
+
+    var mode = AndroidScheduleMode.inexactAllowWhileIdle;
+    if (exact && await canScheduleExact()) mode = AndroidScheduleMode.exactAllowWhileIdle;
+
+    try {
+      await _plugin.zonedSchedule(
+        n.id,
+        n.title,
+        n.body,
+        when,
+        details,
+        uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
+        androidScheduleMode: mode,
+        matchDateTimeComponents: switch (n.repeat) {
+          null => null,
+          NotificationRepeat.daily => DateTimeComponents.time,
+          NotificationRepeat.weekly => DateTimeComponents.dayOfWeekAndTime,
+          NotificationRepeat.monthly => DateTimeComponents.dayOfMonthAndTime,
+        },
+        payload: n.payload,
+      );
+    } catch (e) {
+      debugPrint('No se pudo programar la notificacion ${n.id}: $e');
+    }
   }
 
-  static Future<void> scheduleDefaultReminders() async {
-    if (!_initialized) return; // Sin plugin disponible no hay nada que agendar.
-    await requestPermissions();
-    await _scheduleDaily(
-      id: idMorning,
-      title: 'Buenos dias',
-      body: 'Comienza el dia con un momento de oracion.',
-      time: const TimeOfDay(hour: 7, minute: 0),
-    );
-    await _scheduleDaily(
-      id: idReading,
-      title: 'Es momento de leer la Palabra',
-      body: 'Tu lectura biblica de hoy te espera.',
-      time: const TimeOfDay(hour: 12, minute: 0),
-    );
-    await _scheduleDaily(
-      id: idReflection,
-      title: 'Hoy te espera una reflexion',
-      body: 'Tomate un momento para la reflexion del dia.',
-      time: const TimeOfDay(hour: 17, minute: 0),
-    );
-    await _scheduleDaily(
-      id: idRosary,
-      title: 'No olvides tu Rosario',
-      body: 'Un espacio para orar el Rosario de hoy.',
-      time: const TimeOfDay(hour: 20, minute: 0),
-    );
+  static Future<void> cancel(int id) async {
+    if (!_initialized) return;
+    try {
+      await _plugin.cancel(id);
+    } catch (_) {}
   }
 
   static Future<void> cancelAll() async {
     if (!_initialized) return;
-    await _plugin.cancelAll();
+    try {
+      await _plugin.cancelAll();
+    } catch (_) {}
   }
 }

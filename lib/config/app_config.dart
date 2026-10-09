@@ -5,7 +5,7 @@ class AppConfig {
 
   static const String appName = 'Luz para Hoy';
   static const String appTagline = 'Un momento con Dios, cada dia';
-  static const String appVersion = '0.1.0';
+  static const String appVersion = '0.7.0';
 
   /// Prefijo usado por Hive para cajas y por notificaciones locales.
   static const String storageNamespace = 'luz_para_hoy';

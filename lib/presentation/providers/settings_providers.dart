@@ -31,6 +31,42 @@ final fontScaleProvider = StateNotifierProvider<FontScaleNotifier, double>(
   (ref) => FontScaleNotifier(ref),
 );
 
+/// Tamaño de letra exclusivo del lector biblico (independiente del de la app).
+class ReaderFontScaleNotifier extends StateNotifier<double> {
+  final Ref ref;
+  ReaderFontScaleNotifier(this.ref) : super(ref.read(settingsRepositoryProvider).getReaderFontScale());
+
+  Future<void> setScale(double scale) async {
+    final clamped = scale.clamp(0.8, 1.8);
+    state = clamped;
+    await ref.read(settingsRepositoryProvider).setReaderFontScale(clamped);
+  }
+}
+
+final readerFontScaleProvider = StateNotifierProvider<ReaderFontScaleNotifier, double>(
+  (ref) => ReaderFontScaleNotifier(ref),
+);
+
+enum ReadingMode { standard, sepia }
+
+class ReadingModeNotifier extends StateNotifier<ReadingMode> {
+  final Ref ref;
+  ReadingModeNotifier(this.ref)
+      : super(ref.read(settingsRepositoryProvider).getReadingMode() == 'sepia'
+            ? ReadingMode.sepia
+            : ReadingMode.standard);
+
+  Future<void> setMode(ReadingMode mode) async {
+    state = mode;
+    await ref.read(settingsRepositoryProvider).setReadingMode(mode.name);
+  }
+}
+
+/// Modo de lectura comodo: "sepia" usa un fondo calido de bajo contraste.
+final readingModeProvider = StateNotifierProvider<ReadingModeNotifier, ReadingMode>(
+  (ref) => ReadingModeNotifier(ref),
+);
+
 class BoolSettingNotifier extends StateNotifier<bool> {
   final Ref ref;
   final bool Function() reader;
@@ -43,16 +79,6 @@ class BoolSettingNotifier extends StateNotifier<bool> {
     await writer(value);
   }
 }
-
-final vibrationEnabledProvider = StateNotifierProvider<BoolSettingNotifier, bool>((ref) {
-  final repo = ref.read(settingsRepositoryProvider);
-  return BoolSettingNotifier(ref, repo.getVibrationEnabled, repo.setVibrationEnabled);
-});
-
-final notificationsEnabledProvider = StateNotifierProvider<BoolSettingNotifier, bool>((ref) {
-  final repo = ref.read(settingsRepositoryProvider);
-  return BoolSettingNotifier(ref, repo.getNotificationsEnabled, repo.setNotificationsEnabled);
-});
 
 final onboardingSeenProvider = StateNotifierProvider<BoolSettingNotifier, bool>((ref) {
   final repo = ref.read(settingsRepositoryProvider);

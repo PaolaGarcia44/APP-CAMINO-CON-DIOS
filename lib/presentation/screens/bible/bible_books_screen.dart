@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../../../core/utils/text_normalizer.dart';
+import '../../../data/models/bible_book_model.dart';
 import '../../../routes/route_paths.dart';
 import '../../providers/bible_providers.dart';
 
@@ -17,6 +19,23 @@ class _BibleBooksScreenState extends ConsumerState<BibleBooksScreen> {
   @override
   Widget build(BuildContext context) {
     final booksAsync = ref.watch(bibleBooksProvider);
+    final readChapters = ref.watch(readChaptersProvider);
+
+    int readIn(BibleBookModel b) => readChapters.where((k) => k.startsWith('${b.id}:')).length;
+
+    Widget tile(BibleBookModel b) {
+      final read = readIn(b);
+      return ListTile(
+        title: Text(b.name),
+        subtitle:
+            Text(read == 0 ? '${b.chapterCount} capitulos' : '${b.chapterCount} capitulos · $read leidos'),
+        trailing: read == b.chapterCount
+            ? Icon(Icons.check_circle, color: Theme.of(context).colorScheme.primary)
+            : const Icon(Icons.chevron_right),
+        onTap: () => context.push(RoutePaths.bibleChapters(b.id)),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(title: const Text('Libros')),
       body: Column(
@@ -29,7 +48,7 @@ class _BibleBooksScreenState extends ConsumerState<BibleBooksScreen> {
                 hintText: 'Buscar libro...',
                 border: OutlineInputBorder(),
               ),
-              onChanged: (v) => setState(() => _query = v.trim().toLowerCase()),
+              onChanged: (v) => setState(() => _query = TextNormalizer.normalize(v.trim())),
             ),
           ),
           Expanded(
@@ -37,23 +56,15 @@ class _BibleBooksScreenState extends ConsumerState<BibleBooksScreen> {
               data: (books) {
                 final filtered = _query.isEmpty
                     ? books
-                    : books.where((b) => b.name.toLowerCase().contains(_query)).toList();
+                    : books.where((b) => TextNormalizer.normalize(b.name).contains(_query)).toList();
                 final antiguo = filtered.where((b) => b.testament == 'antiguo').toList();
                 final nuevo = filtered.where((b) => b.testament == 'nuevo').toList();
                 return ListView(
                   children: [
-                    if (antiguo.isNotEmpty) _TestamentHeader('Antiguo Testamento'),
-                    ...antiguo.map((b) => ListTile(
-                          title: Text(b.name),
-                          subtitle: Text('${b.chapterCount} capitulos'),
-                          onTap: () => context.push(RoutePaths.bibleChapters(b.id)),
-                        )),
-                    if (nuevo.isNotEmpty) _TestamentHeader('Nuevo Testamento'),
-                    ...nuevo.map((b) => ListTile(
-                          title: Text(b.name),
-                          subtitle: Text('${b.chapterCount} capitulos'),
-                          onTap: () => context.push(RoutePaths.bibleChapters(b.id)),
-                        )),
+                    if (antiguo.isNotEmpty) const _TestamentHeader('Antiguo Testamento'),
+                    ...antiguo.map(tile),
+                    if (nuevo.isNotEmpty) const _TestamentHeader('Nuevo Testamento'),
+                    ...nuevo.map(tile),
                   ],
                 );
               },

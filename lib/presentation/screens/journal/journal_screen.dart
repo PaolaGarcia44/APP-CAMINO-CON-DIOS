@@ -109,7 +109,7 @@ class JournalScreen extends ConsumerWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   DropdownButtonFormField<JournalCategory>(
-                    value: category,
+                    initialValue: category,
                     items: JournalCategory.values
                         .map((c) => DropdownMenuItem(value: c, child: Text(c.label)))
                         .toList(),

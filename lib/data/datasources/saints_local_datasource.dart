@@ -17,6 +17,12 @@ class SaintsLocalDataSource {
     return _saints!;
   }
 
+  /// Santos con fiesta exactamente en [date] (para el Calendario).
+  Future<List<SaintModel>> getExactlyOn(DateTime date) async {
+    final saints = await getAll();
+    return saints.where((s) => s.month == date.month && s.day == date.day).toList();
+  }
+
   Future<SaintModel?> getForDate(DateTime date) async {
     final saints = await getAll();
     if (saints.isEmpty) return null;

@@ -1,7 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import '../../core/utils/daily_selector.dart';
 import '../models/quote_model.dart';
 
+/// Mensajes del dia almacenados localmente (assets/data/quotes/quotes.json).
+/// Para agregar mensajes basta con añadir entradas al JSON.
 class QuotesLocalDataSource {
   List<QuoteModel>? _quotes;
 
@@ -13,13 +16,9 @@ class QuotesLocalDataSource {
     return _quotes!;
   }
 
-  /// Frase estable para el dia dado (misma frase durante todo el dia).
+  /// Mensaje estable para el dia dado, sin repetirse dos dias seguidos.
   Future<QuoteModel> getForDate(DateTime date) async {
     final quotes = await getAll();
-    final dayOfYear = DateTime(date.year, date.month, date.day)
-        .difference(DateTime(date.year, 1, 1))
-        .inDays;
-    final index = dayOfYear % quotes.length;
-    return quotes[index];
+    return quotes[DailySelector.indexFor(date, quotes.length)];
   }
 }

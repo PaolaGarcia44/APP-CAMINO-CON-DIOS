@@ -25,8 +25,8 @@ const _pages = [
   ),
   _OnboardingPage(
     'assets/images/virgen_orante.jpg',
-    'Rosario, oraciones y mas',
-    'Un Rosario guiado, una biblioteca de oraciones y tu propio diario espiritual, siempre contigo.',
+    'Oraciones, agenda y mas',
+    'Una biblioteca de oraciones, tu agenda personal y el calendario de la fe, siempre contigo.',
   ),
 ];
 

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../config/app_config.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/widgets/faith_icon.dart';
+import '../../../data/services/notification_service.dart';
 import '../../../routes/route_paths.dart';
 import '../../providers/settings_providers.dart';
 
@@ -14,8 +15,7 @@ class SplashScreen extends ConsumerStatefulWidget {
   ConsumerState<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends ConsumerState<SplashScreen>
-    with SingleTickerProviderStateMixin {
+class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _fade;
   late final Animation<double> _scale;
@@ -36,7 +36,12 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     await Future.delayed(const Duration(milliseconds: 1600));
     if (!mounted) return;
     final seenOnboarding = ref.read(onboardingSeenProvider);
-    context.go(seenOnboarding ? RoutePaths.home : RoutePaths.onboarding);
+    if (!seenOnboarding) {
+      context.go(RoutePaths.onboarding);
+      return;
+    }
+    // Si la app se abrio tocando una notificacion, ir directo a su seccion.
+    context.go(NotificationService.takeLaunchPayload() ?? RoutePaths.home);
   }
 
   @override
@@ -85,10 +90,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   const SizedBox(height: 26),
                   Text(
                     AppConfig.appName,
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineMedium
-                        ?.copyWith(color: Colors.white),
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Colors.white),
                   ),
                   const SizedBox(height: 10),
                   Text(

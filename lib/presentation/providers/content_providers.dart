@@ -3,7 +3,6 @@ import '../../data/models/music_model.dart';
 import '../../data/models/prayer_model.dart';
 import '../../data/models/quote_model.dart';
 import '../../data/models/reflection_model.dart';
-import '../../data/models/rosary_model.dart';
 import '../../data/models/saint_model.dart';
 import 'datasource_providers.dart';
 
@@ -29,21 +28,20 @@ final shortPrayerOfDayProvider = FutureProvider<PrayerModel>((ref) {
   return ref.watch(prayersLocalDataSourceProvider).getShortPrayerOfDay(ref.watch(todayProvider));
 });
 
+final allReflectionsProvider = FutureProvider<List<ReflectionModel>>((ref) {
+  return ref.watch(reflectionsLocalDataSourceProvider).getAll();
+});
+
 final reflectionOfTheDayProvider = FutureProvider<ReflectionModel>((ref) {
   return ref.watch(reflectionsLocalDataSourceProvider).getForDate(ref.watch(todayProvider));
 });
 
-final rosaryMysterySetsProvider = FutureProvider<List<RosaryMysterySetModel>>((ref) {
-  return ref.watch(rosaryLocalDataSourceProvider).getAll();
-});
-
-final rosaryOfTheDayProvider = FutureProvider<RosaryMysterySetModel>((ref) {
-  final weekday = ref.watch(todayProvider).weekday;
-  return ref.watch(rosaryLocalDataSourceProvider).getForWeekday(weekday);
-});
-
 final saintOfTheDayProvider = FutureProvider<SaintModel?>((ref) {
   return ref.watch(saintsLocalDataSourceProvider).getForDate(ref.watch(todayProvider));
+});
+
+final saintsOnDateProvider = FutureProvider.family<List<SaintModel>, DateTime>((ref, date) {
+  return ref.watch(saintsLocalDataSourceProvider).getExactlyOn(date);
 });
 
 final musicCategoriesProvider = FutureProvider<List<MusicCategoryModel>>((ref) {

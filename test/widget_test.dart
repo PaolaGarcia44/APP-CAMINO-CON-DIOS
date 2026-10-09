@@ -17,14 +17,7 @@ void main() {
     TestWidgetsFlutterBinding.ensureInitialized();
     final dir = await Directory.systemTemp.createTemp('cami_hive_test');
     Hive.init(dir.path);
-    await Future.wait([
-      Hive.openBox(HiveBoxes.settings),
-      Hive.openBox(HiveBoxes.bibleProgress),
-      Hive.openBox(HiveBoxes.bibleBookmarks),
-      Hive.openBox(HiveBoxes.favorites),
-      Hive.openBox(HiveBoxes.journal),
-      Hive.openBox(HiveBoxes.dailyContentCache),
-    ]);
+    await Future.wait(HiveBoxes.all.map(Hive.openBox));
     await initializeDateFormatting('es');
   });
 

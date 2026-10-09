@@ -11,32 +11,41 @@ import '../../../core/widgets/fade_slide_in.dart';
 import '../../../core/widgets/faith_icon.dart';
 import '../../../core/widgets/quote_art_card.dart';
 import '../../../core/widgets/section_header.dart';
+import '../../../data/models/favorite_item.dart';
+import '../../../domain/entities/liturgical.dart';
 import '../../../routes/route_paths.dart';
+import '../../providers/agenda_providers.dart';
 import '../../providers/bible_providers.dart';
+import '../../providers/calendar_providers.dart';
 import '../../providers/content_providers.dart';
+import '../../providers/favorites_providers.dart';
+import '../agenda/task_tile.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final now = ref.watch(todayProvider);
-    final progressAsync = ref.watch(bibleProgressProvider);
-    final booksAsync = ref.watch(bibleBooksProvider);
-    final reflectionAsync = ref.watch(reflectionOfTheDayProvider);
-    final prayerAsync = ref.watch(shortPrayerOfDayProvider);
+    final now = DateTime.now();
+    final liturgy = ref.watch(todayLiturgyProvider);
     final quoteAsync = ref.watch(quoteOfTheDayProvider);
+    final reflectionAsync = ref.watch(reflectionOfTheDayProvider);
+    final upcoming = ref.watch(upcomingTasksProvider);
+    final favorites = ref.watch(favoritesProvider).valueOrNull ?? const <FavoriteItem>[];
 
     final greeting = GreetingHelper.greetingFor(now);
     final dateLabel = DateFormat("EEEE, d 'de' MMMM", 'es').format(now);
+    final special = liturgy?.special;
+    var delay = 0;
+    int nextDelay() => (delay += 80);
 
     return Scaffold(
       body: RefreshIndicator(
         onRefresh: () async {
+          ref.invalidate(todayProvider);
           ref.invalidate(bibleProgressProvider);
-          ref.invalidate(reflectionOfTheDayProvider);
-          ref.invalidate(shortPrayerOfDayProvider);
-          ref.invalidate(quoteOfTheDayProvider);
+          ref.invalidate(lastReadingPositionProvider);
+          ref.invalidate(upcomingTasksProvider);
         },
         child: CustomScrollView(
           physics: const AlwaysScrollableScrollPhysics(),
@@ -46,219 +55,283 @@ class HomeScreen extends ConsumerWidget {
                 appName: AppConfig.appName,
                 tagline: AppConfig.appTagline,
                 greeting: greeting,
-                dateLabel: dateLabel,
+                dateLabel: dateLabel[0].toUpperCase() + dateLabel.substring(1),
+                liturgy: liturgy,
               ),
             ),
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+              padding: const EdgeInsets.fromLTRB(20, 18, 20, 28),
               sliver: SliverList(
-                delegate: SliverChildListDelegate(
-                  [
-                    _SectionBlock(
-                      title: 'Lectura biblica del dia',
+                delegate: SliverChildListDelegate([
+                  if (special != null) ...[
+                    FadeSlideIn(
                       delayMs: 0,
-                      child: progressAsync.when(
-                        data: (progress) {
-                          final bookName = booksAsync.maybeWhen(
-                            data: (books) => books
-                                .firstWhere(
-                                  (book) => book.id == progress.currentBookId,
-                                  orElse: () => books.first,
-                                )
-                                .name,
-                            orElse: () => progress.currentBookId,
-                          );
-
-                          return AppCard(
-                            onTap: () => context.go(
-                              RoutePaths.bibleRead(progress.currentBookId, progress.currentChapter),
-                            ),
-                            padding: const EdgeInsets.all(20),
+                      child: _SpecialDateCard(
+                        celebration: special,
+                        onTap: () => context.push(RoutePaths.calendar),
+                      ),
+                    ),
+                    const SizedBox(height: 22),
+                  ],
+                  _SectionBlock(
+                    title: 'Mensaje del día',
+                    delayMs: nextDelay(),
+                    child: quoteAsync.when(
+                      data: (quote) {
+                        final favoriteId = 'quote:${quote.id}';
+                        final isFavorite = favorites.any((f) => f.id == favoriteId);
+                        return QuoteArtCard(
+                          quoteText: quote.text,
+                          reference: quote.reference,
+                          appName: AppConfig.appName,
+                          isFavorite: isFavorite,
+                          onToggleFavorite: () {
+                            final notifier = ref.read(favoritesProvider.notifier);
+                            if (isFavorite) {
+                              notifier.remove(favoriteId);
+                            } else {
+                              notifier.add(FavoriteItem(
+                                id: favoriteId,
+                                type: FavoriteType.quote,
+                                title: quote.reference ?? 'Mensaje del día',
+                                content: quote.text,
+                                dateAdded: DateTime.now(),
+                              ));
+                            }
+                          },
+                        );
+                      },
+                      loading: () => const _LoadingCard(),
+                      error: (_, __) => const SizedBox.shrink(),
+                    ),
+                  ),
+                  const SizedBox(height: 22),
+                  _SectionBlock(
+                    title: 'Tu lectura bíblica',
+                    delayMs: nextDelay(),
+                    child: const _ReadingCard(),
+                  ),
+                  const SizedBox(height: 22),
+                  _SectionBlock(
+                    title: 'Próximas tareas',
+                    actionLabel: 'Ver agenda',
+                    onAction: () => context.go(RoutePaths.agenda),
+                    delayMs: nextDelay(),
+                    child: upcoming.isEmpty
+                        ? AppCard(
+                            onTap: () => context.push(RoutePaths.agendaNew()),
                             child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                _FeaturedIcon(
-                                  icon: Icons.menu_book_rounded,
+                                const _FeaturedIcon(
+                                  icon: Icons.event_available_rounded,
                                   background: AppColors.purpleSoft,
                                   foreground: AppColors.purpleDeep,
                                 ),
-                                const SizedBox(width: 16),
+                                const SizedBox(width: 14),
+                                Expanded(
+                                  child: Text(
+                                    'No tienes tareas próximas. Toca para crear una.',
+                                    style: Theme.of(context).textTheme.bodyMedium,
+                                  ),
+                                ),
+                                const Icon(Icons.add_rounded),
+                              ],
+                            ),
+                          )
+                        : Column(
+                            children: [
+                              for (final o in upcoming)
+                                TaskTile(occurrence: o, dense: true, key: ValueKey('${o.task.id}${o.at}')),
+                            ],
+                          ),
+                  ),
+                  const SizedBox(height: 22),
+                  _SectionBlock(
+                    title: 'Reflexión del día',
+                    delayMs: nextDelay(),
+                    child: reflectionAsync.when(
+                      data: (reflection) => AppCard(
+                        onTap: () => context.push(RoutePaths.reflections),
+                        padding: const EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                const _FeaturedIcon(
+                                  icon: Icons.wb_sunny_rounded,
+                                  background: AppColors.goldSoft,
+                                  foreground: AppColors.gold,
+                                ),
+                                const SizedBox(width: 14),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
-                                        'Día ${progress.dayNumber}',
-                                        style: Theme.of(context).textTheme.labelLarge,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      Text(
-                                        '$bookName ${progress.currentChapter}',
-                                        style: Theme.of(context).textTheme.titleMedium,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      Text(
-                                        'Continúa la lectura en orden y conserva tu progreso automáticamente.',
-                                        style: Theme.of(context).textTheme.bodyMedium,
-                                      ),
+                                      Text(reflection.title, style: Theme.of(context).textTheme.titleMedium),
+                                      Text(reflection.verseRef, style: Theme.of(context).textTheme.bodySmall),
                                     ],
                                   ),
                                 ),
-                                const SizedBox(width: 10),
-                                const Icon(Icons.chevron_right_rounded),
                               ],
                             ),
-                          );
-                        },
-                        loading: () => const _LoadingCard(),
-                        error: (_, __) => const SizedBox.shrink(),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    const _SectionBlock(
-                      title: 'Accesos rapidos',
-                      delayMs: 90,
-                      child: _QuickActionsGrid(),
-                    ),
-                    const SizedBox(height: 20),
-                    _SectionBlock(
-                      title: 'Reflexion del dia',
-                      delayMs: 180,
-                      child: reflectionAsync.when(
-                        data: (reflection) => AppCard(
-                          padding: const EdgeInsets.all(20),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  _FeaturedIcon(
-                                    icon: Icons.wb_sunny_rounded,
-                                    background: AppColors.goldSoft,
-                                    foreground: AppColors.gold,
-                                  ),
-                                  const SizedBox(width: 14),
-                                  Expanded(
-                                    child: Text(
-                                      reflection.title,
-                                      style: Theme.of(context).textTheme.titleMedium,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 14),
-                              Text(reflection.text, style: Theme.of(context).textTheme.bodyMedium),
-                              const SizedBox(height: 12),
-                              Container(
-                                width: double.infinity,
-                                padding: const EdgeInsets.all(14),
-                                decoration: BoxDecoration(
-                                  color: Theme.of(context).colorScheme.surfaceContainerHighest.withValues(alpha: 0.45),
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
-                                child: Text(
-                                  reflection.closingMessage,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodyMedium
-                                      ?.copyWith(fontStyle: FontStyle.italic),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        loading: () => const _LoadingCard(),
-                        error: (_, __) => const SizedBox.shrink(),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    _SectionBlock(
-                      title: 'Oracion corta del dia',
-                      delayMs: 260,
-                      child: prayerAsync.when(
-                        data: (prayer) => AppCard(
-                          padding: const EdgeInsets.all(20),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  _FeaturedIcon(
-                                    icon: Icons.volunteer_activism_rounded,
-                                    background: AppColors.goldSoft,
-                                    foreground: AppColors.purpleDeep,
-                                  ),
-                                  const SizedBox(width: 14),
-                                  Expanded(
-                                    child: Text(
-                                      prayer.title,
-                                      style: Theme.of(context).textTheme.titleMedium,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 14),
-                              Text(prayer.text, style: Theme.of(context).textTheme.bodyMedium),
-                            ],
-                          ),
-                        ),
-                        loading: () => const _LoadingCard(),
-                        error: (_, __) => const SizedBox.shrink(),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    _SectionBlock(
-                      title: 'Frase inspiradora',
-                      delayMs: 340,
-                      child: quoteAsync.when(
-                        data: (quote) => QuoteArtCard(
-                          quoteText: quote.text,
-                          appName: AppConfig.appName,
-                        ),
-                        loading: () => const _LoadingCard(),
-                        error: (_, __) => const SizedBox.shrink(),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    _SectionBlock(
-                      title: 'Santo del dia',
-                      delayMs: 420,
-                      child: AppCard(
-                        onTap: () => context.push(RoutePaths.saintOfDay),
-                        padding: const EdgeInsets.all(20),
-                        child: Row(
-                          children: [
-                            _FeaturedIcon(
-                              icon: Icons.emoji_events_outlined,
-                              background: AppColors.goldSoft,
-                              foreground: AppColors.gold,
+                            const SizedBox(height: 12),
+                            Text(
+                              reflection.text,
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
-                            const SizedBox(width: 16),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('Conoce al santo de hoy',
-                                      style: Theme.of(context).textTheme.titleMedium),
-                                  const SizedBox(height: 6),
-                                  Text(
-                                    'Su historia, su frase y una oracion para pedir su intercesion.',
-                                    style: Theme.of(context).textTheme.bodyMedium,
-                                  ),
-                                ],
+                            const SizedBox(height: 6),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Text(
+                                'Leer reflexión',
+                                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                                      color: Theme.of(context).colorScheme.primary,
+                                    ),
                               ),
                             ),
-                            const SizedBox(width: 10),
-                            const Icon(Icons.chevron_right_rounded),
                           ],
                         ),
                       ),
+                      loading: () => const _LoadingCard(),
+                      error: (_, __) => const SizedBox.shrink(),
+                    ),
+                  ),
+                ]),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Continuar donde quedo el usuario; si nunca ha leido, el plan del dia.
+class _ReadingCard extends ConsumerWidget {
+  const _ReadingCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lastPosition = ref.watch(lastReadingPositionProvider);
+    final progress = ref.watch(bibleProgressProvider).valueOrNull;
+    final booksById = ref.watch(bibleBooksByIdProvider);
+    final readCount = ref.watch(readChaptersProvider).length;
+    final total = ref.watch(bibleTotalChaptersProvider).valueOrNull ?? 0;
+    final theme = Theme.of(context);
+
+    String name(String id) => booksById[id]?.name ?? id;
+
+    final String title;
+    final String subtitle;
+    final String route;
+    if (lastPosition != null) {
+      title = '${name(lastPosition.bookId)} ${lastPosition.chapter}'
+          '${lastPosition.verse != null ? ':${lastPosition.verse}' : ''}';
+      subtitle = 'Continúa donde lo dejaste';
+      route = RoutePaths.bibleRead(lastPosition.bookId, lastPosition.chapter, verse: lastPosition.verse);
+    } else if (progress != null) {
+      title = '${name(progress.currentBookId)} ${progress.currentChapter}';
+      subtitle = 'Comienza la Biblia en orden, capítulo a capítulo';
+      route = RoutePaths.bibleRead(progress.currentBookId, progress.currentChapter);
+    } else {
+      return const _LoadingCard();
+    }
+
+    return AppCard(
+      onTap: () => context.push(route),
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const _FeaturedIcon(
+                icon: Icons.menu_book_rounded,
+                background: AppColors.purpleSoft,
+                foreground: AppColors.purpleDeep,
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(subtitle, style: theme.textTheme.labelLarge),
+                    const SizedBox(height: 4),
+                    Text(title, style: theme.textTheme.titleMedium),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded),
+            ],
+          ),
+          if (total > 0 && readCount > 0) ...[
+            const SizedBox(height: 14),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: LinearProgressIndicator(value: readCount / total, minHeight: 6),
+            ),
+            const SizedBox(height: 6),
+            Text('$readCount de $total capítulos leídos', style: theme.textTheme.bodySmall),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _SpecialDateCard extends StatelessWidget {
+  final Celebration celebration;
+  final VoidCallback onTap;
+
+  const _SpecialDateCard({required this.celebration, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        onTap: onTap,
+        child: Ink(
+          padding: const EdgeInsets.all(18),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: LinearGradient(
+              colors: [
+                AppColors.gold.withValues(alpha: 0.95),
+                const Color(0xFFB08436),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: Row(
+            children: [
+              const Icon(Icons.celebration_rounded, color: Colors.white, size: 32),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Hoy celebramos · ${celebration.rank.label}',
+                      style: theme.textTheme.labelLarge?.copyWith(color: Colors.white70),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      celebration.name,
+                      style: theme.textTheme.titleMedium?.copyWith(color: Colors.white),
                     ),
                   ],
                 ),
               ),
-            ),
-          ],
+              const Icon(Icons.chevron_right_rounded, color: Colors.white),
+            ],
+          ),
         ),
       ),
     );
@@ -270,17 +343,23 @@ class _HomeHero extends StatelessWidget {
   final String tagline;
   final String greeting;
   final String dateLabel;
+  final LiturgicalDay? liturgy;
 
   const _HomeHero({
     required this.appName,
     required this.tagline,
     required this.greeting,
     required this.dateLabel,
+    required this.liturgy,
   });
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final liturgy = this.liturgy;
+    // Las memorias (no "fechas especiales") se mencionan aqui sin otra tarjeta.
+    final memorial = liturgy?.special == null ? liturgy?.principal : null;
+
     return Container(
       width: double.infinity,
       decoration: const BoxDecoration(
@@ -302,65 +381,89 @@ class _HomeHero extends StatelessWidget {
           ),
         ),
         child: SafeArea(
-        bottom: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 52,
-                    height: 52,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.18),
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: const Center(
-                      child: FaithIcon(
-                        type: FaithIconType.cross,
-                        size: 26,
-                        color: Colors.white,
+          bottom: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 48,
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.18),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: const Center(
+                        child: FaithIcon(type: FaithIconType.cross, size: 24, color: Colors.white),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(appName, style: theme.textTheme.titleLarge?.copyWith(color: Colors.white)),
+                          const SizedBox(height: 2),
+                          Text(tagline, style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70)),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 24),
+                Text(greeting, style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white)),
+                const SizedBox(height: 6),
+                Text(
+                  dateLabel,
+                  style: theme.textTheme.bodyLarge?.copyWith(color: Colors.white.withValues(alpha: 0.9)),
+                ),
+                if (liturgy != null) ...[
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha: 0.14),
+                      borderRadius: BorderRadius.circular(18),
+                      border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
+                    ),
+                    child: Row(
                       children: [
-                        Text(appName, style: theme.textTheme.titleLarge?.copyWith(color: Colors.white)),
-                        const SizedBox(height: 4),
-                        Text(tagline, style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70)),
+                        Container(
+                          width: 12,
+                          height: 12,
+                          decoration: BoxDecoration(
+                            color: liturgy.color.color,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white70),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                liturgy.weekLabel,
+                                style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
+                              ),
+                              if (memorial != null)
+                                Text(
+                                  memorial.name,
+                                  style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
+                                ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ],
-              ),
-              const SizedBox(height: 28),
-              Text(greeting, style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white)),
-              const SizedBox(height: 8),
-              Text(
-                dateLabel,
-                style: theme.textTheme.bodyLarge?.copyWith(color: Colors.white.withValues(alpha: 0.9)),
-              ),
-              const SizedBox(height: 18),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.14),
-                  borderRadius: BorderRadius.circular(999),
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
-                ),
-                child: Text(
-                  'Lectura, Rosario y oración, siempre disponibles sin conexion.',
-                  style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
         ),
       ),
     );
@@ -371,8 +474,16 @@ class _SectionBlock extends StatelessWidget {
   final String title;
   final Widget child;
   final int delayMs;
+  final String? actionLabel;
+  final VoidCallback? onAction;
 
-  const _SectionBlock({required this.title, required this.child, this.delayMs = 0});
+  const _SectionBlock({
+    required this.title,
+    required this.child,
+    this.delayMs = 0,
+    this.actionLabel,
+    this.onAction,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -381,71 +492,13 @@ class _SectionBlock extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SectionHeader(title: title),
+          SectionHeader(title: title, actionLabel: actionLabel, onAction: onAction),
           const SizedBox(height: 10),
           child,
         ],
       ),
     );
   }
-}
-
-class _QuickActionsGrid extends StatelessWidget {
-  const _QuickActionsGrid();
-
-  @override
-  Widget build(BuildContext context) {
-    final actions = <_QuickActionItem>[
-      _QuickActionItem('Biblia', Icons.menu_book_rounded, AppColors.purpleSoft, AppColors.purpleDeep, RoutePaths.bible),
-      _QuickActionItem('Rosario', Icons.circle_outlined, AppColors.goldSoft, AppColors.gold, RoutePaths.rosary),
-      _QuickActionItem('Oraciones', Icons.volunteer_activism_rounded, AppColors.cream, AppColors.purpleDeep, RoutePaths.prayers),
-      _QuickActionItem('Diario', Icons.edit_note_rounded, AppColors.purpleSoft, AppColors.purple, RoutePaths.journal),
-      _QuickActionItem('Favoritos', Icons.bookmark_rounded, AppColors.goldSoft, AppColors.gold, RoutePaths.favorites),
-      _QuickActionItem('Ajustes', Icons.settings_rounded, AppColors.cream, AppColors.purpleDeep, RoutePaths.settings),
-    ];
-
-    return Wrap(
-      spacing: 12,
-      runSpacing: 12,
-      children: actions
-          .map(
-            (action) => SizedBox(
-              width: 160,
-              child: AppCard(
-                onTap: () => context.go(action.route),
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 44,
-                      height: 44,
-                      decoration: BoxDecoration(
-                        color: action.background,
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      child: Icon(action.icon, color: action.foreground),
-                    ),
-                    const SizedBox(height: 14),
-                    Text(action.label, style: Theme.of(context).textTheme.titleSmall),
-                  ],
-                ),
-              ),
-            ),
-          )
-          .toList(),
-    );
-  }
-}
-
-class _QuickActionItem {
-  final String label;
-  final IconData icon;
-  final Color background;
-  final Color foreground;
-  final String route;
-
-  const _QuickActionItem(this.label, this.icon, this.background, this.foreground, this.route);
 }
 
 class _FeaturedIcon extends StatelessWidget {

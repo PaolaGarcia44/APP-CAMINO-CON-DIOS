@@ -35,6 +35,7 @@ class PrayersHomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final categoriesAsync = ref.watch(prayerCategoriesProvider);
+    final prayerOfDay = ref.watch(shortPrayerOfDayProvider).valueOrNull;
     return Scaffold(
       appBar: AppBar(title: const Text('Oraciones')),
       body: categoriesAsync.when(
@@ -48,14 +49,29 @@ class PrayersHomeScreen extends ConsumerWidget {
                   height: 140,
                   child: Text(
                     'Habla con Dios en cada momento del dia',
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleMedium
-                        ?.copyWith(color: Colors.white),
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),
                   ),
                 ),
               ),
             ),
+            if (prayerOfDay != null)
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
+                sliver: SliverToBoxAdapter(
+                  child: AppCard(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Oracion del dia', style: Theme.of(context).textTheme.labelLarge),
+                        const SizedBox(height: 6),
+                        Text(prayerOfDay.title, style: Theme.of(context).textTheme.titleMedium),
+                        const SizedBox(height: 8),
+                        Text(prayerOfDay.text, style: Theme.of(context).textTheme.bodyMedium),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             SliverPadding(
               padding: const EdgeInsets.all(20),
               sliver: SliverGrid(
@@ -79,7 +95,8 @@ class PrayersHomeScreen extends ConsumerWidget {
                             color: Theme.of(context).colorScheme.primary,
                           ),
                           const SizedBox(height: 10),
-                          Text(category, textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleMedium),
+                          Text(category,
+                              textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleMedium),
                         ],
                       ),
                     );

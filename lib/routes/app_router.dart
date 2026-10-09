@@ -1,30 +1,39 @@
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../presentation/screens/agenda/agenda_screen.dart';
+import '../presentation/screens/agenda/task_editor_screen.dart';
 import '../presentation/screens/bible/bible_bookmarks_screen.dart';
 import '../presentation/screens/bible/bible_books_screen.dart';
 import '../presentation/screens/bible/bible_chapters_screen.dart';
+import '../presentation/screens/bible/bible_history_screen.dart';
 import '../presentation/screens/bible/bible_home_screen.dart';
 import '../presentation/screens/bible/bible_reader_screen.dart';
 import '../presentation/screens/bible/bible_search_screen.dart';
+import '../presentation/screens/calendar/calendar_screen.dart';
 import '../presentation/screens/favorites/favorites_screen.dart';
 import '../presentation/screens/home/home_screen.dart';
 import '../presentation/screens/journal/journal_screen.dart';
-import '../presentation/screens/liturgical/liturgical_calendar_screen.dart';
 import '../presentation/screens/more/more_screen.dart';
 import '../presentation/screens/music/music_screen.dart';
 import '../presentation/screens/onboarding/onboarding_screen.dart';
 import '../presentation/screens/prayers/prayer_category_screen.dart';
 import '../presentation/screens/prayers/prayers_home_screen.dart';
-import '../presentation/screens/rosary/rosary_screen.dart';
 import '../presentation/screens/saint/saint_of_day_screen.dart';
+import '../presentation/screens/reflections/reflections_screen.dart';
 import '../presentation/screens/settings/settings_screen.dart';
 import '../presentation/screens/shell/home_shell.dart';
 import '../presentation/screens/splash/splash_screen.dart';
 import 'route_paths.dart';
 
+/// Navegador raiz: las pantallas que deben cubrir el menu inferior (como
+/// el editor de tareas) se abren aqui. Tambien lo usan las notificaciones.
+final rootNavigatorKey = GlobalKey<NavigatorState>();
+
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
+    navigatorKey: rootNavigatorKey,
     initialLocation: RoutePaths.splash,
     routes: [
       GoRoute(path: RoutePaths.splash, builder: (context, state) => const SplashScreen()),
@@ -60,11 +69,36 @@ final routerProvider = Provider<GoRouter>((ref) {
                   builder: (context, state) => const BibleBookmarksScreen(),
                 ),
                 GoRoute(
+                  path: 'history',
+                  builder: (context, state) => const BibleHistoryScreen(),
+                ),
+                GoRoute(
                   path: 'read/:bookId/:chapter',
                   builder: (context, state) => BibleReaderScreen(
                     bookId: state.pathParameters['bookId']!,
-                    chapterNumber: int.parse(state.pathParameters['chapter']!),
+                    chapterNumber: int.tryParse(state.pathParameters['chapter']!) ?? 1,
+                    initialVerse: int.tryParse(state.uri.queryParameters['verse'] ?? ''),
                   ),
+                ),
+              ],
+            ),
+          ]),
+          StatefulShellBranch(routes: [
+            GoRoute(
+              path: RoutePaths.agenda,
+              builder: (context, state) => const AgendaScreen(),
+              routes: [
+                GoRoute(
+                  path: 'new',
+                  parentNavigatorKey: rootNavigatorKey,
+                  builder: (context, state) => TaskEditorScreen(
+                    initialDate: DateTime.tryParse(state.uri.queryParameters['date'] ?? ''),
+                  ),
+                ),
+                GoRoute(
+                  path: 'edit/:id',
+                  parentNavigatorKey: rootNavigatorKey,
+                  builder: (context, state) => TaskEditorScreen(taskId: state.pathParameters['id']),
                 ),
               ],
             ),
@@ -84,9 +118,6 @@ final routerProvider = Provider<GoRouter>((ref) {
             ),
           ]),
           StatefulShellBranch(routes: [
-            GoRoute(path: RoutePaths.rosary, builder: (context, state) => const RosaryScreen()),
-          ]),
-          StatefulShellBranch(routes: [
             GoRoute(
               path: RoutePaths.more,
               builder: (context, state) => const MoreScreen(),
@@ -94,10 +125,8 @@ final routerProvider = Provider<GoRouter>((ref) {
                 GoRoute(path: 'favorites', builder: (context, state) => const FavoritesScreen()),
                 GoRoute(path: 'journal', builder: (context, state) => const JournalScreen()),
                 GoRoute(path: 'music', builder: (context, state) => const MusicScreen()),
-                GoRoute(
-                  path: 'liturgical-calendar',
-                  builder: (context, state) => const LiturgicalCalendarScreen(),
-                ),
+                GoRoute(path: 'calendar', builder: (context, state) => const CalendarScreen()),
+                GoRoute(path: 'reflections', builder: (context, state) => const ReflectionsScreen()),
                 GoRoute(path: 'saint-of-day', builder: (context, state) => const SaintOfDayScreen()),
                 GoRoute(path: 'settings', builder: (context, state) => const SettingsScreen()),
               ],
